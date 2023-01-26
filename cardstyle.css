@@ -1,0 +1,159 @@
+body {
+  margin: 50px;
+  background-color: #444;
+  background: url("clothback.png"):
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 150px 300px 300px 300px 300px;
+  grid-template-rows: 450px 450px 450px 450px 450px;
+
+  grid-gap: 30px;
+  /*  background-color: #fff; */
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  /* padding: 20px; */
+  font-size: 150%;
+  font-family: 'Aboreto', cursive;
+
+}
+
+.card {
+  /* width: 200px;
+  height: 200px; */
+  width: 100%;
+  height: 100%;
+  float: left;
+  perspective: 500px;
+  border-radius: 5px;
+}
+
+.content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: green;
+  line-height: 300px;
+  color: #03446a;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  border: 5px solid white;
+}
+
+.back {
+  background: #03446a;
+  color: gray;
+  transform: rotateY(180deg);
+}
+
+.stoneback {
+    background: goldenrod;
+    background-image: url("img/stoneback.png")
+}
+
+.starback {
+    background: purple;
+    background-image: url("img/starback.png")
+}
+
+.fireback {
+    background: red;
+    background-image: url("img/fireback.png")
+}
+
+
+.waveback {
+    background: lightseagreen;
+  background-image: url("img/waveback.png");
+}
+
+
+
+.lorec {
+    background-image: url("img/lorec-web.png");
+  }
+  
+  
+.anderon {
+    background-image: url("img/anderon-web.png");
+  }
+
+.aurielle {
+    background-image: url("img/aurielle-web.png");
+  }
+
+.bastard {
+    background-image: url("img/bastard-web.png");
+  }
+
+.suil-lir {
+    background-image: url("img/suil-lir-web.png");
+  }
+
+.fenella {
+    background-image: url("img/fenella-web.png");
+  }
+
+.roichard {
+    background-image: url("img/roichard-web.png");
+  }
+
+.cethlenn {
+    background-image: url("img/cethlenn-web.png");
+  }
+
+.ophelia {
+    background-image: url("img/ophelia-web.png");
+  }
+
+.borel {
+    background-image: url("img/borel-web.png");
+  }
+  
+.ciara {
+    background-image: url("img/ciara-web.png");
+  }
+
+.bevin {
+    background-image: url("img/bevin-web.png");
+  }
+
+.alaric{
+    background-image: url("img/alaric-web.png");
+  }
+
+  .pauol{
+    background-image: url("img/pauol-web.png");
+  }
+
+  .liabelle{
+    background-image: url("img/liabelle-web.png");
+  }
+
+  .diolinda{
+    background-image: url("img/diolinda-web.png");
+  }
