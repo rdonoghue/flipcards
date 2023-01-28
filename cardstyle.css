@@ -101,6 +101,11 @@ body {
   background-image: url("img/serpentback.png");
 }
 
+.shipback {
+  background: orange;
+  background-image: url("img/shipback.png");
+}
+
 .lorec {
   background-image: url("img/lorec-web.png");
 }
@@ -179,4 +184,7 @@ body {
 
 .pyson {
   background-image: url("img/pyson-web.png");
+}
+.eva {
+  background-image: url("img/eva-web.png");
 }
