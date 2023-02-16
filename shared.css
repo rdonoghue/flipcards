@@ -1,0 +1,28 @@
+body {
+  margin: 50px;
+  background-color: #444;
+  background-image: url(img/clothback.png);
+  font-family: "PT Serif", serif;
+  color: whitesmoke;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: lightblue;
+}
+
+a:active {
+  color: violet;
+}

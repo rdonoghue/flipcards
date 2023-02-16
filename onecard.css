@@ -1,0 +1,53 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+.card {
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  margin: 2rem auto;
+  border: 1ch solid white;
+  border-radius: 2ch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: rotate(9deg);
+}
+
+.cardbody {
+  flex: 1;
+  width: 100%;
+
+  /* border-radius: 20%; */
+}
+
+.cardblank {
+  flex: 1;
+  margin: 1ch;
+  border: 1px dashed yellow;
+}
+
+.cardcaption {
+  height: 3rem;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.cardcaptiontext {
+  margin: auto auto;
+  color: black;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.trump {
+  object-fit: cover;
+  width: 100%;
+  clip-path: border-box;
+}
