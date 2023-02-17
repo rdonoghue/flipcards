@@ -286,6 +286,15 @@ otherCards["salem"] = {
     "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
 };
 
+otherCards["edward"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Edward Kolvir",
+  url: "./img/edward.png",
+  tagline: "Opportunity",
+  blurb: "<p>Newly appointed Duke of Kolvir.</p>",
+};
+
 otherCards["desdemona"] = {
   type: "child",
   parent: "ambercourt-category",
@@ -331,7 +340,7 @@ otherCards["wesley"] = {
   parent: "ambercourt-category",
   cardname: "Kathryn Wesley",
   url: "./img/wesley.png",
-  tagline: "Law",
+  tagline: "Outnumbered",
   blurb:
     "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
 };
