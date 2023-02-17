@@ -10,11 +10,14 @@ console.log(scriptCall);
 import { amberCards, otherCards } from "./trumpdata.js";
 
 var cardDetails;
+var pageType;
 
 if (scriptCall == "ambercards") {
   cardDetails = amberCards;
+  pageType = "amber";
 } else if (scriptCall == "othercards") {
   cardDetails = otherCards;
+  pageType = "other";
 }
 
 console.log(document.getElementById("callcards"));
@@ -127,13 +130,11 @@ function resetpage() {
   document.getElementById("frontCard").style.transform = "".concat(
     "rotate(" + cardpivot() + "deg)"
   );
-  document.getElementById("char-blurb").innerHTML = "Prosperity";
+  document.getElementById("cardmeaning").innerHTML = "<p> </p>";
 
+  document.getElementById("char-blurb").innerHTML = "Prosperity";
   document.getElementById("char-desc").innerHTML =
     "<p>Welcome to the Prosperity Court</p>";
-  document.getElementById("frontCard").classList.remove("cardFace");
-  document.getElementById("frontCard").classList.add("cardReverse");
-  document.getElementById("cardmeaning").innerHTML = "<p> </p>";
 
   for (let k in cardDetails) {
     document.getElementById(k).classList.remove("active-button");

@@ -3,31 +3,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=PT+Serif:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:wght@300&family=Nanum+Myeongjo:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="shared.css" />
-  </head>
-  <body>
-    <h1>Card Pages</h1>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="morecards.html">Prosperity Trumps</a></li>
-      <li><a href="cards-amber.html">Full Cards</a></li>
-    </ul>
 
-    <h2>Some Text</h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat
-    nunc turpis, at euismod mi elementum et. Aenean ac consequat tortor.
-    Suspendisse id pharetra dui, at vestibulum magna. In id pretium nibh, et
-    gravida sem. Phasellus felis velit, suscipit ut est et, volutpat ultrices
-    arcu. Suspendisse pulvinar, tellus a commodo condimentum, lacus arcu
-    sagittis nunc, in faucibus est quam a lectus. Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit. In lorem massa, accumsan nec tellus et,
-    lobortis sollicitudin mi. Nam vitae sodales felis. Class aptent taciti
-    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Fusce aliquet lobortis nisi sit amet tempus. Phasellus condimentum lectus
-    sapien, ac dignissim nibh pretium sit amet. Cras euismod odio non ligula
-    pellentesque, in sagittis sem posuere.
+    <link rel="stylesheet" href="shared.css" />
+
+    <link rel="stylesheet" href="cardpage.css" />
+  </head>
+  <body tag="amber">
+    <header>
+      <ul>
+        <li class="active"><a href="index.html">Scions of Amber</a></li>
+        <li><a href="cards-other.html">Others of Note</a></li>
+        <li><a href="morecards.html">All Trumps</a></li>
+        <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
+      </ul>
+    </header>
+    <main>
+      <nav>
+        <div id="buttonList" class="sidenav"></div>
+      </nav>
+      <div class="cardholder">
+        <div class="card cardReverse" id="frontCard">
+          <div class="cardbody">
+            <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
+          </div>
+          <div class="cardcaption">
+            <p class="cardcaptiontext" id="cardname"></p>
+          </div>
+        </div>
+        <div id="cardmeaning"></div>
+        <div class="bottombox">
+          <div id="cardmanip">
+            <button id="pickrandom">Random Draw</button>
+            <button id="resetpage">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="textbox" id="chardesc">
+        <div id="char-blurb">Prosperity</div>
+        <div id="char-desc">Welcome to the Prosperity Court of Amber.</div>
+      </div>
+    </main>
   </body>
+
+  <script
+    src="cardpage.js"
+    type="module"
+    handoff="ambercards"
+    id="callcards"
+  ></script>
 </html>
