@@ -10,7 +10,8 @@ amberCards["oberon"] = {
   cardname: "Oberon",
   url: "./img/oberon.png",
   tagline: "King",
-  blurb: "King of Amber. Manly man.",
+  blurb:
+    "King of Amber. Creator of the Pattern. Conqueror of all reality. Sitting upon a great throne with a greater crown wrought of silver with seven high points, studded with emeralds, and huge rubies at either temple. The jewel of judgment rests upon his chest, supported around broad shoulders by a thick golden chain.</p><p>Father.</p><p>  Oberon as a father is open to many interpretations and possibilities. Oberon is a distant father. Oberon is a loving father. Oberon is a manipulator. Oberon is a teacher. Any, all, or none of these may be true. Oberon is complicated.</p><p>  What can be said about Oberon without interpretation is that those not of royal blood within the court of Amber are terrified of him. He was ruthless enough to win wars that the subjugated are still trying to understand how they could have possibly lost. He was powerful enough to slay demons, ancient dragons, and self- proclaimed gods on the fields of battle.<p>",
 };
 
 amberCards["velka"] = {
@@ -20,7 +21,8 @@ amberCards["velka"] = {
   cardname: "Velka",
   url: "./img/velka.png",
   tagline: "Memory",
-  blurb: "",
+  blurb:
+    "<p>The children of Velka are older than recorded history. Even in the stasis of Amber, only weather-worn statues are any reminder of the first queen of the one true world. Two of her children died - the nameless bastard from a supposed affair who grew to be worshiped as a god of war, and Prince Anderon. The Anderon Hall district of Amber is named in his honor. Two of Velka’s surviving children, Lorec and Aurielle, have been Oberon’s representatives overseeing the surrender of the Abyssal Reach. They have only recently returned to take their place within the court.</p>",
 };
 
 amberCards["fina"] = {
@@ -30,7 +32,8 @@ amberCards["fina"] = {
   cardname: "Fina",
   url: "./img/fina.png",
   tagline: "Dreams",
-  blurb: "",
+  blurb:
+    "<p>Literal portraits of expectation, the children of Fina were crafted from canvas to address the failings of the prior generation. While flesh and blood, they are still tied to their portraits within the great gallery of Amber. The gallery is, outside of the great Pattern within Kolvir, the most heavily guarded area of the palace as a result. Only one portrait has ever been known to be destroyed, resulting in someone’s death - that of Fina herself, destroyed by Oberon. Three portraits of children between Fina and Oberon were created; Suil Leir is the oldest, with Fenella and Roichard created shortly before Fina’s death. The rumor of a fourth portrait being stolen after Fina’s death are just rumors, of course.</p><p>As a child of Fina, reality and shadow are as thin and malleable as a piece of paper. They are master creators and artists, pulling items from thin air or otherwise creating through canvas, song, and the written word.</p>",
 };
 
 amberCards["milesia"] = {
@@ -40,7 +43,8 @@ amberCards["milesia"] = {
   cardname: "Milesia",
   url: "./img/milesia.png",
   tagline: "Chaos",
-  blurb: "",
+  blurb:
+    "<p>A heritage born from the Void at the end of shadow known as the Lasair Caite, Milesia’s children were raised to know both the power of the Amber and the lightless magic of the Outlands. Milesia’s betrayal of her homeland aided greatly in Amber’s conquest of such a distant foe, and the end of Amber’s campaigns seemed imminent. There is a court rumbling, though, that betrayal breeds betrayal, as Milesia was murdered by her oldest daughter Ophelia. The flame of Chaos was born from Milesia’s death, and another era of war against Amber began.</p><p>As a child of Milesia, yours is a heritage of two worlds. While defeated, the Lasair Caite is still a significant presence in the shadows. The peace between the great kingdom and Amber is uneasy, and Milesia’s betrayal casts a dark glance towards her children. The oldest of Milesia’s children is Ciara, followed by the twins Bevin and Alaric.</p>",
 };
 
 amberCards["eirashaol"] = {
@@ -50,7 +54,8 @@ amberCards["eirashaol"] = {
   cardname: "Eira Shaol",
   url: "./img/eirashaol.png",
   tagline: "Queen",
-  blurb: "",
+  blurb:
+    "<p>Queen of Rebma as long as there has been a Rebma, Eira Shaol is an ancient influence upon Amber and the shadow seas. Her greatest efforts have been upon ensuring stability for the underwater kingdom, given that the Chaos of the above land is inevitably reflected upon her kingdom. As a result, Rebma routinely intervenes on Amber’s behalf to prevent the results of endless conflict from reaching her sands. Eira’s marriage to Oberon was the result of a negotiated partnership with the threat the flame of Chaos posed Amber through the Red Rebellion.</p><p>The children of Eira Shaol have blood claims to both the thrones of Amber and Rebma. This, along with Eira Shaol still being married to Oberon, has led to a unique amount of attention being provided the children in their relatively short lives.</p><p>As a child of Eira Shaol, all have been born to rule. Just because Prince Paoul is heir to the throne of Amber doesn’t mean that his younger siblings have been spared any of Eira Shaol’s plans. Both Liabelle and Diolinda, Paoul’s younger sisters, have been repeatedly reminded by their mother that anyone who thinks the king is the most powerful person in Amber is a fool. The finest education and limitless resources are available to the Rebman Queen’s children - as long as they toe the line with Queen Eira Shaol.<p></p>While the queen is technically protected by the Crows, she also has a loyal personal guard lead by the The Kahlverian.</p>",
 };
 amberCards["unknown"] = {
   type: "parent",
@@ -68,8 +73,9 @@ amberCards["dworkin"] = {
   category: "dworkin-category",
   cardname: "Dworkin",
   url: "./img/dworkin.png",
-  tagline: "Enigma",
-  blurb: "",
+  tagline: "Vision",
+  blurb:
+    "<p>Formerly the royal court sorcerer, the hunchback Dworkin ceded the role in recent years to Princess Ciara . Becoming more elusive as a result, the old dwarf tends to operate by sending trusted servants and proxies. That Dworkin is classified as a faction and not as a courtier is because he tends to be heavily involved in assigning seemingly mundane and obtuse tasks to other powers and factions, who are eager to do the reclusive figure a favor.<p></p>Dworkin's representatives, beyond engaging with those in the court, are often seen running a mix of errands in the cities of Amber and the Golden Circle. Wearing traditional red cloaks with the Unicorn embroidered in gold, Dworkin's proxies also run an art gallery in the lower city dedicated to Dworkin's psychedelic paintings and the Masters brand of oils that Dworkin creates and sells.</p>",
 };
 
 // Velka
