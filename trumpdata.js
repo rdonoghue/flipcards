@@ -27,7 +27,6 @@ amberCards["velka"] = {
 
 amberCards["fina"] = {
   type: "parent",
-
   category: "fina-category",
   cardname: "Fina",
   url: "./img/fina.png",
@@ -49,7 +48,6 @@ amberCards["milesia"] = {
 
 amberCards["eirashaol"] = {
   type: "parent",
-
   category: "eirashaol-category",
   cardname: "Eira Shaol",
   url: "./img/eirashaol.png",
@@ -59,7 +57,6 @@ amberCards["eirashaol"] = {
 };
 amberCards["unknown"] = {
   type: "parent",
-
   category: "unknown-category",
   cardname: "Unknown",
   url: "./img/unknown-web.png",
@@ -69,7 +66,6 @@ amberCards["unknown"] = {
 
 amberCards["dworkin"] = {
   type: "parent",
-
   category: "dworkin-category",
   cardname: "Dworkin",
   url: "./img/dworkin.png",
@@ -111,8 +107,9 @@ amberCards["suillir"] = {
   type: "child",
   url: "../img/suillir.png",
   parent: "fina-category",
-  tagline: "Master of Hounds",
-  blurb: "",
+  tagline: "Night",
+  blurb:
+    "<p>Suil Leir is the Night Warden of Arden. A title made up largely by Aurielle to acknowledge Suil Leir’s nocturnal tendencies, the Prince operates a force overlooking the valley of Garnath and the Oisen river from a makeshift fort, the prior fortifications flattened during the Red Rebellion and still under reconstruction. Suil Leir truly is the owl to Aurielle’s hawk.</p><p>Of course, Suil Leir’s love of the night truly has to come from the grand paintings he creates from his camps when he isn’t hunting or patrolling around Amber. These portraits are invariably of great hunts and conflicts that Suil Leir has taken part in, or more troubling, will take part in. These paintings are said to be a large compliment to the Prince’s gifts as a natural hunter.</p><p>It is rumored that Suil Leir was instrumental in the retrieval of Cethlenn, though the details behind how that came to pass are still something of a family secret among those involved. Far more well known is Suil Leir’s role in the defeat of Weirmonken and Ghenesh in the Twin Uprisings, and in slowing down the demon hordes of the Red Rebellion. While Aurielle does not entirely believe it, Suil Leir has publicly professed his preference for the daughter of Velka as the only pure one among the bunch.<p>",
 };
 
 amberCards["fenella"] = {
