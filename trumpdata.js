@@ -1,10 +1,10 @@
 "use strict";
 
-const cardDetails = {};
+const amberCards = {};
 
 // Categories
 
-cardDetails["oberon"] = {
+amberCards["oberon"] = {
   type: "parent",
   category: "oberon-category",
   cardname: "Oberon",
@@ -13,7 +13,7 @@ cardDetails["oberon"] = {
   blurb: "King of Amber. Manly man.",
 };
 
-cardDetails["velka"] = {
+amberCards["velka"] = {
   type: "parent",
 
   category: "velka-category",
@@ -23,7 +23,7 @@ cardDetails["velka"] = {
   blurb: "",
 };
 
-cardDetails["fina"] = {
+amberCards["fina"] = {
   type: "parent",
 
   category: "fina-category",
@@ -33,7 +33,7 @@ cardDetails["fina"] = {
   blurb: "",
 };
 
-cardDetails["milesia"] = {
+amberCards["milesia"] = {
   type: "parent",
 
   category: "milesia-category",
@@ -43,7 +43,7 @@ cardDetails["milesia"] = {
   blurb: "",
 };
 
-cardDetails["eirashaol"] = {
+amberCards["eirashaol"] = {
   type: "parent",
 
   category: "eirashaol-category",
@@ -52,7 +52,7 @@ cardDetails["eirashaol"] = {
   tagline: "Queen",
   blurb: "",
 };
-cardDetails["unknown"] = {
+amberCards["unknown"] = {
   type: "parent",
 
   category: "unknown-category",
@@ -62,7 +62,7 @@ cardDetails["unknown"] = {
   blurb: "Oberon's byblows.",
 };
 
-cardDetails["dworkin"] = {
+amberCards["dworkin"] = {
   type: "parent",
 
   category: "dworkin-category",
@@ -71,18 +71,10 @@ cardDetails["dworkin"] = {
   tagline: "Enigma",
   blurb: "",
 };
-cardDetails["lasaircaite"] = {
-  type: "parent",
-  category: "lasaircaite-category",
-  cardname: "The Laisir Caite",
-  url: "./img/lasaircaite.png",
-  tagline: "The Lasair Caite",
-  blurb: "People of Chaos",
-};
 
 // Velka
 
-cardDetails["anderon"] = {
+amberCards["anderon"] = {
   cardname: "Anderon",
   type: "child",
   url: "../img/anderon.png",
@@ -90,7 +82,7 @@ cardDetails["anderon"] = {
   tagline: "Fallen",
   blurb: "",
 };
-cardDetails["lorec"] = {
+amberCards["lorec"] = {
   cardname: "Lorec",
   type: "child",
   url: "../img/lorec.png",
@@ -98,7 +90,7 @@ cardDetails["lorec"] = {
   tagline: "War",
   blurb: "",
 };
-cardDetails["aurielle"] = {
+amberCards["aurielle"] = {
   cardname: "Aurielle",
   type: "child",
   url: "../img/aurielle.png",
@@ -108,7 +100,7 @@ cardDetails["aurielle"] = {
 };
 
 // Fina
-cardDetails["suillir"] = {
+amberCards["suillir"] = {
   cardname: "Suil Lir",
   type: "child",
   url: "../img/suillir.png",
@@ -117,7 +109,7 @@ cardDetails["suillir"] = {
   blurb: "",
 };
 
-cardDetails["fenella"] = {
+amberCards["fenella"] = {
   cardname: "Fenella",
   type: "child",
   url: "../img/fenella.png",
@@ -126,7 +118,7 @@ cardDetails["fenella"] = {
   blurb: "<p>Placeholder</p>",
 };
 
-cardDetails["roichard"] = {
+amberCards["roichard"] = {
   cardname: "Roichard",
   type: "child",
   url: "../img/roichard.png",
@@ -135,7 +127,7 @@ cardDetails["roichard"] = {
   blurb: "<p>Placeholder</p>",
 };
 
-cardDetails["cethlenn"] = {
+amberCards["cethlenn"] = {
   cardname: "Cethlenn",
   type: "child",
   url: "../img/cethlenn.png",
@@ -145,7 +137,7 @@ cardDetails["cethlenn"] = {
 };
 
 // Milesia
-cardDetails["ophelia"] = {
+amberCards["ophelia"] = {
   type: "child",
   cardname: "Ophelia",
   url: "../img/ophelia.png",
@@ -155,7 +147,7 @@ cardDetails["ophelia"] = {
   description: "<h2>Inferno</h2>",
 };
 
-cardDetails["ciara"] = {
+amberCards["ciara"] = {
   cardname: "Ciara",
   type: "child",
   url: "../img/ciara-web.png",
@@ -165,7 +157,7 @@ cardDetails["ciara"] = {
     "<p>Second daughter of Oberon and Ophelia, she has been Dworkin's student and currently serves as Amber's sorcerer in residence. She was married, for a time, to a lord of the Lasir Caite, and her children have gotten old enough to start taking an interest in Amber.</a>.</p>",
 };
 
-cardDetails["borel"] = {
+amberCards["borel"] = {
   cardname: "Borel",
   type: "child",
   url: "../img/borel.png",
@@ -174,7 +166,7 @@ cardDetails["borel"] = {
   blurb:
     "<p>Third child and first son of Oberon and Ophelia, Borel spends most of his time in what he describes as 'his studies' but which others refer to as 'plugging holes in the universe'.  He is one of the more sorcerously knowledgeable members of the family, but consistently defers to his hister on such matters. </a>.",
 };
-cardDetails["bevin"] = {
+amberCards["bevin"] = {
   cardname: "Bevin",
   type: "child",
   url: "../img/bevin.png",
@@ -184,7 +176,7 @@ cardDetails["bevin"] = {
   description: "<h2>Slayer of Monsters</h2>",
 };
 
-cardDetails["alaric"] = {
+amberCards["alaric"] = {
   cardname: "Alaric",
   type: "child",
   url: "../img/alaric.png",
@@ -195,7 +187,7 @@ cardDetails["alaric"] = {
 
 // Eira Shaol
 
-cardDetails["pauol"] = {
+amberCards["pauol"] = {
   cardname: "Paoul",
   type: "child",
   url: "../img/pauol.png",
@@ -204,7 +196,7 @@ cardDetails["pauol"] = {
   blurb: "<p>Well, <b>somebody</b> has to be the heir.</p>",
 };
 
-cardDetails["liabelle"] = {
+amberCards["liabelle"] = {
   cardname: "Liabelle",
   type: "child",
   url: "../img/liabelle.png",
@@ -214,7 +206,7 @@ cardDetails["liabelle"] = {
     "<p>Liabelle is never not at war, it is only the means which change</p>",
 };
 
-cardDetails["diolinda"] = {
+amberCards["diolinda"] = {
   cardname: "Diolinda",
   type: "child",
   url: "../img/diolinda.png",
@@ -227,16 +219,16 @@ cardDetails["diolinda"] = {
 // Chaos
 
 // Other
-cardDetails["bastard"] = {
+amberCards["bastard"] = {
   cardname: "The Bastard",
   type: "child",
-  url: "../img/bastard.png",
+  url: "./img/bastard.png",
   parent: "unknown-category",
   tagline: "Forgotten",
   blurb: "",
 };
 
-cardDetails["ava"] = {
+amberCards["ava"] = {
   cardname: "Ava",
   type: "child",
   url: "../img/Ava.png",
@@ -246,4 +238,123 @@ cardDetails["ava"] = {
     "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
 
-export { cardDetails };
+const otherCards = {};
+
+otherCards["ambercourt"] = {
+  type: "parent",
+  category: "ambercourt-category",
+  cardname: "The Court of Amber",
+  url: "./img/royalback-full.png",
+  tagline: "",
+  blurb: "The many folk of Amber",
+};
+
+otherCards["lasaircaite"] = {
+  type: "parent",
+  category: "lasaircaite-category",
+  cardname: "The Laisir Caite",
+  url: "./img/lasaircaite.png",
+  tagline: "",
+  blurb: "People of Chaos",
+};
+
+otherCards["shadow"] = {
+  type: "parent",
+  category: "shadow-category",
+  cardname: "Denizens of Shadow",
+  url: "./img/shadow.png",
+  tagline: "",
+  blurb: "",
+};
+
+// COurt
+
+otherCards["salem"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Salem Chantris",
+  url: "./img/salem.png",
+  tagline: "Tradition",
+  blurb:
+    "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
+};
+
+otherCards["desdemona"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Desdemona",
+  url: "./img/desdemona.png",
+  tagline: "Secrets",
+  blurb:
+    "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: “We are not concerned with the affairs of others.</p>",
+};
+
+otherCards["rockscomb"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Rockscomb",
+  url: "./img/rockscomb.png",
+  tagline: "Inspiration",
+  blurb: "",
+};
+
+otherCards["kahlverian"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "The Kahlverian",
+  url: "./img/kahlverian.png",
+  tagline: "Protection",
+  blurb:
+    "<p>The Kahlverian is named for an extinct clan of the Moonriders of Ghenesh and is said to have come to Amber centuries ago after a disagreement with her people. The Kahlverian has a reputation for talented bloodshed usually reserved for the royal family and left the Wardens at Oberon’s request to protect Eira Shaol upon the Queen’s marriage to Oberon. The Kahlverian is almost always at the Queen’s side.  </p>",
+};
+
+otherCards["firestone"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Angela Firestone",
+  url: "./img/firestone.png",
+  tagline: "Law",
+  blurb:
+    "<p>The IAAL operations chief, Firestone is a lawyer from Shadow Earth who has found her calling in the halls of Amber.</p>",
+};
+
+otherCards["wesley"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Kathryn Wesley",
+  url: "./img/wesley.png",
+  tagline: "Law",
+  blurb:
+    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
+};
+
+// Chaos
+
+otherCards["pyson"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Pyson Chanicut",
+  url: "./img/pyson.png",
+  tagline: "Adventure",
+  blurb: "",
+};
+
+otherCards["mikaya"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Mikaya Chanicut",
+  url: "./img/mikaya.png",
+  tagline: "Potential",
+  blurb: "",
+};
+
+otherCards["samson"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Samson Chanicut",
+  url: "./img/samson.png",
+  tagline: "Trickster",
+  blurb: "",
+};
+
+export { amberCards, otherCards };

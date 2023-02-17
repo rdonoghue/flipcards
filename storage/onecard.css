@@ -8,45 +8,6 @@ body {
   background: linear-gradient(70deg, rgb(36, 11, 19), rgb(62, 18, 22));
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 15px 60px;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: rgb(22, 22, 22, 0.4);
-}
-
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-header li {
-  padding-right: 10px;
-  padding-left: 10px;
-
-  margin-left: 20px;
-}
-
-header li:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-}
-
-header .active {
-  color: yellow;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
@@ -72,7 +33,24 @@ button {
   border-radius: 0.25ch;
   box-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
+#cardmanip {
+  display: flex;
+  flex: 1;
+  /* display: flex;
+  flex-direction: row; */
+  /* grid-template-rows: 1fr 1fr;
+  display: grid; */
+  /* gap: 1em; */
+  border: 3px solid yellow;
+  margin: 0 5rem;
+  gap: 1rem;
+}
 
+#cardmanip > * {
+  flex: 1;
+  border: 3px solid yellow;
+  width: 100%;
+}
 .trump-category {
   margin-left: 0;
   display: flex;

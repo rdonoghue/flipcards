@@ -9,21 +9,19 @@
 
     <link rel="stylesheet" href="shared.css" />
 
-    <link rel="stylesheet" href="onecard.css" />
+    <link rel="stylesheet" href="cardpage.css" />
   </head>
-  <body>
+  <body tag="amber">
     <header>
       <ul>
-        <li class="active">Scions of Amber</li>
-        <li>Others of Note</li>
+        <li class="active"><a href="cards-amber.html">Scions of Amber</a></li>
+        <li><a href="cards-other.html">Others of Note</a></li>
         <li>Places</li>
       </ul>
     </header>
     <main>
       <nav>
         <div id="buttonList" class="sidenav"></div>
-        <div id="pickrandom" class="sidenav"><button>Random Draw</button></div>
-        <div id="resetpage" class="sidenav"><button>Reset</button></div>
       </nav>
       <div class="cardholder">
         <div class="card cardReverse" id="frontCard">
@@ -34,12 +32,27 @@
             <p class="cardcaptiontext" id="cardname"></p>
           </div>
         </div>
+        <div id="cardmeaning"></div>
+        <div class="bottombox">
+          <div id="cardmanip">
+            <button id="pickrandom">Random Draw</button>
+            <button id="resetpage">Reset</button>
+          </div>
+        </div>
       </div>
       <div class="textbox" id="chardesc">
-        <div id="char-blurb">Prosperity</div>
-        <div id="char-desc">Welcome to the Prosperity Court.</div>
+        <div id="char-blurb">Scions of Amber</div>
+        <div id="char-desc">
+          The descendants of Oberon and his queens, and a few others.
+        </div>
       </div>
     </main>
   </body>
-  <script src="script.js" type="module"></script>
+
+  <script
+    src="cardpage.js"
+    type="module"
+    handoff="ambercards"
+    id="callcards"
+  ></script>
 </html>

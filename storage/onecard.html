@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="shared.css" />
+
+    <link rel="stylesheet" href="onecard.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="active"><a href="cards-amber.html">Scions of Amber</a></li>
+        <li>Others of Note</li>
+        <li>Places</li>
+      </ul>
+    </header>
+    <main>
+      <nav>
+        <div id="buttonList" class="sidenav"></div>
+        <div id="pickrandom" class="sidenav"><button>Random Draw</button></div>
+        <div id="resetpage" class="sidenav"><button>Reset</button></div>
+      </nav>
+      <div class="cardholder">
+        <div class="card cardReverse" id="frontCard">
+          <div class="cardbody">
+            <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
+          </div>
+          <div class="cardcaption">
+            <p class="cardcaptiontext" id="cardname"></p>
+          </div>
+        </div>
+      </div>
+      <div class="textbox" id="chardesc">
+        <div id="char-blurb">Prosperity</div>
+        <div id="char-desc">Welcome to the Prosperity Court.</div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>

@@ -4,7 +4,9 @@ const card = document.querySelector(".card");
 const trumpSelector = document.querySelectorAll(".trump-selector");
 var buttonDiv = document.getElementById("buttonList");
 
-import { cardDetails } from "./trumpdata.js";
+import { amberCards } from "../trumpdata.js";
+
+const cardDetails = amberCards;
 
 buildCategories(cardDetails);
 setup(cardDetails);

@@ -1,0 +1,168 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+body {
+  background: linear-gradient(70deg, rgb(36, 11, 19), rgb(62, 18, 22));
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  gap: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#buttonlist {
+  visibility: visible;
+}
+
+button {
+  all: unset;
+  margin: 0.25rem 0;
+  text-align: center;
+  background: linear-gradient(70deg, rgb(255, 228, 196), rgb(246, 209, 164));
+  color: rgb(22, 22, 22);
+  border-radius: 0.25ch;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.cardholder {
+  font-size: 1rem;
+  position: relative;
+}
+.card {
+  /* height: 500px; */
+  max-width: 300px;
+  aspect-ratio: 3 / 5;
+  background-color: white;
+  margin: 2rem auto;
+  border: 1ch solid white;
+  border-radius: 2ch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: rotate(9deg);
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+.cardbody {
+  flex: 1;
+  width: 100%;
+}
+
+.cardcaption {
+  height: min(10%, 3rem);
+  background-color: pink;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.cardReverse > .cardcaption {
+  display: none;
+}
+
+.cardFront > .cardcaption {
+  visibility: visible;
+}
+
+.cardcaptiontext {
+  margin: auto auto;
+  color: black;
+  font-size: clamp(1rem, 3vw, 2rem);
+  line-height: max(10%, 3rem);
+}
+
+.trump {
+  object-fit: cover;
+  width: 100%;
+  clip-path: border-box;
+}
+
+#cardmanip {
+  /* display: flex; */
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.bottombox {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#cardmanip > button {
+  flex: 1;
+}
+
+#cardmeaning {
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+  height: 3rem;
+}
+
+#cardmanip > * {
+  flex: 1;
+  width: 100%;
+}
+.trump-category {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.trump-selector {
+  margin-left: 2ch;
+}
+
+button:hover {
+  background-color: rgb(236, 182, 115);
+}
+
+.active-button {
+  color: white;
+  background: linear-gradient(70deg, rgb(82, 77, 77), rgb(124, 92, 92));
+}
+
+#char-blurb {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#char-desc {
+  padding: 0 1ch;
+}
+
+.textbox {
+  visibility: visible; /* margin-left: 2rem; */
+}
+
+.textbox h2 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+}

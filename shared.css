@@ -24,3 +24,45 @@ a {
 a:active {
   color: violet;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px 60px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(22, 22, 22, 0.4);
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-left: 20px;
+}
+
+header li:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+header .active {
+  color: yellow;
+}
+
+header a {
+  text-decoration: none;
+}
