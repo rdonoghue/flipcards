@@ -68,10 +68,11 @@ function pickcard(cardId) {
   document.getElementById("frontCard").style.transform = "".concat(
     "rotate(" + cardpivot() + "deg)"
   );
-  // document.getElementById("frontCard").style.transform = "".concat(
-  //   "rotate(" + cardDetails[cardId]["angle"] + "deg)"
-  // );
-  document.getElementById("chardesc").innerHTML =
-    cardDetails[cardId]["description"];
+
+  document.getElementById("char-blurb").innerHTML =
+    cardDetails[cardId]["tagline"];
+
+  document.getElementById("char-desc").innerHTML = cardDetails[cardId]["blurb"];
+
   resetactive(cardId);
 }

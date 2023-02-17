@@ -5,13 +5,18 @@
 body {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
+  gap: 2rem;
   background-image: url(img/winterback.png);
 }
 
 nav {
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+}
+
+#buttonlist {
+  border: 1px solid yellow;
 }
 
 button {
@@ -39,8 +44,20 @@ button:hover {
   flex-direction: column;
   margin-bottom: 2rem;
 }
+
+#char-blurb {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#char-desc {
+  padding: 0 1ch;
+}
+
 .textbox {
-  margin-left: 2rem;
+  border: 1px solid white;
+  /* margin-left: 2rem; */
 }
 
 .textbox h2 {
@@ -83,7 +100,7 @@ main {
 }
 
 .cardcaption {
-  height: 3rem;
+  height: min(10%, 3rem);
   background-color: white;
   position: absolute;
   bottom: 0;
@@ -95,8 +112,8 @@ main {
 .cardcaptiontext {
   margin: auto auto;
   color: black;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: clamp(1rem, 3vw, 2rem);
+  line-height: max(10%, 3rem);
 }
 
 .trump {
