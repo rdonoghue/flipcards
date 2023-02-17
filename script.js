@@ -1,26 +1,62 @@
 "use strict";
 
 const card = document.querySelector(".card");
-const bevinbutton = document.querySelector(".bevin-button");
-const opheliabutton = document.querySelector(".ophelia-button");
+const trumpSelector = document.querySelectorAll(".trump-selector");
+var buttonDiv = document.getElementById("buttonList");
+import { cardDetails } from "./trumpdata.js";
+
+setup(cardDetails);
+shuffle();
 
 console.log("Making sure the script runs");
-// console.log(document.getElementsByClassName("cardcaptiontext")[0]);
-// console.log(document.getElementById("cardname"));
-// console.log(document.getElementById("cardname").textContent);
-console.log(document.getElementById("frontCard").style.transform);
+console.log(cardpivot());
 
-bevinbutton.addEventListener("click", function () {
-  console.log("Clicked the Bevin Button.");
-  document.getElementById("cardname").textContent = "Bevin";
-  document.getElementById("trumpImage").src = "/img/bevin.png";
+function setup(cardList) {
+  for (let k in cardList) {
+    var button = document.createElement("BUTTON");
+    button.id = k;
+    button.innerText = cardDetails[k]["cardname"];
+    buttonDiv.appendChild(button);
+    document.getElementById(k).classList.add("trump-selector");
+    document.getElementById(k).addEventListener("click", function () {
+      console.log("You clicked:", this.id);
+      pickcard(this.id);
+    });
+  }
+  document.getElementById("pickrandom").addEventListener("click", function () {
+    shuffle();
+  });
+}
 
-  document.getElementById("frontCard").style.transform = "rotate(9deg)";
-});
+function cardpivot() {
+  return Math.floor(Math.random() * 18) - 9;
+}
 
-opheliabutton.addEventListener("click", function () {
-  console.log("Clicked the Ophelia Button.");
-  document.getElementById("cardname").textContent = "Ophelia";
-  document.getElementById("trumpImage").src = "/img/ophelia.png";
-  document.getElementById("frontCard").style.transform = "rotate(-6deg)";
-});
+function resetactive(activebutton) {
+  for (let k in cardDetails) {
+    document.getElementById(k).classList.remove("active");
+  }
+  document.getElementById(activebutton).classList.add("active");
+}
+
+function shuffle() {
+  const cardarray = Object.keys(cardDetails);
+  console.log(cardarray[Math.floor(Math.random() * cardarray.length)]);
+  var picked = cardarray[Math.floor(Math.random() * cardarray.length)];
+  pickcard(picked);
+}
+
+function pickcard(cardId) {
+  document.getElementById("cardname").textContent =
+    cardDetails[cardId]["cardname"];
+  document.getElementById("trumpImage").src = cardDetails[cardId]["url"];
+  document.getElementById("frontCard").style.transform = "".concat(
+    "rotate(" + cardpivot() + "deg)"
+  );
+  // document.getElementById("frontCard").style.transform = "".concat(
+  //   "rotate(" + cardDetails[cardId]["angle"] + "deg)"
+  // );
+  document.getElementById("chardesc").innerHTML =
+    cardDetails[cardId]["description"];
+  resetactive(cardId);
+}

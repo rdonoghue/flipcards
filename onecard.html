@@ -12,22 +12,21 @@
     <link rel="stylesheet" href="onecard.css" />
   </head>
   <body>
-    <button class="bevin-button">Bevin</button>
-    <button class="ophelia-button">Ophelia</button>
-    <div class="card" id="frontCard">
-      <div class="cardbody">
-        <img class="trump" id="trumpImage" src="/img/bevin.png" />
+    <nav>
+      <div id="buttonList" class="sidenav"></div>
+      <div id="pickrandom" class="sidenav"><button>Random Draw</button></div>
+    </nav>
+    <main>
+      <div class="card" id="frontCard">
+        <div class="cardbody">
+          <img class="trump" id="trumpImage" src="/img/bevin.png" />
+        </div>
+        <div class="cardcaption">
+          <p class="cardcaptiontext" id="cardname">Bevin</p>
+        </div>
       </div>
-      <div class="cardcaption">
-        <p class="cardcaptiontext" id="cardname">Bevin</p>
-      </div>
-    </div>
-    <!-- <div class="card">
-      <div class="cardbody">
-        <img class="trump" src="/img/bevin.png" />
-      </div>
-    </div> -->
-
-    <script src="script.js"></script>
+    </main>
+    <div class="textbox" id="chardesc">Placeholder</div>
   </body>
+  <script src="script.js" type="module"></script>
 </html>
