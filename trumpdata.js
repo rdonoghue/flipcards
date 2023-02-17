@@ -82,7 +82,8 @@ amberCards["anderon"] = {
   url: "../img/anderon.png",
   parent: "velka-category",
   tagline: "Fallen",
-  blurb: "",
+  blurb:
+    "<p>Anderon is more of a historical figure than a family member. His life so long ago that Aurielle and Lorec only remember what they intentionally wrote or stored away, the prince was known to be vital in defeating his brother the Bastard and Velka. It is said that the district of Amber now known as Anderon Hall is so named because that is where the prince died. Lorec suggests that Anderon Hall is a mispronunciation and that the area was originally known as Anderon’s Fall before Oberon grew impatient with the label.</p><p>While the history books are vague beyond the expected platitudes, a week out of every year is dedicated to Anderon’s sacrifice for Amber. Festivals, parades, and a grand tournament with melee, jousting and other martial competitions are held by the Crown during this time.</p>",
 };
 amberCards["lorec"] = {
   cardname: "Lorec",
@@ -90,7 +91,8 @@ amberCards["lorec"] = {
   url: "../img/lorec.png",
   parent: "velka-category",
   tagline: "War",
-  blurb: "",
+  blurb:
+    "<p>If one is to listen to Aurielle, then one hears that Lorec’s laughter died with Anderon. The prince appears noticeably older than even his sister from Velka, and is rarely seen without orders or reins in hand. Lorec has been a war horse for Oberon, though the rest of the family has debated as to the fanatic tendencies that he pursues to stay perpetually in conflict. If one asks Lorec, he states that the defense of Amber is all.</p><p>While Lorec is far from hostile to the family, his distance with others has only grown through each war - his friendship and closeness with Fenella is the one time when others might capture a glimpse of who Lorec once was. Lorec is loyal to a fault when it comes to the family, though. He is just not the cheeriest one.</p><p>Lorec’s absence at court is profound, but not unexpected. Lorec rides the shadows, maintaining a dozen different shadow armies, listening for enemies, and hunting remnants of Chaos. Nearly slain at the defense of Amber city, Lorec takes the eradication of the demons that broke and fled into the shadows after Ophelia’s death as a personal matter. </p>",
 };
 amberCards["aurielle"] = {
   cardname: "Aurielle",
@@ -118,7 +120,8 @@ amberCards["fenella"] = {
   url: "../img/fenella.png",
   parent: "fina-category",
   tagline: "Artist",
-  blurb: "<p>Placeholder</p>",
+  blurb:
+    "<p>Princess Fenella embraces both Fina’s love of the arts and Oberon’s almost legendary temper. From an early age the Princess has taken to the sea, forging a lifelong friendship with Lorec during her service in the north fleet and eventually growing to be Lord Admiral in Amber’s navy. Fenella’s crowning military achievement was aiding Rebma in the defeat of the Chaos Leviathans during the Red Rebellion while Amber city held off Ophelia’s siege.</p><p>More recently, and more controversial, Fenella had a brief engagement to pirate king Volund of Minos before she broke off both the arrangement and Volund’s neck. Fenella’s absence during the Twin Uprisings was due to having to deal with the famed fleets of Minos in a series of skirmishes until a new pirate king could replace Volund. This resulted in the crown of Amber stripping Fenella of being Lord Admiral, seeking to prevent a more prolonged conflict.</p><p>Fenella currently serves as the royal court artist, indulging a passion that she has far too often kept relegated to the background, experimenting more with the innate abilities that a daughter of Fina has. She has even started work on a great portrait, though what that portrait will render is a secret known only to herself.</p>",
 };
 
 amberCards["roichard"] = {
@@ -127,7 +130,8 @@ amberCards["roichard"] = {
   url: "../img/roichard.png",
   parent: "fina-category",
   tagline: "Maker",
-  blurb: "<p>Placeholder</p>",
+  blurb:
+    "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber, though he is known to be an unofficial taste tester for House Bayle, and is rather fond of both the casks and the company of the Bayles. What Roichard is also known for are the varying war machines he has constructed in the shadows for Amber’s conquests and defenses. However, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. The clockwork gears that come to him are inspired, his mechanical muses, and he cannot stop painting them. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named ‘Dextero.’ There are many bets in Begma City as to not only what Dextero is, but how long it will run before gloriously exploding. </p>",
 };
 
 amberCards["cethlenn"] = {
@@ -145,9 +149,9 @@ amberCards["ophelia"] = {
   cardname: "Ophelia",
   url: "../img/ophelia.png",
   parent: "milesia-category",
-  tagline: "Inferno",
-  blurb: "",
-  description: "<h2>Inferno</h2>",
+  tagline: "Flame",
+  blurb:
+    "<p>Eldest child and first daughter of Daughter of Oberon and Milesia.</p><p>If one asks Ciara, Ophelia is a tragedy that is impossible to understand. If one asks Roichard, he says she always seemed nice if a little off. Ophelia was a child born of rebellion during the lengthy conflict with the Lasair Caite, growing up pulling at Dworkin’s beard and chasing her pet skunk Iris. Dworkin and she took to each other, and Ophelia spent her formative years learning all she could from the old sorcerer.</p><p>Ophelia went to study - first at the Brandheim Academy in Amber, followed by time at the Jade Empire’s Crane Palace, and then at Harvard on shadow Earth. Gathering her surgical doctorate, Ophelia proceeded to modernize the Amber clinics as much as she possibly could with the limitations in place. While pioneering surgical medicine in Amber, she grew closer to Milesia, learning the powers of the Edge. When Ciara was born, Ophelia was inseparable from her younger sister, and she always was friendly to her brothers.</p><p>Why, as the unknowable length conflict of the second Lasair Caite war wound to a close, Ophelia laid an arcane trap during a dinner for her mother and siblings is not truly known. What is known is that Ophelia slit Milesia’s throat that evening, the princess’ mother igniting upon death as the first spark that would become the flame of Chaos that can now be seen no matter where in the Edge one stands. That moment was somehow not the worst part of the war for most of Ophelia’s siblings. The rest, as they say, is history.</p> ",
 };
 
 amberCards["ciara"] = {
@@ -184,8 +188,9 @@ amberCards["alaric"] = {
   type: "child",
   url: "../img/alaric.png",
   parent: "milesia-category",
-  tagline: "Revelry",
-  blurb: "<p>Placeholder</p>",
+  tagline: "Reveller",
+  blurb:
+    "<p>Alaric has done everything in his power to avoid responsibility from the time that he Test trump call and a thousand worlds away, Alaric vowed to get away from the endless conflicts the family found itself in and to live his life in quiet, hedonistic glory. This plan somewhat backfired, as it was Alaric who first found the shadow Earth that has become a second home for many of the family.</p><p>Alaric’s excursions and fancies into every desire imaginable inadvertently turned the prince into a master shadow manipulator. This ability, combined with motivation from Milesia’s murder, fueled Alaric’s contributions in the Red Rebellion and Abyssal reach wars. The speed in which he moved armies through the shadows is still talked of among some of the family as a thing of legend.</p><p>  With the ending of the Twin Uprisings, Alaric has taken to splitting his time between the shadows and Amber proper. When the errant son does return, it is not unusual to be in relation to some scheme or matter of state that Diolinda ropes the prince into - indeed, the two have a strong bond despite Alaric’s disdain for their parents.</p>",
 };
 
 // Eira Shaol
