@@ -301,7 +301,8 @@ otherCards["rockscomb"] = {
   cardname: "Rockscomb",
   url: "./img/rockscomb.png",
   tagline: "Inspiration",
-  blurb: "",
+  blurb:
+    "<p>David Rockscomb was a record producer in a Very 80s shadow that did not survive one of the problems that Borel deals with, and was one of the survivors that Borel got out. He was given the bar & music venue 'Making Waves' in Amber City to run, where he writes music and supports artists and also acts as Borel's personal Jim Steinman. </p><p>Absolutely the kind of guy who smokes cigars and calls people 'baby'.</p>",
 };
 
 otherCards["kahlverian"] = {
