@@ -4,21 +4,21 @@ const card = document.querySelector(".card");
 const trumpSelector = document.querySelectorAll(".trump-selector");
 var buttonDiv = document.getElementById("buttonList");
 
-const cardDetails = {};
-cardDetails["ophelia"] = {
-  cardname: "Ophelia",
-  url: "/img/ophelia.png",
-  angle: -9,
-  description: "<h2>Inferno</h2>",
-};
+// const cardDetails = {};
+// cardDetails["ophelia"] = {
+//   cardname: "Ophelia",
+//   url: "/img/ophelia.png",
+//   angle: -9,
+//   description: "<h2>Inferno</h2>",
+// };
 
-cardDetails["bevin"] = {
-  cardname: "Bevin",
-  url: "/img/bevin.png",
-  angle: 6,
-  description: "<h2>Slayer of Monsters</h2>",
-};
-// import { cardDetails } from "./trumpdata.js";
+// cardDetails["bevin"] = {
+//   cardname: "Bevin",
+//   url: "/img/bevin.png",
+//   angle: 6,
+//   description: "<h2>Slayer of Monsters</h2>",
+// };
+import { cardDetails } from "./trumpdata.js";
 
 setup(cardDetails);
 shuffle();
