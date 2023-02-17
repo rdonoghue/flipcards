@@ -5,7 +5,7 @@ cardDetails["oberon"] = {
   type: "parent",
   category: "oberon-category",
   cardname: "Oberon",
-  url: ".img/oberon-web.png",
+  url: "./img/oberon-web.png",
   tagline: "King",
   blurb: "King of Amber. Manly man.",
 };
@@ -15,7 +15,7 @@ cardDetails["velka"] = {
 
   category: "velka-category",
   cardname: "Velka",
-  url: ".img/velka-web.png",
+  url: "./img/velka-web.png",
   tagline: "Queen of Dreams",
   blurb: "",
 };
@@ -25,7 +25,7 @@ cardDetails["fina"] = {
 
   category: "fina-category",
   cardname: "Fina",
-  url: ".img/fina-web.png",
+  url: "./img/fina-web.png",
   tagline: "Queen of Mirrors",
   blurb: "",
 };
@@ -35,7 +35,7 @@ cardDetails["milesia"] = {
 
   category: "milesia-category",
   cardname: "Milesia",
-  url: ".img/milesia-web.png",
+  url: "./img/milesia-web.png",
   tagline: "Queen of Chaos",
   blurb: "",
 };
@@ -45,7 +45,7 @@ cardDetails["eirashaol"] = {
 
   category: "eirashaol-category",
   cardname: "Eira Shaol",
-  url: ".img/eirashaol-web.png",
+  url: "./img/eirashaol-web.png",
   tagline: "Queen of Rebma",
   blurb: "",
 };
@@ -54,7 +54,7 @@ cardDetails["unknown"] = {
 
   category: "unknown-category",
   cardname: "unknown",
-  url: ".img/unknown.png",
+  url: "./img/unknown.png",
   tagline: "Illegitimate",
   blurb: "Oberon's blyblows.",
 };
@@ -63,7 +63,7 @@ cardDetails["lasaircaite"] = {
 
   category: "lasaircaite-category",
   cardname: "The Laisir Caite",
-  url: ".img/serpentback.png",
+  url: "./img/serpentback.png",
   tagline: "The Lasair Caite",
   blurb: "People of Chaos",
 };
@@ -71,7 +71,7 @@ cardDetails["lasaircaite"] = {
 cardDetails["ophelia"] = {
   type: "child",
   cardname: "Ophelia",
-  url: "./img/ophelia.png",
+  url: "../img/ophelia.png",
   parent: "milesia-category",
   tagline: "Inferno",
   blurb: "",
@@ -81,7 +81,7 @@ cardDetails["ophelia"] = {
 cardDetails["bevin"] = {
   cardname: "Bevin",
   type: "child",
-  url: "./img/bevin.png",
+  url: "../img/bevin.png",
   parent: "milesia-category",
   tagline: "Slayer of Monsters",
   blurb: "",
@@ -90,7 +90,7 @@ cardDetails["bevin"] = {
 cardDetails["suillir"] = {
   cardname: "Suil Lir",
   type: "child",
-  url: "./img/suillir.png",
+  url: "../img/suillir.png",
   parent: "fina-category",
   tagline: "Master of Hounds",
   blurb: "",
@@ -100,7 +100,7 @@ cardDetails["suillir"] = {
 cardDetails["diolinda"] = {
   cardname: "Diolinda",
   type: "child",
-  url: "./img/diolinda.png",
+  url: "../img/diolinda.png",
   parent: "eirashaol-category",
   tagline: "Confidante",
   blurb:
@@ -110,7 +110,7 @@ cardDetails["diolinda"] = {
 cardDetails["ava"] = {
   cardname: "Ava",
   type: "child",
-  url: "./img/Ava.png",
+  url: "../img/Ava.png",
   parent: "unknown-category",
   tagline: "Pirate Queen",
   blurb:
@@ -120,7 +120,7 @@ cardDetails["ava"] = {
 cardDetails["borel"] = {
   cardname: "Borel",
   type: "child",
-  url: "./img/borel-web.png",
+  url: "../img/borel-web.png",
   parent: "milesia-category",
   tagline: "Master of the Abyss",
   blurb:
@@ -130,7 +130,7 @@ cardDetails["borel"] = {
 cardDetails["ciara"] = {
   cardname: "Ciara",
   type: "child",
-  url: "./img/ciara-web.png",
+  url: "../img/ciara-web.png",
   parent: "milesia-category",
   tagline: "Burned Sorceress",
   blurb:
