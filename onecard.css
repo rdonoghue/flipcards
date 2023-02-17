@@ -3,10 +3,54 @@
 } */
 
 body {
+  /* background-image: url(img/winterback.png); */
+  /* background-color: rgb(58, 18, 62); */
+  background: linear-gradient(70deg, rgb(36, 11, 19), rgb(62, 18, 22));
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px 60px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(22, 22, 22, 0.4);
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  padding-right: 10px;
+  padding-left: 10px;
+
+  margin-left: 20px;
+}
+
+header li:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+header .active {
+  color: yellow;
+}
+
+main {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
   gap: 2rem;
-  background-image: url(img/winterback.png);
 }
 
 nav {
@@ -16,7 +60,7 @@ nav {
 }
 
 #buttonlist {
-  border: 1px solid yellow;
+  visibility: visible;
 }
 
 button {
@@ -33,7 +77,6 @@ button {
   margin-left: 0;
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
 }
 
 .trump-selector {
@@ -44,7 +87,7 @@ button:hover {
   background-color: rgb(236, 182, 115);
 }
 
-.active {
+.active-button {
   color: white;
   background: linear-gradient(70deg, rgb(22, 22, 22), rgb(45, 45, 45));
 }
@@ -67,8 +110,7 @@ button:hover {
 }
 
 .textbox {
-  border: 1px solid white;
-  /* margin-left: 2rem; */
+  visibility: visible; /* margin-left: 2rem; */
 }
 
 .textbox h2 {
@@ -76,7 +118,7 @@ button:hover {
   font-size: 2rem;
   text-align: center;
 }
-main {
+.cardholder {
   font-size: 1rem;
 }
 .card {
@@ -103,21 +145,31 @@ main {
 
   /* border-radius: 20%; */
 }
-
+/* 
 .cardblank {
   flex: 1;
   margin: 1ch;
   border: 1px dashed yellow;
-}
+} */
 
 .cardcaption {
   height: min(10%, 3rem);
-  background-color: white;
+  background-color: pink;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
+  display: none;
+}
+
+.cardReverse > .cardcaption {
+  display: none;
+  border: 2px solid purple;
+}
+
+.cardFront > .cardcaption {
+  visibility: visible;
 }
 
 .cardcaptiontext {

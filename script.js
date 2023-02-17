@@ -62,6 +62,12 @@ function setup(cardList) {
       });
     }
   }
+  document.getElementById("pickrandom").addEventListener("click", function () {
+    shuffle();
+  });
+  document.getElementById("resetpage").addEventListener("click", function () {
+    resetpage();
+  });
 }
 
 // }
@@ -75,9 +81,9 @@ function cardpivot() {
 
 function resetactive(activebutton) {
   for (let k in cardDetails) {
-    document.getElementById(k).classList.remove("active");
+    document.getElementById(k).classList.remove("active-button");
   }
-  document.getElementById(activebutton).classList.add("active");
+  document.getElementById(activebutton).classList.add("active-button");
 }
 
 function shuffle() {
@@ -86,19 +92,6 @@ function shuffle() {
   var picked = cardarray[Math.floor(Math.random() * cardarray.length)];
   pickcard(picked);
 }
-// function pickcardnew(cardDict) {
-//   document.getElementById("cardname").textContent = cardDict.cardname;
-//   document.getElementById("trumpImage").src = cardDict.url;
-//   document.getElementById("frontCard").style.transform = "".concat(
-//     "rotate(" + cardpivot() + "deg)"
-//   );
-//   document.getElementById("char-blurb").innerHTML = cardDict.tagline;
-//   document.getElementById("char-desc").innerHTML = cardDict.blurb;
-
-// console.log(cardDict.id);
-// FIX ME
-// resetactive(cardDict.id);
-// }
 
 function pickcard(cardId) {
   console.log(cardId);
@@ -112,5 +105,24 @@ function pickcard(cardId) {
     cardDetails[cardId]["tagline"];
 
   document.getElementById("char-desc").innerHTML = cardDetails[cardId]["blurb"];
+
+  document.getElementById("frontCard").classList.add("cardFace");
+  document.getElementById("frontCard").classList.remove("cardReverse");
+
   resetactive(cardId);
+}
+
+function resetpage() {
+  console.log("reset the page!");
+  document.getElementById("cardname").textContent = " ";
+  document.getElementById("trumpImage").src = "/img/royalback-full.png";
+  document.getElementById("frontCard").style.transform = "".concat(
+    "rotate(" + cardpivot() + "deg)"
+  );
+  document.getElementById("char-blurb").innerHTML = "Prosperity";
+
+  document.getElementById("char-desc").innerHTML =
+    "<p>Welcome to the Prosperity Court</p>";
+  document.getElementById("frontCard").classList.remove("cardFace");
+  document.getElementById("frontCard").classList.add("cardReverse");
 }
