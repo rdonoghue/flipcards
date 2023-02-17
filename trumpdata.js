@@ -24,7 +24,8 @@ cardDetails["diolinda"] = {
   cardname: "Diolinda",
   url: "/img/diolinda.png",
   angle: -1,
-  description: "<h2>Confidante</h2>",
+  description:
+    "<h2>Confidante</h2><p>Diolinda is many things.  Youngest child of Oberon and Eira Shaol. Patron of the arts.  Shadow Earth enthusiast.  Oberon's favorite.  She is, indeed many things, but you can rest assured that none of those things is 'spy'.",
 };
 
 cardDetails["ava"] = {
