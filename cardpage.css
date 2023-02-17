@@ -59,7 +59,7 @@ button {
   flex-direction: column;
   position: relative;
   transform: rotate(9deg);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.15s ease-in-out;
   transform-style: preserve-3d;
   box-shadow: 2px 4px 8px rgb(0, 0, 0);
 }
