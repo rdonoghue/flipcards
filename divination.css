@@ -1,6 +1,49 @@
+main {
+  margin-top: 4rem;
+}
+
 .playcard {
-  height: 800px;
-  width: 400px;
-  border: 1px dashed yellow;
+  height: 550px;
+  width: 350px;
+  border: 1px dashed rgb(246, 209, 164);
   border-radius: 2rem;
+  font-family: "Aboreto", cursive;
+  font-size: 2rem;
+  position: relative;
+  perspective: 500px;
+}
+
+.playcard h2 {
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(246, 209, 164);
+  width: 100%;
+}
+
+.card {
+  height: 250px;
+  width: 150px;
+  aspect-ratio: 3 / 5;
+  background-color: white;
+  margin: 2rem auto;
+  border: 0.5rem solid white;
+  border-radius: 2ch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+.cardbody {
+  flex: 1;
+  width: 100%;
+}
+.trump {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  clip-path: border-box;
 }
