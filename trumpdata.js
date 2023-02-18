@@ -470,4 +470,14 @@ otherCards["lucatiel"] = {
     "<p>Lucatiel is an Abyss Hunter famous for not being one of the beings of the Abyssal Reach. A shadow dweller, she picked up the cursed armor of a fallen hunter who had tried and failed to stave off the corruption of the Abyss within her shadow of Mirrah. While Mirrah fell, Lucatiel’s vengeance has made her a figure within the Reach. She serves as a mercenary to combat the Abyss if the Abyssal Reach is not able to respond quickly enough to save a shadow. </p>",
 };
 
+otherCards["zhao"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Zhao Lihua",
+  url: "./img/zhao.png",
+  tagline: "Enlightenment",
+  blurb:
+    "<p>A representative of the Jade Empire from the imperial seat of Penglai, Zhao Lihua has been honored to speak with the voice of the Emperor on matters of state at the court of Amber. Zhao Lihua has additional duties beyond matters of state, recording interesting tales from other shadows of the Golden Circle and seeking cultural exchanges as part of the Great Enlightenment ordered by Emperor Ban. </p>",
+};
+
 export { amberCards, otherCards };
