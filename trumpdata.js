@@ -479,5 +479,23 @@ otherCards["zhao"] = {
   blurb:
     "<p>A representative of the Jade Empire from the imperial seat of Penglai, Zhao Lihua has been honored to speak with the voice of the Emperor on matters of state at the court of Amber. Zhao Lihua has additional duties beyond matters of state, recording interesting tales from other shadows of the Golden Circle and seeking cultural exchanges as part of the Great Enlightenment ordered by Emperor Ban. </p>",
 };
+otherCards["almasi"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Hamoud Almasi",
+  url: "./img/almasi.png",
+  tagline: "Harmony",
+  blurb:
+    "<p>The Alhambran Ambassador professes to have no desires beyond experiencing the splendors of Amber and standing shoulder to shoulder in harmony with the royal family of the one true kingdom. That Alhambra holds strong monopolies in the spices, rare metals, and glass traded in Amber and the Golden Circle is not a secret. A lot of Ambassador Almasi’s efforts circle around highlighting the value of utilizing trade for mutual benefit rather than allowing other shadows to get a foothold in these commodities.  </p>",
+};
 
+otherCards["gramble"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Gramble",
+  url: "./img/gramble.png",
+  tagline: "Bargainer",
+  blurb:
+    "<p>There is some debate among circles on whether or not the demon Gramble is a nuisance or a serious threat in the court. Having declared itself Ambassador to the flame of Chaos, the demon rarely seems interested in politics and more in causing headaches. Showing up in varying forms from time to time, a common giveaway is when someone arrives claiming to be an ambassador from Weirmonken or Ghenesh since both lands have withheld sending an ambassador in protest of Amber’s domination of their respective territories. Efforts to kill the demon have been sub-optimal.</p>",
+};
 export { amberCards, otherCards };
