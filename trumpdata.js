@@ -390,6 +390,16 @@ otherCards["mikaya"] = {
     "<p>Daughter of Princess Ciara and the deceeased Caleb Cahanicut, she was raised in Chaos out of ssight of Amber. She has become an active participant in the court and is an Advisor to King Swayvill.  However, as one among many, many advisors, she is frustrated by her relative powerlessness and the king's conservative nature. She has recently reached out to her relatives in Amber to see what other paths might be open to her.</p>",
 };
 
+otherCards["galina"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Galina Sawall",
+  url: "./img/galina.png",
+  tagline: "Silence",
+  blurb:
+    "<p>Milesia’s younger sister and daughter of King Swayvil of the Lasair Caite. Galina was appointed ambassador to Amber after the end of the second Lasair Caite war. While tensions remain high between Amber and the Lasair Caite, Galina has driven much of the effort to maintain the peace. Without much of a need or ability to trade with Amber or the Golden Circle, a lot of the ambassador’s focus has been on making sure efforts taken by the Thelbane to strengthen their position after a series of wars do not come across as unnecessarily bellicose.</p>",
+};
+
 otherCards["samson"] = {
   type: "child",
   parent: "lasaircaite-category",
@@ -407,6 +417,26 @@ otherCards["simon"] = {
   tagline: "Outsider",
   blurb:
     "<p>An accomplished sorcerer within the Lasair Caite, Simon traveled to Amber’s court to see what all the fuss was about. He has his own small retinue but will profess to largely being a spectator. Coming from the house of Helgram, Simon does have enough weight in his homeland to assist in matters of complexity there.</p>",
+};
+
+otherCards["irina"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Auntie Irina Sawall",
+  url: "./img/irina.png",
+  tagline: "Grandmother",
+  blurb:
+    "<p>Irina Sawall is one of the many aunties of the Laser Caite - their exact position and relations has become unclear over time, but their age, wisdom and power makes them an informal power in Chaos.  Irina is the archetypical scary old witch in the woods, surrounded by houses made of candy and creepy dolls.<p></p>She is one of the figures pressuring Borel to take up the mantle of keeper of the Abyss, going so far as to trap him in one of her ways in an attempt to persuade him. </p>",
+};
+
+otherCards["richeza"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Richeza",
+  url: "./img/richeza.png",
+  tagline: "Spiderr",
+  blurb:
+    "<p>The loose and other worldly kingdoms of the Abyssal Reach are represented as one voice by Richeza, a demonic being who maintains a human form while in Amber. While the Reach may have interests and concerns that are occasionally floated to the crown of Amber and the associated court, far more often the Ambassador’s role is to hear of grievances and concerns about abyssal corruption from shadows within and beyond the Golden Circle. It is Richeza who tasks the Abyss Hunters to go combat the corruption of the Abyss where Amber or the others need such actions taken.</p>",
 };
 
 // Shadow
@@ -428,6 +458,16 @@ otherCards["wesley"] = {
   tagline: "Outnumbered",
   blurb:
     "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
+};
+
+otherCards["lucatiel"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Darkdiver Lucatiel",
+  url: "./img/lucatiel.png",
+  tagline: "Mercenary",
+  blurb:
+    "<p>Lucatiel is an Abyss Hunter famous for not being one of the beings of the Abyssal Reach. A shadow dweller, she picked up the cursed armor of a fallen hunter who had tried and failed to stave off the corruption of the Abyss within her shadow of Mirrah. While Mirrah fell, Lucatiel’s vengeance has made her a figure within the Reach. She serves as a mercenary to combat the Abyss if the Abyssal Reach is not able to respond quickly enough to save a shadow. </p>",
 };
 
 export { amberCards, otherCards };
