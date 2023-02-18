@@ -1,0 +1,6 @@
+.playcard {
+  height: 800px;
+  width: 400px;
+  border: 1px dashed yellow;
+  border-radius: 2rem;
+}
