@@ -434,7 +434,7 @@ otherCards["richeza"] = {
   parent: "lasaircaite-category",
   cardname: "Richeza",
   url: "./img/richeza.png",
-  tagline: "Spiderr",
+  tagline: "Spider",
   blurb:
     "<p>The loose and other worldly kingdoms of the Abyssal Reach are represented as one voice by Richeza, a demonic being who maintains a human form while in Amber. While the Reach may have interests and concerns that are occasionally floated to the crown of Amber and the associated court, far more often the Ambassador’s role is to hear of grievances and concerns about abyssal corruption from shadows within and beyond the Golden Circle. It is Richeza who tasks the Abyss Hunters to go combat the corruption of the Abyss where Amber or the others need such actions taken.</p>",
 };
