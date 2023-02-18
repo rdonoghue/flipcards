@@ -209,7 +209,7 @@ amberCards["pauol"] = {
 amberCards["liabelle"] = {
   cardname: "Liabelle",
   type: "child",
-  url: "../img/liabelle.png",
+  url: "/img/liabelle.png",
   parent: "eirashaol-category",
   tagline: "Resolver",
   blurb:
@@ -219,7 +219,7 @@ amberCards["liabelle"] = {
 amberCards["diolinda"] = {
   cardname: "Diolinda",
   type: "child",
-  url: "../img/diolinda.png",
+  url: "/img/diolinda.png",
   parent: "eirashaol-category",
   tagline: "Confidante",
   blurb:
