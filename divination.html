@@ -14,28 +14,62 @@
 
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="divination.css" />
+    <link rel="stylesheet" href="namedcards.css" />
+
     <title>Trump Divination</title>
   </head>
   <body>
     <header>
       <ul>
-        <li class="active"><a href="index.html">Scions of Amber</a></li>
+        <li><a href="index.html">Scions of Amber</a></li>
         <li><a href="cards-other.html">Others of Note</a></li>
         <li><a href="morecards.html">All Trumps</a></li>
+        <li class="active"><a href="divination.html">Divination</a></li>
         <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
       </ul>
     </header>
     <main>
-      <div class="playcard" id="past">
-        <div class="card front">
-          <img class="trump" src="/img/alaric.png" />
+      <div class="controls">
+        <button id="resetSpread">Draw a New Spread</button>
+        <!-- <button id="facedown">Face Down</button> -->
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="pastmeaning"></div>
+        <div class="playcard" id="pastspace">
+          <div class="flipspace">
+            <div class="card" id="cardpast">
+              <div class="cardface cardback stoneback"></div>
+              <div id="past" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Past</h2>
         </div>
-        <div class="card back">
-          <img class="trump" src="/img/royalback-full.png" />
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="presentmeaning"></div>
+        <div class="playcard" id="presentspace">
+          <div class="flipspace">
+            <div class="card" id="cardpresent">
+              <div class="cardface cardback stoneback"></div>
+              <div id="present" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Present</h2>
         </div>
-
-        <h2>The Past</h2>
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="futuremeaning"></div>
+        <div class="playcard" id="futurespace">
+          <div class="flipspace">
+            <div class="card" id="cardfuture">
+              <div class="cardface cardback stoneback"></div>
+              <div id="future" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Future</h2>
+        </div>
       </div>
     </main>
   </body>
+  <script src="divination.js" type="module"></script>
 </html>
