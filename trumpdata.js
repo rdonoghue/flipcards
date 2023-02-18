@@ -392,6 +392,16 @@ otherCards["samson"] = {
   blurb: "",
 };
 
+otherCards["simon"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Simon Helgram",
+  url: "./img/simon.png",
+  tagline: "Outsider",
+  blurb:
+    "<p>An accomplished sorcerer within the Lasair Caite, Simon traveled to Amber’s court to see what all the fuss was about. He has his own small retinue but will profess to largely being a spectator. Coming from the house of Helgram, Simon does have enough weight in his homeland to assist in matters of complexity there.</p>",
+};
+
 // Shadow
 otherCards["prudence"] = {
   type: "child",
