@@ -129,7 +129,7 @@ amberCards["roichard"] = {
   type: "child",
   url: "../img/roichard.png",
   parent: "fina-category",
-  tagline: "Maker",
+  tagline: "Creation",
   blurb:
     "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber,but is known for are the varying war machines he has constructed in the shadows for Amber’s conquests and defenses. Recently, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named ‘Dextero.’.</p>",
 };
@@ -160,7 +160,7 @@ amberCards["ciara"] = {
   type: "child",
   url: "../img/ciara-web.png",
   parent: "milesia-category",
-  tagline: "Burned Sorceress",
+  tagline: "Burned",
   blurb:
     "<p>Second daughter of Oberon and Ophelia, she has been Dworkin's student and currently serves as Amber's sorcerer in residence. She was married, for a time, to a lord of the Lasir Caite, and her children have gotten old enough to start taking an interest in Amber.</a>.</p>",
 };
@@ -170,7 +170,7 @@ amberCards["borel"] = {
   type: "child",
   url: "../img/borel.png",
   parent: "milesia-category",
-  tagline: "Master of the Abyss",
+  tagline: "Abyss",
   blurb:
     "<p>Third child and first son of Oberon and Ophelia, Borel spends most of his time in what he describes as 'his studies' but which others refer to as 'plugging holes in the universe'.  He is one of the more sorcerously knowledgeable members of the family, but consistently defers to his hister on such matters. </a>.",
 };
@@ -179,7 +179,7 @@ amberCards["bevin"] = {
   type: "child",
   url: "../img/bevin.png",
   parent: "milesia-category",
-  tagline: "Slayer of Monsters",
+  tagline: "Death",
   blurb:
     "<p>“Keenly aware of the family across the shadows and the challenges he has had connecting with the Lasair Caite, Bevin views the royal family of Amber as a gift, if one that has to be handled carefully. With gloves.</p><p> The prince is an incredibly gifted warrior, his reputation cemented in infamy after besting Lorec at one of the melees in Anderon’s name. Bevin is loathe to draw a blade, however, and views the explosion of life in the shadows as the ultimate gift that Amber’s creation provides. He will truly kill only as a last resort, though once the decision has been made very little will change Bevin’s mind about the task at hand.</p><p>Bevin convinced Eira Shaol to make him Amber’s ambassador to the Golden Circle and relishes exploring the primal shadows to learn every detail, every alley, every hidden statue.</p>",
 };
@@ -201,7 +201,7 @@ amberCards["pauol"] = {
   type: "child",
   url: "../img/pauol.png",
   parent: "eirashaol-category",
-  tagline: "Crown Prince",
+  tagline: "Prince",
   blurb:
     "<p>The declared heir to the throne of Amber, Paoul is of a temperament that is far friendlier than one might expect from being relentlessly pushed to prepare for ruling the universe. Striving to understand and relate to all of his relatives, Paul has the best upbringing, education, advisers, and food testers that can possibly be. But he has rarely been tested, and only after getting outside of the protective bubble the crown has put on their investment.</p><p>As Paoul grew into himself and the role of a Prince of Amber, he managed to establish some measure of breathing room upon walking the Pattern and finding ways to escape the Queen’s gaze with the help of siblings. Paoul’s most recent disobedience was in taking up the blade and going to fight for the defense of Rebma during the Red Rebellion. To this day, he hides who helped him get to the front, so as to protect them from the Queen’s wrath.</p><p>Now Paoul splits is time between shadow and the newly critical court of Amber.</p>",
 };
