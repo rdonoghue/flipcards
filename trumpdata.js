@@ -295,6 +295,34 @@ otherCards["edward"] = {
   blurb: "<p>Newly appointed Duke of Kolvir.</p>",
 };
 
+otherCards["arlan"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Arlan Feldane",
+  url: "./img/arlan.png",
+  tagline: "Youth",
+  blurb:
+    "<p>The youngest of the Feldane line, Oberon picked Arlan as the most recent cup bearer after the Red Rebellion.</p>",
+};
+
+otherCards["richard"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Richard Karm",
+  url: "./img/richard.png",
+  tagline: "Duty",
+  blurb: "<p></p>",
+};
+
+otherCards["ilyana"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Ilyana Karm",
+  url: "./img/ilyana.png",
+  tagline: "Balance",
+  blurb: "<p></p>",
+};
+
 otherCards["desdemona"] = {
   type: "child",
   parent: "ambercourt-category",
@@ -335,16 +363,6 @@ otherCards["firestone"] = {
     "<p>The IAAL operations chief, Firestone is a lawyer from Shadow Earth who has found her calling in the halls of Amber.</p>",
 };
 
-otherCards["wesley"] = {
-  type: "child",
-  parent: "ambercourt-category",
-  cardname: "Kathryn Wesley",
-  url: "./img/wesley.png",
-  tagline: "Outnumbered",
-  blurb:
-    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
-};
-
 // Chaos
 
 otherCards["pyson"] = {
@@ -372,6 +390,27 @@ otherCards["samson"] = {
   url: "./img/samson.png",
   tagline: "Trickster",
   blurb: "",
+};
+
+// Shadow
+otherCards["prudence"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Prudence Taylor",
+  url: "./img/prudence.png",
+  tagline: "Propriety",
+  blurb:
+    "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
+};
+
+otherCards["wesley"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Kathryn Wesley",
+  url: "./img/wesley.png",
+  tagline: "Outnumbered",
+  blurb:
+    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
 };
 
 export { amberCards, otherCards };
