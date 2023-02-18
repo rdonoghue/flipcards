@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:wght@300&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="divination.css" />
+    <link rel="stylesheet" href="namedcards.css" />
+
+    <title>Trump Divination</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html">Scions of Amber</a></li>
+        <li><a href="cards-other.html">Others of Note</a></li>
+        <li><a href="morecards.html">All Trumps</a></li>
+        <li class="active"><a href="divination.html">Divination</a></li>
+        <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="controls">
+        <button id="resetSpread">Draw a New Spread</button>
+        <!-- <button id="facedown">Face Down</button> -->
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="pastmeaning"></div>
+        <div class="playcard" id="pastspace">
+          <div class="flipspace">
+            <div class="card" id="cardpast">
+              <div class="cardface cardback stoneback"></div>
+              <div id="past" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Past</h2>
+        </div>
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="presentmeaning"></div>
+        <div class="playcard" id="presentspace">
+          <div class="flipspace">
+            <div class="card" id="cardpresent">
+              <div class="cardface cardback stoneback"></div>
+              <div id="present" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Present</h2>
+        </div>
+      </div>
+      <div class="columnWrapper">
+        <div class="cardmeaning" id="futuremeaning"></div>
+        <div class="playcard" id="futurespace">
+          <div class="flipspace">
+            <div class="card" id="cardfuture">
+              <div class="cardface cardback stoneback"></div>
+              <div id="future" class="cardface cardfront"></div>
+            </div>
+          </div>
+          <h2>The Future</h2>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="divination.js" type="module"></script>
+</html>
