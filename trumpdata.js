@@ -99,7 +99,8 @@ amberCards["aurielle"] = {
   url: "../img/aurielle.png",
   parent: "velka-category",
   tagline: "Hunt",
-  blurb: "",
+  blurb:
+    "<p>Aurielle is the founder of the Wardens of Arden and the most comfortable within the immense forest. With the ancient griffin Rosenwyn, last of her kind, the Princess is the shield against the horrors of the shadows entering through Amber by land. This duty and a love of the outdoors serve as a lodestone for the Princess - unlike her brother Lorec, Aurielle embraces the loss of memory her line faces. She knows who she is, she knows she loves her family, and that is enough.</p><p>Aurielle has been part of every conflict Amber has engaged in, and is a naturally fluent warrior as a result. Rarely leaving for the shadows, Arden and Amber serve as an endless supply of hunts, nature conservancy and finding one’s self.</p><p>Within court Aurielle is the Master of the Hunt, a title handled with no small amount of pleasure. The Princess’ relationship with Lorec is strained to the point of antagonism over moral differences. At the opposite end of the spectrum, she has taken a strong liking to Paoul, who she sees as a good person to be protected from the corrupting influences of the monarchs. </p>",
 };
 
 // Fina
@@ -120,7 +121,7 @@ amberCards["fenella"] = {
   parent: "fina-category",
   tagline: "Artist",
   blurb:
-    "<p>Princess Fenella embraces both Fina’s love of the arts and Oberon’s almost legendary temper. From an early age the Princess has taken to the sea, forging a lifelong friendship with Lorec during her service in the north fleet and eventually growing to be Lord Admiral in Amber’s navy. Fenella’s crowning military achievement was aiding Rebma in the defeat of the Chaos Leviathans during the Red Rebellion while Amber city held off Ophelia’s siege.</p><p>More recently, and more controversial, Fenella had a brief engagement to pirate king Volund of Minos before she broke off both the arrangement and Volund’s neck. Fenella’s absence during the Twin Uprisings was due to having to deal with the famed fleets of Minos in a series of skirmishes until a new pirate king could replace Volund. This resulted in the crown of Amber stripping Fenella of being Lord Admiral, seeking to prevent a more prolonged conflict.</p><p>Fenella currently serves as the royal court artist, indulging a passion that she has far too often kept relegated to the background, experimenting more with the innate abilities that a daughter of Fina has. She has even started work on a great portrait, though what that portrait will render is a secret known only to herself.</p>",
+    "<p>Princess Fenella embraces both Fina’s love of the arts and Oberon’s almost legendary temper. From an early age the Princess has taken to the sea, forging a lifelong friendship with Lorec during her service in the north fleet and eventually growing to be Lord Admiral in Amber’s navy. Fenella’s crowning military achievement was aiding Rebma in the defeat of the Chaos Leviathans during the Red Rebellion while Amber city held off Ophelia’s siege.</p><p>More recently, and more controversial, Fenella had a brief engagement to pirate king Volund of Minos before she broke off both the arrangement and Volund’s neck. Fenella’s absence during the Twin Uprisings was due to having to deal with the famed fleets of Minos in a series of skirmishes until a new pirate king could replace Volund. This resulted in the crown of Amber stripping Fenella of being Lord Admiral, seeking to prevent a more prolonged conflict.</p><p>Fenella currently serves as the royal court artist.</p>",
 };
 
 amberCards["roichard"] = {
@@ -130,7 +131,7 @@ amberCards["roichard"] = {
   parent: "fina-category",
   tagline: "Maker",
   blurb:
-    "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber, though he is known to be an unofficial taste tester for House Bayle, and is rather fond of both the casks and the company of the Bayles. What Roichard is also known for are the varying war machines he has constructed in the shadows for Amber’s conquests and defenses. However, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. The clockwork gears that come to him are inspired, his mechanical muses, and he cannot stop painting them. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named ‘Dextero.’ There are many bets in Begma City as to not only what Dextero is, but how long it will run before gloriously exploding. </p>",
+    "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber,but is known for are the varying war machines he has constructed in the shadows for Amber’s conquests and defenses. Recently, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named ‘Dextero.’.</p>",
 };
 
 amberCards["cethlenn"] = {
@@ -139,7 +140,8 @@ amberCards["cethlenn"] = {
   url: "../img/cethlenn.png",
   parent: "fina-category",
   tagline: "Reflection",
-  blurb: "<p>Placeholder</p>",
+  blurb:
+    "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger. She’s never quite been certain who the danger would come from -- Oberon? Tir? Her mother’s loyal retainers? Political machinations she’s unaware of? -- but the fact remains that she grew up ever-aware that calling attention to herself would be tantamount to suicide. Luckily, in Tir, it was easy to learn how to drift by silently.</p><p>When Princess Cethlenn, the long-lost daughter of Fina, was recognized and welcomed into Amber’s court by King Oberson, Cethlenn was perturbed to discover that she had no knowledge of the double taking her place. Her memories of that era are dim, flickers and moments and half-caught glimpses. She came back to herself in the Forest of Arden with Suil Lier, and grounded herself on Tir Na Nog’th’s Pattern hours later. Her false twin died, and Cethlenn survived the Pattern but lost her ability to remain in Tir after sunrise.</p><p>Since then, Cethlenn has slipped into the role of Princess of Amber, which another played before her.</p>",
 };
 
 // Milesia
@@ -178,8 +180,8 @@ amberCards["bevin"] = {
   url: "../img/bevin.png",
   parent: "milesia-category",
   tagline: "Slayer of Monsters",
-  blurb: "",
-  description: "<h2>Slayer of Monsters</h2>",
+  blurb:
+    "<p>“Keenly aware of the family across the shadows and the challenges he has had connecting with the Lasair Caite, Bevin views the royal family of Amber as a gift, if one that has to be handled carefully. With gloves.</p><p> The prince is an incredibly gifted warrior, his reputation cemented in infamy after besting Lorec at one of the melees in Anderon’s name. Bevin is loathe to draw a blade, however, and views the explosion of life in the shadows as the ultimate gift that Amber’s creation provides. He will truly kill only as a last resort, though once the decision has been made very little will change Bevin’s mind about the task at hand.</p><p>Bevin convinced Eira Shaol to make him Amber’s ambassador to the Golden Circle and relishes exploring the primal shadows to learn every detail, every alley, every hidden statue.</p>",
 };
 
 amberCards["alaric"] = {
@@ -200,7 +202,8 @@ amberCards["pauol"] = {
   url: "../img/pauol.png",
   parent: "eirashaol-category",
   tagline: "Crown Prince",
-  blurb: "<p>Well, <b>somebody</b> has to be the heir.</p>",
+  blurb:
+    "<p>The declared heir to the throne of Amber, Paoul is of a temperament that is far friendlier than one might expect from being relentlessly pushed to prepare for ruling the universe. Striving to understand and relate to all of his relatives, Paul has the best upbringing, education, advisers, and food testers that can possibly be. But he has rarely been tested, and only after getting outside of the protective bubble the crown has put on their investment.</p><p>As Paoul grew into himself and the role of a Prince of Amber, he managed to establish some measure of breathing room upon walking the Pattern and finding ways to escape the Queen’s gaze with the help of siblings. Paoul’s most recent disobedience was in taking up the blade and going to fight for the defense of Rebma during the Red Rebellion. To this day, he hides who helped him get to the front, so as to protect them from the Queen’s wrath.</p><p>Now Paoul splits is time between shadow and the newly critical court of Amber.</p>",
 };
 
 amberCards["liabelle"] = {
@@ -232,7 +235,8 @@ amberCards["bastard"] = {
   url: "./img/bastard.png",
   parent: "unknown-category",
   tagline: "Forgotten",
-  blurb: "",
+  blurb:
+    "Born during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.",
 };
 
 amberCards["ava"] = {
@@ -311,7 +315,8 @@ otherCards["richard"] = {
   cardname: "Richard Karm",
   url: "./img/richard.png",
   tagline: "Duty",
-  blurb: "<p></p>",
+  blurb:
+    "<p>Master at arms Richard Karm is the court-appointed military officer responsible for overseeing the training of military units within the army, including the city watch, local garrisons, and the royal guard. </p>",
 };
 
 otherCards["ilyana"] = {
@@ -371,7 +376,8 @@ otherCards["pyson"] = {
   cardname: "Pyson Chanicut",
   url: "./img/pyson.png",
   tagline: "Adventure",
-  blurb: "",
+  blurb:
+    "<p>Son of Princess Ciara and the deceeased Caleb Cahanicut. He was raised in Chaos, out of the sight of Amber, and now spends his days adventuring across the Outlands.</p>",
 };
 
 otherCards["mikaya"] = {
@@ -380,7 +386,8 @@ otherCards["mikaya"] = {
   cardname: "Mikaya Chanicut",
   url: "./img/mikaya.png",
   tagline: "Potential",
-  blurb: "",
+  blurb:
+    "<p>Daughter of Princess Ciara and the deceeased Caleb Cahanicut, she was raised in Chaos out of ssight of Amber. She has become an active participant in the court and is an Advisor to King Swayvill.  However, as one among many, many advisors, she is frustrated by her relative powerlessness and the king's conservative nature. She has recently reached out to her relatives in Amber to see what other paths might be open to her.</p>",
 };
 
 otherCards["samson"] = {
@@ -389,7 +396,7 @@ otherCards["samson"] = {
   cardname: "Samson Chanicut",
   url: "./img/samson.png",
   tagline: "Trickster",
-  blurb: "",
+  blurb: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel</p>",
 };
 
 otherCards["simon"] = {
