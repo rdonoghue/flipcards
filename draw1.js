@@ -5,96 +5,81 @@ const zones = ["play"];
 
 import { amberCards, otherCards } from "./trumpdata.js";
 const cardDetails = Object.assign(amberCards, otherCards);
-var liveDeck = shuffle(cardDetails);
-var cardMeanings = {};
-var cardWindow = document.getElementById("cardlist");
-var elementList = "";
-var selectedCard = "";
-
-const urlParams = new URLSearchParams(decodeURI(window.location.search));
-selectedCard = urlParams.get("card");
-console.log(selectedCard);
+var liveDeck = deckSetup(cardDetails);
+var pileCard = document.getElementById("pile");
+var pileSpace = document.getElementById("piledeck");
+var underCards = document.getElementsByClassName("backdeck");
 
 // FUNCTIONAL BUTTONS
 var resetButton = document.getElementById("resetdeck");
-var slideButton = document.getElementById("startslides");
 resetButton.addEventListener("click", function () {
-  resetSpread();
+  resetDeck();
 });
-slideButton.addEventListener("click", function () {
-  slideShow("play");
+var drawButton = document.getElementById("draw1");
+drawButton.addEventListener("click", function () {
+  drawCard();
 });
 
 // CORE ACTIONS
 
-for (let z = 0; z < zones.length; z++) {
-  placeCard(zones[z], selectedCard);
-}
-
-for (let z = 0; z < liveDeck.length; z++) {
-  console.log(liveDeck[z]);
-  var newElement;
-  var newURI;
-  newURI = "draw1.html?card=" + liveDeck[z];
-  newURI = encodeURI(newURI);
-  newElement = "<p><a href='" + newURI + "'>" + liveDeck[z] + "</p>";
-  elementList = elementList + newElement;
-}
-cardWindow.innerHTML = elementList;
-
-faceup();
+placeFirstCard();
 
 // FUNCTIONS
-function slideShow(myZone) {
-  console.log(myZone);
-  for (let z = 0; z < liveDeck.length; z++) {
-    setTimeout(function () {
-      console.log(myZone + ": " + liveDeck[z]);
-      placeCard(myZone, liveDeck[z]);
-    }, 1000 * z);
-    // placeCard(myZone, liveDeck[z]);
-
-    // setTimeout(function () {
-
-    //   placeCard(myZone, liveDeck[z]);
-    //   faceup();
-    // }, 3000);
-  }
-}
-
-function placeCard(space, myselectedcard) {
-  var myCard;
-  var myValue;
-  console.log(myselectedcard);
-  if (myselectedcard == null) {
-    myValue = pickNumber(liveDeck);
-    myCard = liveDeck[myValue];
-  } else {
-    myCard = myselectedcard;
-    myValue = liveDeck.indexOf(myCard);
-  }
-  var myMeaning = cardDetails[myCard]["tagline"];
-  const flipString = "".concat("#card", space);
-  const meaningString = "".concat(space, "meaning");
-  liveDeck = removeCard(myValue, liveDeck);
-  document.getElementById(space).removeAttribute("class");
-  document.getElementById(space).classList.add("cardface");
-  document.getElementById(space).classList.add("cardfront");
-  document.getElementById(space).classList.add(myCard);
-  var cardInit = document.querySelector(flipString);
-
+function placeFirstCard() {
+  var cardInit = document.getElementById("carddeck");
   cardInit.addEventListener("click", function () {
-    cardInit.classList.toggle("is-flipped");
-    if (cardInit.classList.contains("is-flipped")) {
-      document.getElementById(meaningString).textContent = cardMeanings[space];
-    } else {
-      document.getElementById(meaningString).textContent = "";
-    }
+    revealCard();
   });
-  cardMeanings[space] = myMeaning;
 }
 
-function shuffle(deck) {
+function revealCard(space = "deck") {
+  var cardInit = document.getElementById("carddeck");
+  console.log(cardInit);
+  cardInit.classList.add("frozen");
+  console.log(cardInit);
+  var myCard = liveDeck.pop();
+  var cardsLeft = liveDeck.length;
+  if (cardsLeft == 0) {
+    underCards.classList.add("hidden");
+  }
+  console.log(liveDeck.length + " cards left");
+  var myDeck = document.getElementById(space);
+  console.log("You clicked it!");
+  myDeck.classList = "cardface cardfront";
+  myDeck.classList.add(myCard);
+  var cardInit = document.getElementById("carddeck");
+  cardInit.classList.toggle("is-flipped");
+
+  setTimeout(function () {
+    pileSpace.classList.remove("hidden");
+    pileCard.classList = "cardface";
+    pileCard.classList.add(myCard);
+  }, 400);
+  setTimeout(function () {
+    cardInit.classList.add("hidden");
+    cardInit.classList.toggle("is-flipped");
+  }, 500);
+  setTimeout(function () {
+    if (cardsLeft > 0) {
+      cardInit.classList.remove("hidden");
+      cardInit.classList.remove("frozen");
+    }
+  }, 1000);
+}
+
+function resetDeck() {
+  liveDeck = deckSetup(cardDetails);
+  var cardInit = document.getElementById("carddeck");
+  cardInit.classList.remove("hidden");
+  cardInit.classList.remove("frozen");
+  pileSpace.classList.add("hidden");
+  //   underCards.classList.remove("hidden");
+  for (let k = 0; k < underCards.length; k++) {
+    underCards[k].classList.remove("hidden");
+  }
+}
+
+function deckSetup(deck) {
   var cardList = Object.keys(deck);
   console.log(cardList.length);
   for (let k = 0; k < omitList.length; k++) {
@@ -102,89 +87,26 @@ function shuffle(deck) {
     cardList.splice(badCard, 1);
   }
   console.log(cardList.length);
-  //   for (var k in omitList) {
-  //     var badCard = cardArray.indexOf(omitList[k]);
-  //     cardArray.splice(badCard, 1);
-  //   }
+  for (var k in omitList) {
+    var badCard = cardList.indexOf(omitList[k]);
+    cardList.splice(badCard, 1);
+  }
+  cardList = shuffleArray(cardList);
   return cardList;
+}
+
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+
+  return array;
 }
 
 function pickNumber(deck) {
   const drawNum = Math.floor(Math.random() * deck.length);
   return drawNum;
 }
-
-function removeCard(myCard, myDeck) {
-  myDeck.splice(myCard, 1);
-  return myDeck;
-}
-
-function faceup() {
-  for (var z = 0; z < zones.length; z++) {
-    const flipString = "".concat("#card", zones[z]);
-    const meaningString = "".concat(zones[z], "meaning");
-
-    var cardInit = document.querySelector(flipString);
-    cardInit.classList.add("is-flipped");
-    document.getElementById(meaningString).textContent = "";
-  }
-}
-
-// function resetSpread() {
-//   liveDeck = shuffle(cardDetails);
-
-//   faceup();
-//   setTimeout(function () {
-//     facedown();
-//   }, 500);
-
-//   setTimeout(function () {
-//     for (var z = 0; z < zones.length; z++) {
-//       replaceCard(zones[z]);
-//     }
-//   }, 700);
-// }
-
-// function faceup() {
-//   for (var z = 0; z < zones.length; z++) {
-//     const flipString = "".concat("#card", zones[z]);
-//     const meaningString = "".concat(zones[z], "meaning");
-
-//     var cardInit = document.querySelector(flipString);
-//     cardInit.classList.add("is-flipped");
-//     document.getElementById(meaningString).textContent = "";
-//   }
-// }
-
-// function facedown() {
-//   for (var z = 0; z < zones.length; z++) {
-//     const flipString = "".concat("#card", zones[z]);
-//     const meaningString = "".concat(zones[z], "meaning");
-//     var cardInit = document.querySelector(flipString);
-//     cardInit.classList.remove("is-flipped");
-//     document.getElementById(meaningString).textContent = "";
-//   }
-// }
-
-// function replaceCard(space) {
-//   const myValue = pickNumber(liveDeck);
-//   const myCard = liveDeck[myValue];
-//   var myMeaning = cardDetails[myCard]["tagline"];
-//   const meaningString = "".concat(space, "meaning");
-//   liveDeck = removeCard(myValue, liveDeck);
-//   document.getElementById(space).removeAttribute("class");
-//   document.getElementById(space).classList.add("cardface");
-//   document.getElementById(space).classList.add("cardfront");
-//   document.getElementById(space).classList.add(myCard);
-//   document.getElementById(meaningString).textContent = "";
-//   if (coinFlip() == 0) {
-//     document.getElementById(space).classList.add("invert");
-//     myMeaning = myMeaning + " (Inverted)";
-//   }
-
-//   cardMeanings[space] = myMeaning;
-// }
-
-// function coinFlip() {
-//   return Math.floor(Math.random() * 2);
-// }

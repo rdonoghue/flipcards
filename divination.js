@@ -6,18 +6,19 @@ const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
 // const cardDetails = amberCards;
 const cardDetails = Object.assign(amberCards, otherCards);
 var liveDeck = shuffle(cardDetails);
-var resetButton = document.getElementById("resetSpread");
-var flipButton = document.getElementById("faceup");
+
 const zones = ["past", "present", "future"];
 var cardMeanings = {};
 
 // FUNCTIONAL BUTTONS
+var resetButton = document.getElementById("resetSpread");
+// var flipButton = document.getElementById("faceup");
 resetButton.addEventListener("click", function () {
   resetSpread();
 });
-flipButton.addEventListener("click", function () {
-  faceup();
-});
+// flipButton.addEventListener("click", function () {
+//   faceup();
+// });
 
 // CORE ACTIONS
 

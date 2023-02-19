@@ -13,9 +13,8 @@
     />
 
     <link rel="stylesheet" href="shared.css" />
-    <link rel="stylesheet" href="divination.css" />
-    <link rel="stylesheet" href="namedcards.css" />
     <link rel="stylesheet" href="draw1.css" />
+    <link rel="stylesheet" href="namedcards.css" />
 
     <title>Trump Divination</title>
   </head>
@@ -32,34 +31,43 @@
     <main>
       <div class="controls">
         <button id="resetdeck">Reshuffle</button>
+        <button id="draw1">Draw</button>
         <button id="startslides">Slideshow</button>
         <div id="cardlist"></div>
       </div>
       <div class="columnWrapper">
-        <div class="cardmeaning" id="pastmeaning"></div>
-        <div class="playcard" id="pastspace">
+        <div class="playcard" id="deckspace">
           <div class="flipspace">
-            <div class="card" id="deck">
+            <div class="card" id="carddeck">
               <div class="cardface cardback stoneback"></div>
-              <div id="past" class="cardface cardfront"></div>
+              <div id="deck" class="cardface cardfront"></div>
+            </div>
+            <div class="fauxcard backdeck l1" id="backdeck1">
+              <div class="cardface cardback stoneback"></div>
+              <div class="cardface cardfront"></div>
+            </div>
+            <div class="fauxcard backdeck l2" id="backdeck2">
+              <div class="cardface cardback stoneback"></div>
+              <div class="cardface cardfront"></div>
+            </div>
+            <div class="fauxcard backdeck l3" id="backdeck3">
+              <div class="cardface cardback stoneback"></div>
+              <div class="cardface cardfront"></div>
             </div>
           </div>
           <h2>Deck</h2>
         </div>
       </div>
       <div class="columnWrapper">
-        <div class="cardmeaning" id="playmeaning"></div>
-        <div class="playcard" id="playspace">
+        <div class="playcard" id="pilespace">
           <div class="flipspace">
-            <div class="card" id="cardplay">
-              <div class="cardface cardback starback"></div>
-              <div id="play" class="cardface cardfront"></div>
+            <div class="card hidden" id="piledeck">
+              <div class="cardface cardback stoneback"></div>
+              <div id="pile" class="cardface"></div>
             </div>
           </div>
-          <h2>Play</h2>
+          <h2>pile</h2>
         </div>
-      </div>
-      
       </div>
     </main>
   </body>
