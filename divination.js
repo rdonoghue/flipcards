@@ -4,7 +4,7 @@ import { amberCards, otherCards } from "./trumpdata.js";
 const cardDetails = amberCards;
 var liveDeck = shuffle(cardDetails);
 var resetButton = document.getElementById("resetSpread");
-var flipButton = document.getElementById("facedown");
+var flipButton = document.getElementById("faceup");
 const zones = ["past", "present", "future"];
 var cardMeanings = {};
 
@@ -12,9 +12,9 @@ var cardMeanings = {};
 resetButton.addEventListener("click", function () {
   resetSpread();
 });
-// flipButton.addEventListener("click", function () {
-//   facedown();
-// });
+flipButton.addEventListener("click", function () {
+  faceup();
+});
 
 // CORE ACTIONS
 
@@ -22,21 +22,37 @@ for (var z = 0; z < zones.length; z++) {
   placeCard(zones[z]);
 }
 
-// FUNCTIOND
+// FUNCTIONS
 function resetSpread() {
-  facedown();
+  liveDeck = shuffle(cardDetails);
+
+  faceup();
+  setTimeout(function () {
+    facedown();
+  }, 500);
+
   setTimeout(function () {
     for (var z = 0; z < zones.length; z++) {
       replaceCard(zones[z]);
     }
-  }, 500);
+  }, 700);
+}
+
+function faceup() {
+  for (var z = 0; z < zones.length; z++) {
+    const flipString = "".concat("#card", zones[z]);
+    const meaningString = "".concat(zones[z], "meaning");
+
+    var cardInit = document.querySelector(flipString);
+    cardInit.classList.add("is-flipped");
+    document.getElementById(meaningString).textContent = "";
+  }
 }
 
 function facedown() {
   for (var z = 0; z < zones.length; z++) {
     const flipString = "".concat("#card", zones[z]);
     const meaningString = "".concat(zones[z], "meaning");
-
     var cardInit = document.querySelector(flipString);
     cardInit.classList.remove("is-flipped");
     document.getElementById(meaningString).textContent = "";

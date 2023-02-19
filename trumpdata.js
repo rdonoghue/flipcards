@@ -9,7 +9,7 @@ amberCards["oberon"] = {
   category: "oberon-category",
   cardname: "Oberon",
   url: "./img/oberon.png",
-  tagline: "King",
+  tagline: "The King",
   blurb:
     "King of Amber. Creator of the Pattern. Conqueror of all reality. Sitting upon a great throne with a greater crown wrought of silver with seven high points, studded with emeralds, and huge rubies at either temple. The jewel of judgment rests upon his chest, supported around broad shoulders by a thick golden chain.</p><p>Father.</p><p>  Oberon as a father is open to many interpretations and possibilities. Oberon is a distant father. Oberon is a loving father. Oberon is a manipulator. Oberon is a teacher. Any, all, or none of these may be true. Oberon is complicated.</p><p>  What can be said about Oberon without interpretation is that those not of royal blood within the court of Amber are terrified of him. He was ruthless enough to win wars that the subjugated are still trying to understand how they could have possibly lost. He was powerful enough to slay demons, ancient dragons, and self- proclaimed gods on the fields of battle.<p>",
 };
@@ -50,7 +50,7 @@ amberCards["eirashaol"] = {
   category: "eirashaol-category",
   cardname: "Eira Shaol",
   url: "./img/eirashaol.png",
-  tagline: "Queen",
+  tagline: "The Queen",
   blurb:
     "<p>Queen of Rebma as long as there has been a Rebma, Eira Shaol is an ancient influence upon Amber and the shadow seas. Her greatest efforts have been upon ensuring stability for the underwater kingdom, given that the Chaos of the above land is inevitably reflected upon her kingdom. As a result, Rebma routinely intervenes on Amber’s behalf to prevent the results of endless conflict from reaching her sands. Eira’s marriage to Oberon was the result of a negotiated partnership with the threat the flame of Chaos posed Amber through the Red Rebellion.</p><p>The children of Eira Shaol have blood claims to both the thrones of Amber and Rebma. This, along with Eira Shaol still being married to Oberon, has led to a unique amount of attention being provided the children in their relatively short lives.</p><p>While the queen is technically protected by the Crows, she also has a loyal personal guard lead by the The Kahlverian.</p>",
 };
@@ -59,7 +59,7 @@ amberCards["unknown"] = {
   category: "unknown-category",
   cardname: "Unknown",
   url: "./img/unknown-web.png",
-  tagline: "Illegitimate",
+  tagline: "The Illegitimate",
   blurb: "Oberon's byblows.",
 };
 
@@ -80,7 +80,7 @@ amberCards["anderon"] = {
   type: "child",
   url: "../img/anderon.png",
   parent: "velka-category",
-  tagline: "Fallen",
+  tagline: "The Fallen",
   blurb:
     "<p>Anderon is more of a historical figure than a family member. His life so long ago that Aurielle and Lorec only remember what they intentionally wrote or stored away, the prince was known to be vital in defeating his brother the Bastard and Velka. It is said that the district of Amber now known as Anderon Hall is so named because that is where the prince died. Lorec suggests that Anderon Hall is a mispronunciation and that the area was originally known as Anderon’s Fall before Oberon grew impatient with the label.</p><p>While the history books are vague beyond the expected platitudes, a week out of every year is dedicated to Anderon’s sacrifice for Amber. Festivals, parades, and a grand tournament with melee, jousting and other martial competitions are held by the Crown during this time.</p>",
 };
@@ -407,6 +407,15 @@ otherCards["samson"] = {
   url: "./img/samson.png",
   tagline: "Trickster",
   blurb: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel</p>",
+};
+
+otherCards["strowan"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Strowan Chanicut",
+  url: "./img/strowan.png",
+  tagline: "Riddles",
+  blurb: "<p>Head of House Chanicut. Also goes by Argo to some./p>",
 };
 
 otherCards["simon"] = {
