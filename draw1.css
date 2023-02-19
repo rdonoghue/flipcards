@@ -19,6 +19,7 @@ button {
   font-family: "Jost", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
+  width: 100%;
 }
 
 .columnWrapper {
@@ -76,8 +77,7 @@ button {
 }
 
 .cardfront {
-  transform: rotateY(180deg) translateX(800px);
-  transform-origin: right top 0px;
+  transform: rotateY(180deg) translateX(500px);
   background-color: blueviolet;
 }
 .cardback {
@@ -149,4 +149,28 @@ button {
 
 .frozen {
   pointerevents: none;
+}
+
+.pivot-r {
+  transition: transform 0.25s;
+  transform: rotate(10deg);
+}
+
+.pivot-l {
+  transition: transform 0.25s;
+  transform: rotate(-10deg);
+}
+
+.flopback {
+  transform: rotateY(-180deg) translateX(-800px);
+  background-color: blueviolet;
+}
+
+.card.is-flopped {
+  transform: rotateY(-180deg) translateX(-500px);
+}
+
+.pilefront {
+  transform: rotateY(-180deg) translateX(-500px);
+  background-color: blueviolet;
 }
