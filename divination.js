@@ -1,7 +1,10 @@
 "use strict";
 // INITIAL VALUES
 import { amberCards, otherCards } from "./trumpdata.js";
-const cardDetails = amberCards;
+const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
+
+// const cardDetails = amberCards;
+const cardDetails = Object.assign(amberCards, otherCards);
 var liveDeck = shuffle(cardDetails);
 var resetButton = document.getElementById("resetSpread");
 var flipButton = document.getElementById("faceup");
@@ -127,10 +130,14 @@ function coinFlip() {
 }
 
 function shuffle(deck) {
-  var cardArray = Object.keys(deck);
-  var badCard = cardArray.indexOf("unknown");
-  cardArray.splice(badCard, 1);
-  return cardArray;
+  var cardList = Object.keys(deck);
+  console.log(cardList.length);
+  for (let k = 0; k < omitList.length; k++) {
+    var badCard = cardList.indexOf(omitList[k]);
+    cardList.splice(badCard, 1);
+  }
+  console.log(cardList.length);
+  return cardList;
 }
 
 function pickNumber(deck) {
