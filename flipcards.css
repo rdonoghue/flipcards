@@ -6,8 +6,9 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 150px 300px 300px 300px 300px;
-  grid-template-rows: 450px 450px 450px 450px 450px 450px 450px 450px 450px 450px 450px;
+  /* grid-template-columns: 150px 300px 300px 300px 300px; */
+  grid-template-columns: 150px repeat(4, 300px);
+  grid-template-rows: repeat(15, 450px);
 
   grid-gap: 30px;
   /*  background-color: #fff; */
@@ -73,6 +74,14 @@ body {
   background: #03446a;
   color: gray;
   transform: rotateY(180deg);
+}
+
+.tall {
+  grid-row-end: span 2;
+}
+
+.extra-tall {
+  grid-row-end: span 3;
 }
 /* 
 .stoneback {

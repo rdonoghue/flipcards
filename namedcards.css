@@ -1,138 +1,182 @@
 .stoneback {
   background: goldenrod;
   background-image: url("img/stoneback.png");
+  background-size: cover;
 }
 
 .starback {
   background: purple;
   background-image: url("img/starback.png");
+  background-size: cover;
 }
 
 .fireback {
   background: red;
   background-image: url("img/fireback.png");
+  background-size: cover;
 }
 
 .waveback {
   background: lightseagreen;
   background-image: url("img/waveback.png");
+  background-size: cover;
 }
 
 .royalback {
   background: green;
   background-image: url("img/royalback.png");
+  background-size: cover;
 }
 
 .serpentback {
   background: black;
   background-image: url("img/serpentback.png");
+  background-size: cover;
 }
 
 .shipback {
   background: orange;
   background-image: url("img/shipback.png");
+  background-size: cover;
+}
+.amberback {
+  background: goldenrod;
+  background-image: url("img/amberback.png");
+  background-size: cover;
+}
+
+.shadowback {
+  background: brown;
+  background-image: url("img/shadowback.png");
+  background-size: cover;
 }
 
 .lorec {
   background-image: url("img/lorec-web.png");
+  background-size: cover;
 }
 
 .anderon {
   background-image: url("img/anderon-web.png");
+  background-size: cover;
 }
 
 .aurielle {
   background-image: url("img/aurielle-web.png");
+  background-size: cover;
 }
 
 .bastard {
   background-image: url("img/bastard-web.png");
+  background-size: cover;
 }
 
 .suillir {
   background-image: url("img/suil-lir-web.png");
+  background-size: cover;
 }
 
 .fenella {
   background-image: url("img/fenella-web.png");
+  background-size: cover;
 }
 
 .roichard {
   background-image: url("img/roichard-web.png");
+  background-size: cover;
 }
 
 .cethlenn {
   background-image: url("img/cethlenn-web.png");
+  background-size: cover;
 }
 
 .ophelia {
   background-image: url("img/ophelia-web.png");
+  background-size: cover;
 }
 
 .borel {
   background-image: url("img/borel-web.png");
+  background-size: cover;
 }
 
 .ciara {
   background-image: url("img/ciara-web.png");
+  background-size: cover;
 }
 
 .bevin {
   background-image: url("img/bevin-web.png");
+  background-size: cover;
 }
 
 .alaric {
   background-image: url("img/alaric-web.png");
+  background-size: cover;
 }
 
 .pauol {
   background-image: url("img/pauol-web.png");
+  background-size: cover;
 }
 
 .liabelle {
   background-image: url("img/liabelle-web.png");
+  background-size: cover;
 }
 
 .diolinda {
   background-image: url("img/diolinda-web.png");
+  background-size: cover;
 }
 
 .oberon {
   background-image: url("img/oberon-web.png");
+  background-size: cover;
 }
 
 .queen,
 .eirashaol {
   background-image: url("img/eirashaol-web.png");
+  background-size: cover;
 }
 
 .mikaya {
   background-image: url("img/mikaya-web.png");
+  background-size: cover;
 }
 
 .pyson {
   background-image: url("img/pyson-web.png");
+  background-size: cover;
 }
 .ava {
   background-image: url("img/eva-web.png");
+  background-size: cover;
 }
 
 .velka {
   background-image: url("img/velka-web.png");
+  background-size: cover;
 }
 .fina {
   background-image: url("img/fina-web.png");
+  background-size: cover;
 }
 .milesia {
   background-image: url("img/milesia-web.png");
+  background-size: cover;
 }
 
 .samson {
   background-image: url("img/samson-web.png");
+  background-size: cover;
 }
 
 .dworkin {
   background-image: url("img/dworkin-web.png");
+  background-size: cover;
 }
 .gramble {
   background-image: url("img/gramble.png");
