@@ -6,39 +6,71 @@ const zones = ["play"];
 import { amberCards, otherCards } from "./trumpdata.js";
 const cardDetails = Object.assign(amberCards, otherCards);
 var liveDeck = shuffle(cardDetails);
-var resetButton = document.getElementById("resetdeck");
 var cardMeanings = {};
 var cardWindow = document.getElementById("cardlist");
 var elementList = "";
+var selectedCard = "";
+
+const urlParams = new URLSearchParams(decodeURI(window.location.search));
+selectedCard = urlParams.get("card");
+console.log(selectedCard);
 
 // FUNCTIONAL BUTTONS
+var resetButton = document.getElementById("resetdeck");
+var slideButton = document.getElementById("startslides");
 resetButton.addEventListener("click", function () {
   resetSpread();
+});
+slideButton.addEventListener("click", function () {
+  slideShow("play");
 });
 
 // CORE ACTIONS
 
 for (let z = 0; z < zones.length; z++) {
-  placeCard(zones[z], "irina");
+  placeCard(zones[z], selectedCard);
 }
 
 for (let z = 0; z < liveDeck.length; z++) {
   console.log(liveDeck[z]);
-  elementList = elementList + "<p>" + liveDeck[z] + "</p>";
+  var newElement;
+  var newURI;
+  newURI = "draw1.html?card=" + liveDeck[z];
+  newURI = encodeURI(newURI);
+  newElement = "<p><a href='" + newURI + "'>" + liveDeck[z] + "</p>";
+  elementList = elementList + newElement;
 }
-
 cardWindow.innerHTML = elementList;
 
-// FUNCTIONS
+faceup();
 
-function placeCard(space, selectedcard) {
+// FUNCTIONS
+function slideShow(myZone) {
+  console.log(myZone);
+  for (let z = 0; z < liveDeck.length; z++) {
+    setTimeout(function () {
+      console.log(myZone + ": " + liveDeck[z]);
+      placeCard(myZone, liveDeck[z]);
+    }, 1000 * z);
+    // placeCard(myZone, liveDeck[z]);
+
+    // setTimeout(function () {
+
+    //   placeCard(myZone, liveDeck[z]);
+    //   faceup();
+    // }, 3000);
+  }
+}
+
+function placeCard(space, myselectedcard) {
   var myCard;
   var myValue;
-  if (selectedcard == null) {
+  console.log(myselectedcard);
+  if (myselectedcard == null) {
     myValue = pickNumber(liveDeck);
     myCard = liveDeck[myValue];
   } else {
-    myCard = selectedcard;
+    myCard = myselectedcard;
     myValue = liveDeck.indexOf(myCard);
   }
   var myMeaning = cardDetails[myCard]["tagline"];
@@ -85,6 +117,17 @@ function pickNumber(deck) {
 function removeCard(myCard, myDeck) {
   myDeck.splice(myCard, 1);
   return myDeck;
+}
+
+function faceup() {
+  for (var z = 0; z < zones.length; z++) {
+    const flipString = "".concat("#card", zones[z]);
+    const meaningString = "".concat(zones[z], "meaning");
+
+    var cardInit = document.querySelector(flipString);
+    cardInit.classList.add("is-flipped");
+    document.getElementById(meaningString).textContent = "";
+  }
 }
 
 // function resetSpread() {
