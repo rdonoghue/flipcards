@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:wght@300&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="places.css" />
+  </head>
+  <body tag="other">
+    <header>
+      <ul>
+        <li><a href="index.html">Scions of Amber</a></li>
+        <li class="active"><a href="cards-other.html">Others of Note</a></li>
+        <li><a href="flipcards.html">All Trumps</a></li>
+        <li><a href="draw1.html">Draw a Card</li>
+        <li><a href="divination.html">Divination</a></li>
+        <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
+      </ul>
+    </header>
+    <main>
+      <nav>
+        <div id="buttonList" class="sidenav"></div>
+      </nav>
+      <div class="cardholder">
+        <div class="card cardReverse" id="frontCard">
+          <div class="cardbody">
+            <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
+          </div>
+          <div class="cardcaption">
+            <p class="cardcaptiontext" id="cardname"></p>
+          </div>
+        </div>
+        <div id="cardmeaning"></div>
+        <div class="bottombox">
+          <div id="cardmanip">
+            <button id="pickrandom">Random Draw</button>
+            <button id="resetpage">Reset</button>
+          </div>
+        </div>
+      </div>
+      <div class="textbox" id="chardesc">
+        <div id="char-blurb">Prosperity</div>
+        <div id="char-desc">Welcome to the Prosperity Court of Amber.</div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="cardpage.js"
+    type="module"
+    id="callcards"
+    handoff="places"
+  ></script>
+</html>

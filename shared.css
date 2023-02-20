@@ -29,6 +29,7 @@ a:active {
 }
 
 a:visited {
+  color: skyblue;
 }
 header {
   display: flex;

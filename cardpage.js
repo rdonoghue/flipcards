@@ -7,7 +7,7 @@ const scriptCall = document.getElementById("callcards").getAttribute("handoff");
 
 console.log(scriptCall);
 
-import { amberCards, otherCards } from "./trumpdata.js";
+import { amberCards, otherCards, placeCards } from "./trumpdata.js";
 
 var cardDetails;
 var pageType;
@@ -18,6 +18,9 @@ if (scriptCall == "ambercards") {
 } else if (scriptCall == "othercards") {
   cardDetails = otherCards;
   pageType = "other";
+} else if (scriptCall == "places") {
+  cardDetails = placeCards;
+  pageType = "places";
 }
 
 console.log(document.getElementById("callcards"));
@@ -88,7 +91,7 @@ function setup(cardList) {
 // }
 
 function cardpivot() {
-  return Math.floor(Math.random() * 18) - 9;
+  return Math.floor(Math.random() * 12) - 6;
 }
 
 function resetactive(activebutton) {
