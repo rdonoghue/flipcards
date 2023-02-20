@@ -27,6 +27,9 @@ a {
 a:active {
   color: violet;
 }
+
+a:visited {
+}
 header {
   display: flex;
   flex-direction: row;
@@ -72,5 +75,9 @@ header a {
 }
 
 header a:visited {
+  color: rgb(246, 209, 164);
+}
+
+header a {
   color: rgb(246, 209, 164);
 }
