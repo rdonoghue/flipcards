@@ -1,7 +1,7 @@
 "use strict";
 // INITIAL VALUES
 const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
-import { amberCards, otherCards } from "./trumpdatashort.js";
+import { amberCards, otherCards } from "./trumpdata.js";
 var cardObject = Object.assign(amberCards, otherCards);
 var liveDeck = deckSetup(cardObject);
 console.log("Clean Deck: " + liveDeck);
@@ -10,6 +10,7 @@ var underCard = document.getElementById("decktop");
 var cardFront = document.getElementById("mainFront");
 var cardContainer = document.getElementById("carddeck");
 var backDeck = document.getElementById("backdeck1");
+var images = new Array();
 
 // FUNCTIONAL BUTTONS
 var resetButton = document.getElementById("resetdeck");
@@ -20,8 +21,20 @@ resetButton.addEventListener("click", function () {
 // CORE ACTIONS
 
 placeFirstCard();
+preLoad();
 
 // FUNCTIONS
+
+function preLoad() {
+  var myURL;
+  for (var k = 0; k < liveDeck.length; k++) {
+    console.log(cardObject[liveDeck[k]]["url"]);
+    myURL = cardObject[liveDeck[k]]["url"];
+    images[k] = new Image();
+    images[k].url = myURL;
+  }
+}
+
 function deckSetup(deck) {
   var cardList = Object.keys(deck);
   // console.log("bad deck length: ", cardList.length);
