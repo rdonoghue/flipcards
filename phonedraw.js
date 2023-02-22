@@ -1,14 +1,15 @@
 "use strict";
 // INITIAL VALUES
 const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
-const zones = ["play"];
-import { amberCards, otherCards } from "./trumpdata-short.js";
-const cardDetails = Object.assign(amberCards, otherCards);
-var liveDeck = deckSetup(cardDetails);
-var pileSpace = document.getElementById("piledeck");
-var underCards = document.getElementsByClassName("backdeck");
-var allCards = document.getElementsByClassName("allcards");
-console.log(cardDetails);
+import { amberCards, otherCards } from "./trumpdatashort.js";
+var cardObject = Object.assign(amberCards, otherCards);
+var liveDeck = deckSetup(cardObject);
+console.log("Clean Deck: " + liveDeck);
+var cardBack = document.getElementById("mainBack");
+var underCard = document.getElementById("decktop");
+var cardFront = document.getElementById("mainFront");
+var cardContainer = document.getElementById("carddeck");
+var backDeck = document.getElementById("backdeck1");
 
 // FUNCTIONAL BUTTONS
 var resetButton = document.getElementById("resetdeck");
@@ -21,7 +22,39 @@ resetButton.addEventListener("click", function () {
 placeFirstCard();
 
 // FUNCTIONS
+function deckSetup(deck) {
+  var cardList = Object.keys(deck);
+  // console.log("bad deck length: ", cardList.length);
+  // console.log("bad deck contents: " + cardList);
 
+  for (var k in omitList) {
+    // console.log("Check for: " + omitList[k]);
+
+    var badCard = cardList.indexOf(omitList[k]);
+    if (badCard > -1) {
+      // console.log("Found: " + omitList[k]);
+
+      cardList.splice(badCard, 1);
+      // console.log("Card Removed!");
+    }
+  }
+  // console.log("Good decklength: " + cardList.length);
+  // console.log("Pre-shuffle: " + cardList);
+  cardList = shuffleArray(cardList);
+  // console.log("Post-shuffle: " + cardList);
+
+  return cardList;
+}
+
+function shuffleArray(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
 function placeFirstCard() {
   var cardInit = document.getElementById("carddeck");
   cardInit.addEventListener("click", function () {
@@ -29,89 +62,57 @@ function placeFirstCard() {
   });
 }
 
-// function revealCard(space = "deck") {
-//   var cardInit = document.getElementById("carddeck");
-//   cardInit.classList.add("frozen");
-//   console.log(cardInit);
-//   var myCard = liveDeck.pop();
-//   var cardsLeft = liveDeck.length;
+function revealCard() {
+  var cardsLeft = liveDeck.length;
 
-//   if (cardsLeft == 0) {
-//     for (let k = 0; k < allCards.length; k++) {
-//       allCards[k].classList.remove("hidden");
-//     }
-//   }
-//   console.log(liveDeck.length + " cards left");
-//   var myDeck = document.getElementById(space);
-//   console.log("You clicked it!");
-//   myDeck.classList = "cardface cardfront";
-//   myDeck.classList.add(myCard);
-//   var cardInit = document.getElementById("carddeck");
-//   cardInit.classList.toggle("is-flipped");
-//   var showCard = document.getElementById("mainBack");
-//   var alsoShowCard = document.getElementById("decktop");
+  var myCard = liveDeck.pop();
+  cardContainer.classList.add("frozen");
+  console.log(liveDeck.length + " cards left");
+  console.log("You clicked it! " + cardFront.classList);
+  cardFront.setAttribute("class", "cardface cardfront");
+  cardFront.classList.add(myCard);
+  cardContainer.classList.toggle("is-flipped");
 
-//   setTimeout(function () {
-//     showCard.classList = "cardface cardback";
-//     alsoShowCard.classList = "cardface cardback";
-//     console.log(showCard);
-//     console.log(alsoShowCard);
+  setTimeout(function () {
+    cardBack.setAttribute("class", "cardface cardback");
+    underCard.setAttribute("class", "cardface cardback");
+    if (cardsLeft > 0) {
+      cardBack.classList.add(myCard);
+      underCard.classList.add(myCard);
+    } else {
+      cardBack.classList.add("royalback");
+      underCard.classList.add("hidden");
+    }
+  }, 250);
+  setTimeout(function () {
+    cardContainer.classList.add("hidden");
+    cardContainer.classList.toggle("is-flipped");
+  }, 300);
+  console.log("Remaining Deck: " + liveDeck);
+  if (cardsLeft > 0) {
+    setTimeout(function () {
+      cardContainer.classList.remove("hidden");
+      cardContainer.classList.remove("frozen");
+    }, 600);
+  } else {
+    cardFront.classList = "cardface cardfront royalback";
+    setTimeout(function () {
+      cardContainer.classList.remove("frozen");
+      backDeck.classList.add("hidden");
+    }, 500);
+  }
+  console.log(underCard.classList);
+}
 
-//     showCard.classList.add(myCard);
-//     alsoShowCard.classList.add(myCard);
-//   }, 250);
+function resetDeck() {
+  liveDeck = deckSetup(cardObject);
 
-//   setTimeout(function () {
-//     cardInit.classList.add("hidden");
-//     cardInit.classList.toggle("is-flipped");
-//   }, 300);
-
-//   setTimeout(function () {
-//     if (cardsLeft > 0) {
-//       cardInit.classList.remove("hidden");
-//       cardInit.classList.remove("frozen");
-//     }
-//   }, 700);
-// }
-
-// function resetDeck() {
-//   liveDeck = deckSetup(cardDetails);
-//   var cardInit = document.getElementById("carddeck");
-//   cardInit.classList.remove("hidden");
-//   cardInit.classList.remove("frozen");
-//   for (let k = 0; k < allCards.length; k++) {
-//     underCards[k].classList.remove("hidden");
-//   }
-// }
-
-// function deckSetup(deck) {
-//   var cardList = Object.keys(deck);
-//   console.log(cardList.length);
-//   for (let k = 0; k < omitList.length; k++) {
-//     var badCard = cardList.indexOf(omitList[k]);
-//     cardList.splice(badCard, 1);
-//   }
-//   console.log(cardList.length);
-//   for (var k in omitList) {
-//     var badCard = cardList.indexOf(omitList[k]);
-//     cardList.splice(badCard, 1);
-//   }
-//   cardList = shuffleArray(cardList);
-//   return cardList;
-// }
-
-// function shuffleArray(array) {
-//   for (var i = array.length - 1; i > 0; i--) {
-//     var j = Math.floor(Math.random() * (i + 1));
-//     var temp = array[i];
-//     array[i] = array[j];
-//     array[j] = temp;
-//   }
-
-//   return array;
-// }
-
-// function pickNumber(deck) {
-//   const drawNum = Math.floor(Math.random() * deck.length);
-//   return drawNum;
-// }
+  cardBack.classList = "cardface cardback royalback vibrate";
+  underCard.classList = "cardface cardback royalback";
+  cardFront.classList = "cardface cardfront";
+  cardContainer.classList = "card allcards";
+  backDeck.classList = "fauxcard backdeck l1 allcards";
+  setTimeout(function () {
+    cardBack.classList = "cardface cardback royalback";
+  }, 400);
+}

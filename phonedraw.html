@@ -12,11 +12,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="phonedraw.css" />
     <link rel="stylesheet" href="namedcards.css" />
 
-    <title>Trump Divination</title>
+    <title>Draw a Trump</title>
   </head>
   <body>
     <main>
@@ -26,17 +25,16 @@
           <div class="flipspace">
             <div class="card allcards" id="carddeck">
               <div id="mainBack" class="cardface cardback royalback"></div>
-              <div id="deck" class="cardface cardfront"></div>
+              <div id="mainFront" class="cardface cardfront"></div>
             </div>
-            <div id="undercard" class="undercard allcards"></div>
-            <div class="fauxcard backdeck l1" id="backdeck1">
-              <div id="decktop" class="cardface cardback fireback"></div>
-              <div class="cardface cardfront"></div>
+            <div class="fauxcard backdeck l1 allcards" id="backdeck1">
+              <div id="decktop" class="cardface cardback royalback"></div>
             </div>
           </div>
-        <button id="resetdeck">Reshuffle</button>
-          
+          <button id="resetdeck">Reshuffle</button>
+
     </main>
+
   </body>
   <script src="phonedraw.js" type="module"></script>
 </html>
