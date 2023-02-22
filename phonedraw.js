@@ -10,7 +10,7 @@ var underCard = document.getElementById("decktop");
 var cardFront = document.getElementById("mainFront");
 var cardContainer = document.getElementById("carddeck");
 var backDeck = document.getElementById("backdeck1");
-var images = new Array();
+var imagesHTML = "";
 
 // FUNCTIONAL BUTTONS
 var resetButton = document.getElementById("resetdeck");
@@ -27,12 +27,15 @@ preLoad();
 
 function preLoad() {
   var myURL;
+  var myString = "";
   for (var k = 0; k < liveDeck.length; k++) {
     console.log(cardObject[liveDeck[k]]["url"]);
     myURL = cardObject[liveDeck[k]]["url"];
-    images[k] = new Image();
-    images[k].url = myURL;
+    // images[k] = new Image();
+    // images[k].url = myURL;
+    myString = myString + "<img src='" + myURL + "'>";
   }
+  document.getElementById("preloader").innerHTML = myString;
 }
 
 function deckSetup(deck) {

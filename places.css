@@ -18,6 +18,9 @@ nav {
   display: flex;
   flex-direction: column;
 }
+aside {
+  visibility: hidden;
+}
 
 .sidenav {
   width: 100%;
@@ -178,4 +181,8 @@ button:hover {
 }
 .l3 {
   rotate: 87deg;
+}
+
+.preloader {
+  visibility: hidden;
 }
