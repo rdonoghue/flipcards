@@ -102,8 +102,9 @@ function revealCard() {
   }, 250);
   setTimeout(function () {
     cardContainer.classList.add("hidden");
+
     cardContainer.classList.toggle("is-flipped");
-  }, 300);
+  }, 251);
   console.log("Remaining Deck: " + liveDeck);
   if (cardsLeft > 0) {
     setTimeout(function () {
