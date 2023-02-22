@@ -80,10 +80,10 @@ button {
 
 .cardfront {
   transform: rotateY(180deg);
-  background-color: blueviolet;
+  background-color: whitesmoke;
 }
 .cardback {
-  background-color: aqua;
+  background-color: whitesmoke;
 }
 .card.is-flipped {
   transform: rotateY(180deg);
