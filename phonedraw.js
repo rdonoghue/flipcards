@@ -32,8 +32,11 @@ function revealCard(space = "deck") {
   console.log(cardInit);
   var myCard = liveDeck.pop();
   var cardsLeft = liveDeck.length;
+  var allCards = getElementsByClassName("allcards");
+  
   if (cardsLeft == 0) {
-    underCards.classList.add("hidden");
+    allCards.classList.add("hidden");
+    
   }
   console.log(liveDeck.length + " cards left");
   var myDeck = document.getElementById(space);
@@ -73,27 +76,11 @@ function resetDeck() {
   var cardInit = document.getElementById("carddeck");
   cardInit.classList.remove("hidden");
   cardInit.classList.remove("frozen");
+  var allCards = getElementsByClassName("allcards");
+allCards.classList.remove("hidden");
   for (let k = 0; k < underCards.length; k++) {
     underCards[k].classList.remove("hidden");
   }
-  pileSpace.classList.toggle("is-flopped");
-
-  document.getElementById("backdeck2").classList.add("pivot-r");
-  document.getElementById("backdeck3").classList.add("pivot-l");
-  setTimeout(function () {
-    document.getElementById("backdeck2").classList.remove("pivot-r");
-    document.getElementById("backdeck2").classList.add("pivot-l");
-    document.getElementById("backdeck3").classList.remove("pivot-l");
-    document.getElementById("backdeck3").classList.add("pivot-r");
-  }, 250);
-
-  setTimeout(function () {
-    document.getElementById("backdeck2").classList.remove("pivot-l");
-    document.getElementById("backdeck3").classList.remove("pivot-r");
-    pileSpace.classList.toggle("is-flopped");
-    pileSpace.classList.add("hidden");
-  }, 500);
-}
 
 function deckSetup(deck) {
   var cardList = Object.keys(deck);

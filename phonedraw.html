@@ -20,34 +20,22 @@
   </head>
   <body>
     <main>
-      <div class="controls">
-        <button id="resetdeck">Reshuffle</button>
-        <div id="cardlist"></div>
-      </div>
-      <div class="columnWrapper">
+    
         <div class="playcard" id="deckspace">
+        <h2> maybe text</h2>
           <div class="flipspace">
-            <div class="card" id="carddeck">
+            <div class="card allcards" id="carddeck">
               <div id="mainBack" class="cardface cardback royalback"></div>
               <div id="deck" class="cardface cardfront"></div>
             </div>
-            <div id="undercard" class="undercard"></div>
+            <div id="undercard" class="undercard allcards"></div>
             <div class="fauxcard backdeck l1" id="backdeck1">
               <div id="decktop" class="cardface cardback fireback"></div>
               <div class="cardface cardfront"></div>
             </div>
-            <!-- <div class="fauxcard backdeck l2" id="backdeck2">
-              <div class="cardface cardback royalback"></div>
-              <div class="cardface cardfront"></div>
-            </div>
-            <div class="fauxcard backdeck l3" id="backdeck3">
-              <div class="cardface cardback royalback"></div>
-              <div class="cardface cardfront"></div>
-            </div> -->
           </div>
-          <h2></h2>
-        </div>
-      </div>
+        <button id="resetdeck">Reshuffle</button>
+          
     </main>
   </body>
   <script src="phonedraw.js" type="module"></script>
