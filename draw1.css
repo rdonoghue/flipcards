@@ -148,7 +148,7 @@ button {
 }
 
 .frozen {
-  pointerevents: none;
+  pointer-events: none;
 }
 
 .pivot-r {
