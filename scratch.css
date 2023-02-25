@@ -1,0 +1,245 @@
+body {
+  font-family: "Nanum Myeongjo", serif;
+  color: whitesmoke;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  background: linear-gradient(70deg, rgb(36, 11, 19), rgb(62, 18, 22));
+}
+
+main {
+  margin-top: 4rem;
+}
+
+.playspace {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* justify-content: space-evenly; */
+  gap: 1ch;
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.card {
+  border: 5px solid white;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  height: 500px;
+  width: 300px;
+  background-image: url("./img/royalback-full.png");
+  object-fit: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.99;
+
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* width: 0; */
+  /* flex-basis: 100%; */
+  /* flex-grow: 1; */
+}
+
+.card .fireback {
+  background-image: url("./img/fireback.png");
+}
+/* .cardimage {
+  width: 300px;
+  background-image: url("./img/zhao.png");
+  height: 500px;
+  margin: 0;
+  padding: 0;
+} */
+
+.cardface {
+  background-image: url("./img/royalback-full.png");
+  background-size: cover;
+  height: 500px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  object-fit: cover;
+}
+/* 
+button {
+  all: unset;
+  margin: 0.1rem 0;
+  text-align: center;
+  background: linear-gradient(70deg, rgb(255, 228, 196), rgb(246, 209, 164));
+  color: rgb(22, 22, 22);
+  border-radius: 0.25ch;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.playcard {
+  height: 550px;
+  width: 350px;
+  border: 1px dashed rgb(246, 209, 164);
+  border-radius: 2rem;
+  font-family: "Aboreto", cursive;
+  font-size: 2rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.playcard h2 {
+  margin: 0.5rem auto 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(246, 209, 164);
+  width: 100%;
+}
+
+.flipspace {
+  perspective: 1200px;
+  height: 450px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.cardface {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  border: 0.5rem solid white;
+  box-sizing: border-box;
+  border-radius: 2ch;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+  background-color: blanchedalmond;
+}
+
+.cardfront {
+  transform: rotateY(180deg);
+  background-color: whitesmoke;
+}
+.cardback {
+  background-color: whitesmoke;
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+.cardmeaning {
+  text-align: center;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  font-family: "Aboreto", cursive;
+  font-size: 1.25rem;
+  color: rgb(246, 209, 164);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.invert {
+  rotate: 180deg;
+}
+
+#cardlist p {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0, 1rem;
+  margin: 0;
+}
+
+.fauxcard {
+  width: 100%;
+  height: 100%;
+}
+
+.backdeck {
+  position: absolute;
+  top: 0px;
+}
+
+.l1 {
+  z-index: -30;
+}
+.l2 {
+  z-index: -40;
+  rotate: 2deg;
+}
+.l3 {
+  z-index: -50;
+  rotate: -3deg;
+}
+
+.frozen {
+  pointer-events: none;
+}
+
+.pivot-r {
+  transition: transform 0.25s;
+  transform: rotate(10deg);
+}
+
+.pivot-l {
+  transition: transform 0.25s;
+  transform: rotate(-10deg);
+}
+
+.flopback {
+  transform: rotateY(-180deg) translateX(-800px);
+  background-color: blueviolet;
+}
+
+.card.is-flopped {
+  transform: rotateY(-180deg) translateX(-500px);
+}
+
+.pilefront {
+  transform: rotateY(-180deg) translateX(-500px);
+  background-color: blueviolet;
+}
+
+.vibrate {
+  animation: shake-left-right 0.4s linear both;
+}
+@keyframes shake-left-right {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+} */
