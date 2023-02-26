@@ -16,11 +16,19 @@ var resetButton = document.getElementById("resetdeck");
 resetButton.addEventListener("click", function () {
   resetDeck();
 });
+var leftHandle = document.getElementById("testhandle");
+resetButton.addEventListener("click", function () {
+  pivotLeft(document.getElementById("testhandle").parentElement);
+});
 
 // CORE ACTIONS
 createDeck();
 
 var moveCard = document.getElementsByClassName("card");
+
+function pivotElement(elmnt) {
+  console.log(elmnt.nodename);
+}
 
 for (let k = 0; k < moveCard.length; k++) {
   dragElement(moveCard[k]);
@@ -31,6 +39,7 @@ for (let k = 0; k < moveCard.length; k++) {
 // dragElement(document.getElementById("oberon"));
 
 // FUNCTIONS
+
 function dragElement(elmnt) {
   var pos1 = 0,
     pos2 = 0,
@@ -39,8 +48,6 @@ function dragElement(elmnt) {
   elmnt.onmousedown = dragMouseDown;
 
   function dragMouseDown(e) {
-    elmnt.style.zindex = ++topZ;
-    console.log(elmnt.style.zindex);
     elmnt.parentNode.appendChild(elmnt);
 
     e = e || window.event;
@@ -77,7 +84,7 @@ function createDeck() {
   var location = document.getElementById("playspace");
   for (let k in cardIndex) {
     // console.log(k);
-    console.log(k, cardIndex[k]);
+    // console.log(k, cardIndex[k]);
     let cardID = cardIndex[k];
     let myCard = document.createElement("div");
     myCard.setAttribute("id", cardIndex[k]);
@@ -112,8 +119,8 @@ function deckSetup(deck) {
   for (let k in omitList) {
     let badCardNum = cardList.indexOf(omitList[k]);
     let badCardName = omitList[k];
-    console.log(badCardNum, badCardName);
-    console.log(allCards[badCardName]);
+    // console.log(badCardNum, badCardName);
+    // console.log(allCards[badCardName]);
     delete allCards[badCardName];
     cardList.splice(badCardNum, 1);
   }
