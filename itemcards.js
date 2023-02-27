@@ -16,10 +16,12 @@ var resetButton = document.getElementById("resetdeck");
 resetButton.addEventListener("click", function () {
   resetDeck();
 });
-var leftHandle = document.getElementById("testhandle");
-resetButton.addEventListener("click", function () {
-  pivotLeft(document.getElementById("testhandle").parentElement);
-});
+var leftHandle = document.getElementById("lefthandle");
+leftHandle.onmouseover = function () {
+  console.log("lefthandle initiated");
+  // console.log(leftHandle);
+  pivotLeft(leftHandle);
+};
 
 // CORE ACTIONS
 createDeck();
@@ -39,6 +41,34 @@ for (let k = 0; k < moveCard.length; k++) {
 // dragElement(document.getElementById("oberon"));
 
 // FUNCTIONS
+
+function hasClass(element, clsName) {
+  return (" " + element.className + " ").indexOf(" " + clsName + " ") > -1;
+}
+
+function pivotLeft(elmnt) {
+  console.log("It started");
+  let wrapper = elmnt.parentNode;
+  let wrapClass = wrapper.classList;
+  // let oneOff = wrapClass.indexOf("r0");
+  let nextString = "";
+  console.log(wrapClass[1]);
+
+  // for (let k = 0; k < 361; k += 15) {
+  //   let rString = "r" + k;
+
+  //   if ((k = 0)) {
+  //     nextString = "r15";
+  //   } else {
+  //     nextString = "r" + (k - 15);
+  //   }
+  //   console.log(rString);
+  //   // console.log(hasClass(wrapper, rString));
+  //   if (hasClass(wrapper, rString)) {
+  //     wrapper.classList = "card " + nextString;
+  //   }
+  // }
+}
 
 function dragElement(elmnt) {
   var pos1 = 0,
