@@ -566,6 +566,15 @@ placeCards["garnath"] = {
   blurb:
     "<p>A vast reserve of land near Garnath  which is the King's private reserve.  There is a small village there (Garnath Village) which is entirely funded and designed by Oberon to provide him an ideal retreat location.</p><p>The surrounding area contains some of the most valuable properties in Amber, as noble estates in proximity to the reserve are considered in prime property.</p>",
 };
+placeCards["summerpalace"] = {
+  type: "child",
+  parent: "amber-category",
+  cardname: "The Summer Palace",
+  url: "./img/summerpalace.png",
+  tagline: "Another royal getaway and zoo",
+  blurb:
+    "<p>Located on an island near Bayle territory, this palace serves as a retreat for th eking or queen, and includes numerous wonders, including the king's personal zoo.</p>",
+};
 
 placeCards["brandheim"] = {
   type: "child",
