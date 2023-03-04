@@ -570,10 +570,10 @@ placeCards["summerpalace"] = {
   type: "child",
   parent: "amber-category",
   cardname: "The Summer Palace",
-  url: "./img/summerpalace.png",
-  tagline: "Another royal getaway and zoo",
+  url: "./img/summer.png",
+  tagline: "Royal getaway and zoo",
   blurb:
-    "<p>Located on an island near Bayle territory, this palace serves as a retreat for th eking or queen, and includes numerous wonders, including the king's personal zoo.</p>",
+    "<p>Located on an island near Bayle territory, this palace serves as a retreat for the king or queen, and includes numerous wonders, including the king's personal zoo.</p>",
 };
 
 placeCards["brandheim"] = {
