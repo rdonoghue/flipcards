@@ -368,6 +368,15 @@ otherCards["firestone"] = {
     "<p>The IAAL operations chief, Firestone is a lawyer from Shadow Earth who has found her calling in the halls of Amber.</p>",
 };
 
+otherCards["haim"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Thomas Haim, Esq.",
+  url: "./img/haim.png",
+  tagline: "Service",
+  blurb: "<p>Oberon's personal lawyer.</p>",
+};
+
 // Chaos
 
 otherCards["pyson"] = {

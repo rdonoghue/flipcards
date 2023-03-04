@@ -9,50 +9,56 @@ var underCard = document.getElementById("decktop");
 var cardFront = document.getElementById("mainFront");
 var cardContainer = document.getElementById("carddeck");
 var backDeck = document.getElementById("backdeck1");
-var topZ = 1;
+var borelAngle = -5;
+document.getElementById("borel2").style.transform =
+  "rotate(" + borelAngle + "deg)";
 
 // FUNCTIONAL BUTTONS
 var resetButton = document.getElementById("resetdeck");
 resetButton.addEventListener("click", function () {
   resetDeck();
 });
-var leftHandle = document.getElementById("lefthandle");
-leftHandle.onmouseover = function () {
-  console.log("lefthandle initiated");
-  // console.log(leftHandle);
-  pivotLeft(leftHandle);
-};
+// var leftHandle = document.getElementById("lefthandle");
+// leftHandle.onmouseover = function () {
+//   console.log("lefthandle initiated");
+//   // console.log(leftHandle);
+//   pivotLeft(leftHandle);
+// };
+var leftHandle = document.getElementsByClassName("lefthandle");
+for (let k = 0; k < leftHandle.length; k++) {
+  let currentCard = leftHandle[k];
+  console.log(currentCard);
+  currentCard.onmouseover = function () {
+    console.log("lefthandle initiated");
+    // console.log(leftHandle);
+    pivotLeft(currentCard);
+  };
+}
 
 // CORE ACTIONS
 createDeck();
 
 var moveCard = document.getElementsByClassName("card");
-
-function pivotElement(elmnt) {
-  console.log(elmnt.nodename);
-}
-
 for (let k = 0; k < moveCard.length; k++) {
   dragElement(moveCard[k]);
-  // console.log(moveCard[k]);
 }
-// placeFirstCard();
-// preLoad();
-// dragElement(document.getElementById("oberon"));
 
+console.log(allCards["oberon"]);
 // FUNCTIONS
-
-function hasClass(element, clsName) {
-  return (" " + element.className + " ").indexOf(" " + clsName + " ") > -1;
-}
 
 function pivotLeft(elmnt) {
   console.log("It started");
   let wrapper = elmnt.parentNode;
-  let wrapClass = wrapper.classList;
+  let myID = wrapper.id;
+  let currentAngle = allCards["myID"]["angle"];
+  console.log(currentAngle);
+  console.log(myID);
+  console.log(wrapper);
+  borelAngle += 15;
+  wrapper.style.transform = "rotate(" + borelAngle + "deg)";
+
   // let oneOff = wrapClass.indexOf("r0");
   let nextString = "";
-  console.log(wrapClass[1]);
 
   // for (let k = 0; k < 361; k += 15) {
   //   let rString = "r" + k;
@@ -113,39 +119,39 @@ function dragElement(elmnt) {
 function createDeck() {
   var location = document.getElementById("playspace");
   for (let k in cardIndex) {
-    // console.log(k);
-    // console.log(k, cardIndex[k]);
+    console.log(k);
+    console.log(k, cardIndex[k]);
+    let myKey = cardIndex[k];
     let cardID = cardIndex[k];
+    console.log(allCards[myKey]);
+    console.log(allCards[myKey]["url"]);
+    allCards[myKey]["angle"] = 0;
+    console.log(allCards[myKey]["angle"]);
+
     let myCard = document.createElement("div");
     myCard.setAttribute("id", cardIndex[k]);
     myCard.setAttribute("class", "card");
-    // console.log(allCards[k]["url"]);
+    // console.log(cardIndex[k]["url"]);
+    // console.log(allCards[cardIndex[k]["url"]]);
     // myCard.innerHTML =
     //   "<div class='cardface'><img src='" >
     //   +allCards[k]["url"] + "' /></div><div class='cardback'>";
 
-    myCard.innerHTML = "<div class='cardface " + cardID + "'></div>";
+    myCard.innerHTML =
+      "<div class='cardface " +
+      cardID +
+      "'></div><div class='lspot lefthandle'></div>";
     // <img src='./img/zhao.png' class='cardimage' />
     // /div>";
     location.appendChild(myCard);
   }
 }
 
-function preLoad() {
-  var myURL;
-  var myString = "";
-  for (let k = 0; k < cardIndex.length; k++) {
-    myURL = allCards[cardIndex[k]]["url"];
-    // images[k] = new Image();
-    // images[k].url = myURL;
-    myString = myString + "<img src='" + myURL + "'>";
-  }
-  document.getElementById("preloader").innerHTML = myString;
-}
-
 function deckSetup(deck) {
   let cardList = Object.keys(deck);
-
+  for (let k in deck) {
+    deck[k]["angle"] = 0;
+  }
   for (let k in omitList) {
     let badCardNum = cardList.indexOf(omitList[k]);
     let badCardName = omitList[k];
