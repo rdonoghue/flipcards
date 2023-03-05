@@ -191,7 +191,7 @@ amberCards["alaric"] = {
   parent: "milesia-category",
   tagline: "Reveller",
   blurb:
-    "<p>Alaric has done everything in his power to avoid responsibility from the time that he Test trump call and a thousand worlds away, Alaric vowed to get away from the endless conflicts the family found itself in and to live his life in quiet, hedonistic glory. This plan somewhat backfired, as it was Alaric who first found the shadow Earth that has become a second home for many of the family.</p><p>Alaric’s excursions and fancies into every desire imaginable inadvertently turned the prince into a master shadow manipulator. This ability, combined with motivation from Milesia’s murder, fueled Alaric’s contributions in the Red Rebellion and Abyssal reach wars. The speed in which he moved armies through the shadows is still talked of among some of the family as a thing of legend.</p>",
+    "<p>Alaric has done everything in his power to avoid responsibility.  Alaric vowed to get away from the endless conflicts the family found itself in and to live his life in quiet, hedonistic glory. This plan somewhat backfired, as it was Alaric who first found the shadow Earth that has become a second home for many of the family.</p><p>Alaric’s excursions and fancies into every desire imaginable inadvertently turned the prince into a master shadow manipulator. This ability, combined with motivation from Milesia’s murder, fueled Alaric’s contributions in the Red Rebellion and Abyssal reach wars. The speed in which he moved armies through the shadows is still talked of among some of the family as a thing of legend.</p>",
 };
 
 // Eira Shaol
