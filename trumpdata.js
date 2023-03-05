@@ -139,7 +139,7 @@ amberCards["cethlenn"] = {
   type: "child",
   url: "../img/cethlenn.png",
   parent: "fina-category",
-  tagline: "Reflection",
+  tagline: "Enigma",
   blurb:
     "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger. She’s never quite been certain who the danger would come from -- Oberon? Tir? Her mother’s loyal retainers? Political machinations she’s unaware of? -- but the fact remains that she grew up ever-aware that calling attention to herself would be tantamount to suicide. Luckily, in Tir, it was easy to learn how to drift by silently.</p><p>When Princess Cethlenn, the long-lost daughter of Fina, was recognized and welcomed into Amber’s court by King Oberson, Cethlenn was perturbed to discover that she had no knowledge of the double taking her place. Her memories of that era are dim, flickers and moments and half-caught glimpses. She came back to herself in the Forest of Arden with Suil Lier, and grounded herself on Tir Na Nog’th’s Pattern hours later. Her false twin died, and Cethlenn survived the Pattern but lost her ability to remain in Tir after sunrise.</p><p>Since then, Cethlenn has slipped into the role of Princess of Amber, which another played before her.</p>",
 };
@@ -170,7 +170,7 @@ amberCards["borel"] = {
   type: "child",
   url: "../img/borel.png",
   parent: "milesia-category",
-  tagline: "Abyss",
+  tagline: "Gatekeeper",
   blurb:
     "<p>Third child and first son of Oberon and Ophelia, Borel spends most of his time in what he describes as 'his studies' but which others refer to as 'plugging holes in the universe'.  He is one of the more sorcerously knowledgeable members of the family, but consistently defers to his hister on such matters. </a>.",
 };
@@ -211,7 +211,7 @@ amberCards["liabelle"] = {
   type: "child",
   url: "/img/liabelle.png",
   parent: "eirashaol-category",
-  tagline: "Resolver",
+  tagline: "Lighthouse",
   blurb:
     "<p>Liabelle is never not at war, it is only the means which change</p>",
 };
