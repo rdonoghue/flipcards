@@ -376,3 +376,13 @@
   background-image: url("img/summer.png");
   background-size: cover;
 }
+
+.besmer {
+  background-image: url("img/besmer.png");
+  background-size: cover;
+}
+
+.hargin {
+  background-image: url("img/hargin.png");
+  background-size: cover;
+}
