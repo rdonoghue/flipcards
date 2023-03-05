@@ -8,7 +8,7 @@ body {
   display: grid;
   /* grid-template-columns: 150px 300px 300px 300px 300px; */
   grid-template-columns: 150px repeat(4, 300px);
-  grid-template-rows: repeat(15, 450px);
+  grid-template-rows: repeat(16, 450px);
 
   grid-gap: 30px;
   /*  background-color: #fff; */
@@ -82,6 +82,10 @@ body {
 
 .extra-tall {
   grid-row-end: span 3;
+}
+
+.extra-extra-tall {
+  grid-row-end: span 4;
 }
 /* 
 .stoneback {

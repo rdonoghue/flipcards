@@ -325,7 +325,17 @@ otherCards["ilyana"] = {
   cardname: "Ilyana Karm",
   url: "./img/ilyana.png",
   tagline: "Balance",
-  blurb: "<p></p>",
+  blurb: "<p>Lady of House Karm, currently in want of a Husband.</p>",
+};
+
+otherCards["alvina"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Alvina Karm",
+  url: "./img/alvina.png",
+  tagline: "Marked",
+  blurb:
+    "<p>Alvina Karm is the daughter of Richard Karm and Belinda Bayle and a veteran of the Red Rebellion and Abyssal Reach wars. A prodigy of Brandheim, Alvina's ability to control the power of the Crystal Scale is second only to her legendary inability to be killed. This particular legend culminates in Alvina's initiation as an Abyss Walker in a failed attempt to save the Outlands realm of Jugo from corruption inflicted by Chaos.</p><p>After the wars, Alvina's rare ability as a shadow walker outside of the royal family means she often serves as Karm's hand in affairs outside of Amber. The resulting reputation as a fixer means her presence abroad is rarely a sign of peace and stability in whatever realm she currently inhabits.</p>",
 };
 
 otherCards["desdemona"] = {
