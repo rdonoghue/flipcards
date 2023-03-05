@@ -380,7 +380,7 @@ otherCards["haim"] = {
 otherCards["besmer"] = {
   type: "child",
   parent: "ambercourt-category",
-  cardname: "Headmaster Besmer Hara",
+  cardname: "Besmer Hara",
   url: "./img/besmer.png",
   tagline: "Instruction",
   blurb: "<p>Headmaster of Brandheim Academy.</p>",
