@@ -377,6 +377,25 @@ otherCards["haim"] = {
   blurb: "<p>Oberon's personal lawyer.</p>",
 };
 
+otherCards["besmer"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Headmaster Besmer Hara",
+  url: "./img/besmer.png",
+  tagline: "Instruction",
+  blurb: "<p>Headmaster of Brandheim Academy.</p>",
+};
+
+otherCards["hargin"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Professor Hargin",
+  url: "./img/hargin.png",
+  tagline: "Curiosity",
+  blurb:
+    "<p>A professor at Brandheim Academy and a former student of Borel.</p>",
+};
+
 // Chaos
 
 otherCards["pyson"] = {
