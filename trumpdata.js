@@ -244,7 +244,7 @@ amberCards["ava"] = {
   type: "child",
   url: "../img/Ava.png",
   parent: "unknown-category",
-  tagline: "Pirate Queen",
+  tagline: "Pirate",
   blurb:
     "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
@@ -534,6 +534,16 @@ otherCards["gramble"] = {
   tagline: "Bargainer",
   blurb:
     "<p>There is some debate among circles on whether or not the demon Gramble is a nuisance or a serious threat in the court. Having declared itself Ambassador to the flame of Chaos, the demon rarely seems interested in politics and more in causing headaches. Showing up in varying forms from time to time, a common giveaway is when someone arrives claiming to be an ambassador from Weirmonken or Ghenesh since both lands have withheld sending an ambassador in protest of Amber’s domination of their respective territories. Efforts to kill the demon have been sub-optimal.</p>",
+};
+
+otherCards["gael"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Gael",
+  url: "./img/gael.png",
+  tagline: "Caretaker",
+  blurb:
+    "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
 };
 
 const placeCards = {};
