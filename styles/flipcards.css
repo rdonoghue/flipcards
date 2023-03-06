@@ -6,7 +6,7 @@ body {
 
 .gridbox {
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 8fr;
   gap: 3rem;
   margin-top: 4rem;
 }
@@ -26,7 +26,7 @@ body {
   font-family: "Aboreto", cursive;
   text-align: center;
 
-  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   box-sizing: border-box;
 }
 
