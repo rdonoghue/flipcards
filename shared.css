@@ -84,3 +84,57 @@ header a:visited {
 header a {
   color: rgb(246, 209, 164);
 }
+
+.hamburger {
+  /* visibility: hidden; */
+  display: none;
+  cursor: pointer;
+}
+.menuburger {
+  height: 2rem;
+  width: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  visibility: hidden;
+}
+
+@media (max-width: 48rem) {
+  body {
+    margin: 0;
+  }
+  header {
+    padding: 0;
+    margin: 0;
+  }
+  header ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(62, 18, 22);
+    z-index: 100;
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  header .active {
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

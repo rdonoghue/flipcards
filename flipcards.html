@@ -12,11 +12,19 @@
     <link rel="stylesheet" href="flipcards.css" />
     <link rel="stylesheet" href="namedcards.css" />
 
+    <script src="shared.js" type="module" defer></script>
+
+
   </head>
   <body>
+    <div class="overlay"></div>
     <header>
+      <div class="hamburger">
+ <img src="img/menu.png" class="menuburger">
+  
+            </div>
       
-        <ul>
+        <ul id="navigator">
           <li><a href="index.html">Scions of Amber</a></li>
           <li><a href="cards-other.html">Others of Note</a></li>
           <li><a href="places.html">Places</a></li>
@@ -27,7 +35,380 @@
         </ul>
     </header>
 
-    <div class="wrapper">
+    <div class="gridbox">
+      <div class="box">The Crown</div>
+      <div class="cards">
+        <div class="card">
+          <div class="content">
+            <div class="front royalback"></div>
+            <div class="back oberon"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="front royalback"></div>
+            <div class="back queen"></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="box">Queens of Old</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front stoneback"></div>
+              <div class="back velka"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front starback"></div>
+              <div class="back fina"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back milesia"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Children of Stone</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front stoneback"></div>
+              <div class="back lorec"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front stoneback"></div>
+              <div class="back aurielle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Children of Dreams</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front starback"></div>
+              <div class="back suillir"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front starback"></div>
+              <div class="back fenella"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front starback"></div>
+              <div class="back roichard"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front starback"></div>
+              <div class="back cethlenn"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Children of Fire</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back ciara"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back borel"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back bevin"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back alaric"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Children of Waves</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front waveback"></div>
+              <div class="back pauol"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front waveback"></div>
+              <div class="back liabelle"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front waveback"></div>
+              <div class="back diolinda"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">The Lost</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front stoneback"></div>
+              <div class="back anderon"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front stoneback"></div>
+              <div class="back bastard"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front fireback"></div>
+              <div class="back ophelia"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Others</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front shipback"></div>
+              <div class="back ava"></div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="box">Amber</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back salem"></div>
+            </div>
+          </div>
+    
+         <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back edward"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back arlan"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back richard"></div>
+            </div>
+          </div>
+    
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back ilyana"></div>
+            </div>
+          </div>
+    
+         <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back desdemona"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back rockscomb"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back kahlverian"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back haim"></div>
+            </div>
+          </div> 
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back firestone"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back besmer"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back hargin"></div>
+            </div>
+          </div>
+    
+    
+          <div class="card">
+            <div class="content">
+              <div class="front amberback"></div>
+              <div class="back alvina"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Lasir Caite</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back mikaya"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back pyson"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back samson"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back strowan"></div>
+            </div>
+          </div>
+    
+    
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back galina"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back simon"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back irina"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front serpentback"></div>
+              <div class="back richeza"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">Shadow</div>
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back prudence"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back almasi"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back zhao"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back wesley"></div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back lucatiel"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back gramble"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="front shadowback"></div>
+              <div class="back gael"></div>
+            </div>
+          </div>
+        </div>
+
+    
+    
+
+      </div>
+
+
+
+    </div>
+
+    <!-- <div class="wrapper">
       <div class="box">The Crown</div>
       <div class="card">
         <div class="content">
@@ -395,7 +776,7 @@
 
 
 
-    </div>  <!-- end of wrapper -->
+    </div>  end of wrapper -->
     
   </body>
 </html>

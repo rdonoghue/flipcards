@@ -11,10 +11,27 @@
 
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="cardpage.css" />
+  
+
+    <script
+    src="cardpage.js"
+    type="module"
+    id="callcards"
+    handoff="othercards"
+    defer
+  ></script>
+  <script src="shared.js" type="module" defer></script>
+
   </head>
   <body tag="other">
+    <div class="overlay"></div>
     <header>
-      <ul>
+      <div class="hamburger">
+ <img src="img/menu.png" class="menuburger">
+  
+            </div>
+      
+        <ul id="navigator">
         <li><a href="index.html">Scions of Amber</a></li>
         <li class="active"><a href="cards-other.html">Others of Note</a></li>
         <li><a href="places.html">Places</a></li>
@@ -60,10 +77,5 @@
       </div>
     </main>
   </body>
-  <script
-    src="cardpage.js"
-    type="module"
-    id="callcards"
-    handoff="othercards"
-  ></script>
+
 </html>
