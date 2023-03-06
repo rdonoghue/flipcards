@@ -250,20 +250,29 @@ amberCards["ava"] = {
 };
 const amberCourtCards = {};
 
+amberCourtCards["ambernobility"] = {
+  type: "parent",
+  category: "ambernobility-category",
+  cardname: "The Nobility of Amber",
+  url: "../img/royalback-full.png",
+  tagline: "",
+  blurb: "The many folk of Amber",
+};
+
 amberCourtCards["ambercourt"] = {
   type: "parent",
   category: "ambercourt-category",
   cardname: "The Court of Amber",
   url: "../img/royalback-full.png",
   tagline: "",
-  blurb: "The many folk of Amber",
+  blurb: "Other figures of the court and city",
 };
 
 // COurt
 
 amberCourtCards["salem"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Salem Chantris",
   url: "../img/salem.png",
   tagline: "Tradition",
@@ -273,7 +282,7 @@ amberCourtCards["salem"] = {
 
 amberCourtCards["edward"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Edward Kolvir",
   url: "../img/edward.png",
   tagline: "Opportunity",
@@ -282,7 +291,7 @@ amberCourtCards["edward"] = {
 
 amberCourtCards["arlan"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Arlan Feldane",
   url: "../img/arlan.png",
   tagline: "Youth",
@@ -292,7 +301,7 @@ amberCourtCards["arlan"] = {
 
 amberCourtCards["richard"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Richard Karm",
   url: "../img/richard.png",
   tagline: "Duty",
@@ -302,7 +311,7 @@ amberCourtCards["richard"] = {
 
 amberCourtCards["ilyana"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Ilyana Karm",
   url: "../img/ilyana.png",
   tagline: "Balance",
@@ -311,7 +320,7 @@ amberCourtCards["ilyana"] = {
 
 amberCourtCards["alvina"] = {
   type: "child",
-  parent: "ambercourt-category",
+  parent: "ambernobility-category",
   cardname: "Alvina Karm",
   url: "../img/alvina.png",
   tagline: "Marked",
@@ -408,6 +417,15 @@ amberCourtCards["filquoir"] = {
 
 const otherCards = {};
 
+otherCards["goldencircle"] = {
+  type: "parent",
+  category: "goldencircle-category",
+  cardname: "The Golden Circle",
+  url: "../img/goldencircle.png",
+  tagline: "",
+  blurb: "Ambassadors and citizens of the Golden Circle.",
+};
+
 otherCards["lasaircaite"] = {
   type: "parent",
   category: "lasaircaite-category",
@@ -424,6 +442,47 @@ otherCards["shadow"] = {
   tagline: "",
   blurb: "",
 };
+
+// Golden Circle
+
+otherCards["zhao"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Zhao Lihua",
+  url: "../img/zhao.png",
+  tagline: "Enlightenment",
+  blurb:
+    "<p>A representative of the Jade Empire from the imperial seat of Penglai, Zhao Lihua has been honored to speak with the voice of the Emperor on matters of state at the court of Amber. Zhao Lihua has additional duties beyond matters of state, recording interesting tales from other shadows of the Golden Circle and seeking cultural exchanges as part of the Great Enlightenment ordered by Emperor Ban. </p>",
+};
+otherCards["almasi"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Hamoud Almasi",
+  url: "../img/almasi.png",
+  tagline: "Harmony",
+  blurb:
+    "<p>The Alhambran Ambassador professes to have no desires beyond experiencing the splendors of Amber and standing shoulder to shoulder in harmony with the royal family of the one true kingdom. That Alhambra holds strong monopolies in the spices, rare metals, and glass traded in Amber and the Golden Circle is not a secret. A lot of Ambassador Almasi’s efforts circle around highlighting the value of utilizing trade for mutual benefit rather than allowing other shadows to get a foothold in these commodities.  </p>",
+};
+otherCards["prudence"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Prudence Taylor",
+  url: "../img/prudence.png",
+  tagline: "Propriety",
+  blurb:
+    "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
+};
+
+otherCards["wesley"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Kathryn Wesley",
+  url: "../img/wesley.png",
+  tagline: "Outnumbered",
+  blurb:
+    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
+};
+
 // Chaos
 
 otherCards["pyson"] = {
@@ -514,25 +573,6 @@ otherCards["richeza"] = {
 };
 
 // Shadow
-otherCards["prudence"] = {
-  type: "child",
-  parent: "shadow-category",
-  cardname: "Prudence Taylor",
-  url: "../img/prudence.png",
-  tagline: "Propriety",
-  blurb:
-    "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
-};
-
-otherCards["wesley"] = {
-  type: "child",
-  parent: "shadow-category",
-  cardname: "Kathryn Wesley",
-  url: "../img/wesley.png",
-  tagline: "Outnumbered",
-  blurb:
-    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
-};
 
 otherCards["lucatiel"] = {
   type: "child",
@@ -542,25 +582,6 @@ otherCards["lucatiel"] = {
   tagline: "Mercenary",
   blurb:
     "<p>Lucatiel is an Abyss Hunter famous for not being one of the beings of the Abyssal Reach. A shadow dweller, she picked up the cursed armor of a fallen hunter who had tried and failed to stave off the corruption of the Abyss within her shadow of Mirrah. While Mirrah fell, Lucatiel’s vengeance has made her a figure within the Reach. She serves as a mercenary to combat the Abyss if the Abyssal Reach is not able to respond quickly enough to save a shadow. </p>",
-};
-
-otherCards["zhao"] = {
-  type: "child",
-  parent: "shadow-category",
-  cardname: "Zhao Lihua",
-  url: "../img/zhao.png",
-  tagline: "Enlightenment",
-  blurb:
-    "<p>A representative of the Jade Empire from the imperial seat of Penglai, Zhao Lihua has been honored to speak with the voice of the Emperor on matters of state at the court of Amber. Zhao Lihua has additional duties beyond matters of state, recording interesting tales from other shadows of the Golden Circle and seeking cultural exchanges as part of the Great Enlightenment ordered by Emperor Ban. </p>",
-};
-otherCards["almasi"] = {
-  type: "child",
-  parent: "shadow-category",
-  cardname: "Hamoud Almasi",
-  url: "../img/almasi.png",
-  tagline: "Harmony",
-  blurb:
-    "<p>The Alhambran Ambassador professes to have no desires beyond experiencing the splendors of Amber and standing shoulder to shoulder in harmony with the royal family of the one true kingdom. That Alhambra holds strong monopolies in the spices, rare metals, and glass traded in Amber and the Golden Circle is not a secret. A lot of Ambassador Almasi’s efforts circle around highlighting the value of utilizing trade for mutual benefit rather than allowing other shadows to get a foothold in these commodities.  </p>",
 };
 
 otherCards["gramble"] = {

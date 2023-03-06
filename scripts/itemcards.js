@@ -80,7 +80,7 @@ function getKeyboardInput(event) {
     resetButton.style.visibility = "visible";
     helpButton.style.visibility = "visible";
     pageHeader.style.visibility = "visible";
-  } else if (event.key == "r") {
+  } else if (event.key == "t") {
     activeCard.style.top = 0;
     activeCard.style.left = 0;
     cardRotationValue = 0;
