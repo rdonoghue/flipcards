@@ -406,6 +406,25 @@ otherCards["hargin"] = {
     "<p>A professor at Brandheim Academy and a former student of Borel.</p>",
 };
 
+otherCards["ramirez"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Ramirez",
+  url: "./img/ramirez.png",
+  tagline: "Loyalty",
+  blurb: "<p>Oberon's favorite falcon. Missing and greatly missed.</p>",
+};
+
+otherCards["filquoir"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Filquoir",
+  url: "./img/filquoir.png",
+  tagline: "Cat",
+  blurb:
+    "<p>Filquoir may be the most exotic attendee of the court of Amber. A sentient cat with plush fur and brilliant sapphire eyes, the being has been known to bring incredibly powerful artifacts such as rings to those who show favor. Rumor has it that equally incredible bad luck comes across those who try to harm the flamboyant feline. Her laughter often rings throughout social events, as well as the begging for fish. Filquoir is rumored to have been around since the founding of Amber and has also been a fixture for the children of Oberon who grew up or resided in the castle.</p>",
+};
+
 // Chaos
 
 otherCards["pyson"] = {
