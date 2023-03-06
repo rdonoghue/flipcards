@@ -32,6 +32,8 @@ a:visited {
   color: skyblue;
 }
 header {
+  font-family: "Nanum Myeongjo", serif;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
