@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico?" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -8,10 +8,19 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/cardpage.css" />
+    <link rel="stylesheet" href="styles/namedcards.css" />
 
-    <link rel="stylesheet" href="cardpage.css" />
-    <link rel="stylesheet" href="namedcards.css" />
+    <script
+    src="scripts/cardpage.js"
+    type="module"
+    handoff="ambercards"
+    id="callcards"
+  ></script>
+  <script src="scripts/shared.js" type="module" defer></script>
+
+
   </head>
   <body tag="amber">
     <div class="overlay"></div>
@@ -23,6 +32,8 @@
       
         <ul id="navigator">
         <li class="active"><a href="index.html">Scions of Amber</a></li>
+        <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
+
         <li><a href="cards-other.html">Others of Note</a></li>
         <li><a href="places.html">Places</a></li>
         <li><a href="flipcards.html">The Spread</a></li>
@@ -71,10 +82,5 @@
     </main>
   </body>
 
-  <script
-    src="cardpage.js"
-    type="module"
-    handoff="ambercards"
-    id="callcards"
-  ></script>
+
 </html>

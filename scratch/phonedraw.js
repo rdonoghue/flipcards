@@ -1,7 +1,7 @@
 "use strict";
 // INITIAL VALUES
 const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
-import { amberCards, otherCards } from "./trumpdata.js";
+import { amberCards, otherCards } from "./scripts/trumpdata.js";
 var cardObject = Object.assign(amberCards, otherCards);
 var liveDeck = deckSetup(cardObject);
 console.log("Clean Deck: " + liveDeck);

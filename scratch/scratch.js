@@ -1,7 +1,7 @@
 "use strict";
 // INITIAL VALUES
 const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
-import { amberCards, otherCards } from "./trumpdata.js";
+import { amberCards, otherCards } from "../scripts/trumpdata.js";
 var allCards = Object.assign(amberCards, otherCards);
 var cardIndex = deckSetup(allCards);
 var cardBack = document.getElementById("mainBack");

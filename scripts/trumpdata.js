@@ -8,7 +8,7 @@ amberCards["oberon"] = {
   type: "parent",
   category: "oberon-category",
   cardname: "Oberon",
-  url: "./img/oberon.png",
+  url: "../img/oberon.png",
   tagline: "The King",
   blurb:
     "<p>King of Amber. Creator of the Pattern. Conqueror of all reality. Sitting upon a great throne with a greater crown wrought of silver with seven high points, studded with emeralds, and huge rubies at either temple. The jewel of judgment rests upon his chest, supported around broad shoulders by a thick golden chain.</p><p>Father.</p><p>  Oberon as a father is open to many interpretations and possibilities. Oberon is a distant father. Oberon is a loving father. Oberon is a manipulator. Oberon is a teacher. Any, all, or none of these may be true. Oberon is complicated.</p><p>  What can be said about Oberon without interpretation is that those not of royal blood within the court of Amber are terrified of him. He was ruthless enough to win wars that the subjugated are still trying to understand how they could have possibly lost. He was powerful enough to slay demons, ancient dragons, and self- proclaimed gods on the fields of battle.</p>",
@@ -19,7 +19,7 @@ amberCards["velka"] = {
 
   category: "velka-category",
   cardname: "Velka",
-  url: "./img/velka.png",
+  url: "../img/velka.png",
   tagline: "Memory",
   blurb:
     "<p>The children of Velka are older than recorded history. Even in the stasis of Amber, only weather-worn statues are any reminder of the first queen of the one true world. Two of her children died - the nameless bastard from a supposed affair who grew to be worshiped as a god of war, and Prince Anderon. The Anderon Hall district of Amber is named in his honor. Two of Velka’s surviving children, Lorec and Aurielle, have been Oberon’s representatives overseeing the surrender of the Abyssal Reach. They have only recently returned to take their place within the court.</p>",
@@ -29,7 +29,7 @@ amberCards["fina"] = {
   type: "parent",
   category: "fina-category",
   cardname: "Fina",
-  url: "./img/fina.png",
+  url: "../img/fina.png",
   tagline: "Dreams",
   blurb:
     "<p>Literal portraits of expectation, the children of Fina were crafted from canvas to address the failings of the prior generation. While flesh and blood, they are still tied to their portraits within the great gallery of Amber. The gallery is, outside of the great Pattern within Kolvir, the most heavily guarded area of the palace as a result. Only one portrait has ever been known to be destroyed, resulting in someone’s death - that of Fina herself, destroyed by Oberon. Three portraits of children between Fina and Oberon were created; Suil Leir is the oldest, with Fenella and Roichard created shortly before Fina’s death. The rumor of a fourth portrait being stolen after Fina’s death are just rumors, of course.</p><p>As a child of Fina, reality and shadow are as thin and malleable as a piece of paper. They are master creators and artists, pulling items from thin air or otherwise creating through canvas, song, and the written word.</p>",
@@ -39,7 +39,7 @@ amberCards["milesia"] = {
   type: "parent",
   category: "milesia-category",
   cardname: "Milesia",
-  url: "./img/milesia.png",
+  url: "../img/milesia.png",
   tagline: "Chaos",
   blurb:
     "<p>A heritage born from the Void at the end of shadow known as the Lasair Caite, Milesia’s children were raised to know both the power of the Amber and the lightless magic of the Outlands. Milesia’s betrayal of her homeland aided greatly in Amber’s conquest of such a distant foe, and the end of Amber’s campaigns seemed imminent. There is a court rumbling, though, that betrayal breeds betrayal, as Milesia was murdered by her oldest daughter Ophelia. The flame of Chaos was born from Milesia’s death, and another era of war against Amber began.</p>",
@@ -49,7 +49,7 @@ amberCards["eirashaol"] = {
   type: "parent",
   category: "eirashaol-category",
   cardname: "Eira Shaol",
-  url: "./img/eirashaol.png",
+  url: "../img/eirashaol.png",
   tagline: "The Queen",
   blurb:
     "<p>Queen of Rebma as long as there has been a Rebma, Eira Shaol is an ancient influence upon Amber and the shadow seas. Her greatest efforts have been upon ensuring stability for the underwater kingdom, given that the Chaos of the above land is inevitably reflected upon her kingdom. As a result, Rebma routinely intervenes on Amber’s behalf to prevent the results of endless conflict from reaching her sands. Eira’s marriage to Oberon was the result of a negotiated partnership with the threat the flame of Chaos posed Amber through the Red Rebellion.</p><p>The children of Eira Shaol have blood claims to both the thrones of Amber and Rebma. This, along with Eira Shaol still being married to Oberon, has led to a unique amount of attention being provided the children in their relatively short lives.</p><p>While the queen is technically protected by the Crows, she also has a loyal personal guard lead by the The Kahlverian.</p>",
@@ -58,7 +58,7 @@ amberCards["unknown"] = {
   type: "parent",
   category: "unknown-category",
   cardname: "Unknown",
-  url: "./img/unknown-web.png",
+  url: "../img/unknown-web.png",
   tagline: "The Illegitimate",
   blurb: "Oberon's byblows.",
 };
@@ -67,7 +67,7 @@ amberCards["dworkin"] = {
   type: "parent",
   category: "dworkin-category",
   cardname: "Dworkin",
-  url: "./img/dworkin.png",
+  url: "../img/dworkin.png",
   tagline: "Vision",
   blurb:
     "<p>Formerly the royal court sorcerer, the hunchback Dworkin ceded the role in recent years to Princess Ciara . Becoming more elusive as a result, the old dwarf tends to operate by sending trusted servants and proxies. That Dworkin is classified as a faction and not as a courtier is because he tends to be heavily involved in assigning seemingly mundane and obtuse tasks to other powers and factions, who are eager to do the reclusive figure a favor.<p></p>Dworkin's representatives, beyond engaging with those in the court, are often seen running a mix of errands in the cities of Amber and the Golden Circle. Wearing traditional red cloaks with the Unicorn embroidered in gold, Dworkin's proxies also run an art gallery in the lower city dedicated to Dworkin's psychedelic paintings and the Masters brand of oils that Dworkin creates and sells.</p>",
@@ -232,7 +232,7 @@ amberCards["diolinda"] = {
 amberCards["bastard"] = {
   cardname: "The Bastard",
   type: "child",
-  url: "./img/bastard.png",
+  url: "../img/bastard.png",
   parent: "unknown-category",
   tagline: "Forgotten",
   blurb:
@@ -248,190 +248,189 @@ amberCards["ava"] = {
   blurb:
     "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
+const amberCourtCards = {};
 
-const otherCards = {};
-
-otherCards["ambercourt"] = {
+amberCourtCards["ambercourt"] = {
   type: "parent",
   category: "ambercourt-category",
   cardname: "The Court of Amber",
-  url: "./img/royalback-full.png",
+  url: "../img/royalback-full.png",
   tagline: "",
   blurb: "The many folk of Amber",
 };
 
-otherCards["lasaircaite"] = {
-  type: "parent",
-  category: "lasaircaite-category",
-  cardname: "The Laisir Caite",
-  url: "./img/lasaircaite.png",
-  tagline: "",
-  blurb: "People of Chaos",
-};
-
-otherCards["shadow"] = {
-  type: "parent",
-  category: "shadow-category",
-  cardname: "Denizens of Shadow",
-  url: "./img/shadow.png",
-  tagline: "",
-  blurb: "",
-};
-
 // COurt
 
-otherCards["salem"] = {
+amberCourtCards["salem"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Salem Chantris",
-  url: "./img/salem.png",
+  url: "../img/salem.png",
   tagline: "Tradition",
   blurb:
     "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
 };
 
-otherCards["edward"] = {
+amberCourtCards["edward"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Edward Kolvir",
-  url: "./img/edward.png",
+  url: "../img/edward.png",
   tagline: "Opportunity",
   blurb: "<p>Newly appointed Duke of Kolvir.</p>",
 };
 
-otherCards["arlan"] = {
+amberCourtCards["arlan"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Arlan Feldane",
-  url: "./img/arlan.png",
+  url: "../img/arlan.png",
   tagline: "Youth",
   blurb:
     "<p>The youngest of the Feldane line, Oberon picked Arlan as the most recent cup bearer after the Red Rebellion.</p>",
 };
 
-otherCards["richard"] = {
+amberCourtCards["richard"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Richard Karm",
-  url: "./img/richard.png",
+  url: "../img/richard.png",
   tagline: "Duty",
   blurb:
     "<p>Master at arms Richard Karm is the court-appointed military officer responsible for overseeing the training of military units within the army, including the city watch, local garrisons, and the royal guard. </p>",
 };
 
-otherCards["ilyana"] = {
+amberCourtCards["ilyana"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Ilyana Karm",
-  url: "./img/ilyana.png",
+  url: "../img/ilyana.png",
   tagline: "Balance",
   blurb: "<p>Lady of House Karm, currently in want of a Husband.</p>",
 };
 
-otherCards["alvina"] = {
+amberCourtCards["alvina"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Alvina Karm",
-  url: "./img/alvina.png",
+  url: "../img/alvina.png",
   tagline: "Marked",
   blurb:
     "<p>Alvina Karm is the daughter of Richard Karm and Belinda Bayle and a veteran of the Red Rebellion and Abyssal Reach wars. A prodigy of Brandheim, Alvina's ability to control the power of the Crystal Scale is second only to her legendary inability to be killed. This particular legend culminates in Alvina's initiation as an Abyss Walker in a failed attempt to save the Outlands realm of Jugo from corruption inflicted by Chaos.</p><p>After the wars, Alvina's rare ability as a shadow walker outside of the royal family means she often serves as Karm's hand in affairs outside of Amber. The resulting reputation as a fixer means her presence abroad is rarely a sign of peace and stability in whatever realm she currently inhabits.</p>",
 };
 
-otherCards["desdemona"] = {
+amberCourtCards["desdemona"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Desdemona",
-  url: "./img/desdemona.png",
+  url: "../img/desdemona.png",
   tagline: "Secrets",
   blurb:
     "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: “We are not concerned with the affairs of others.</p>",
 };
 
-otherCards["rockscomb"] = {
+amberCourtCards["rockscomb"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Rockscomb",
-  url: "./img/rockscomb.png",
+  url: "../img/rockscomb.png",
   tagline: "Inspiration",
   blurb:
     "<p>David Rockscomb was a record producer in a Very 80s shadow that did not survive one of the problems that Borel deals with, and was one of the survivors that Borel got out. He was given the bar & music venue 'Making Waves' in Amber City to run, where he writes music and supports artists and also acts as Borel's personal Jim Steinman. </p><p>Absolutely the kind of guy who smokes cigars and calls people 'baby'.</p>",
 };
 
-otherCards["kahlverian"] = {
+amberCourtCards["kahlverian"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "The Kahlverian",
-  url: "./img/kahlverian.png",
+  url: "../img/kahlverian.png",
   tagline: "Protection",
   blurb:
     "<p>The Kahlverian is named for an extinct clan of the Moonriders of Ghenesh and is said to have come to Amber centuries ago after a disagreement with her people. The Kahlverian has a reputation for talented bloodshed usually reserved for the royal family and left the Wardens at Oberon’s request to protect Eira Shaol upon the Queen’s marriage to Oberon. The Kahlverian is almost always at the Queen’s side.  </p>",
 };
 
-otherCards["firestone"] = {
+amberCourtCards["firestone"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Angela Firestone",
-  url: "./img/firestone.png",
+  url: "../img/firestone.png",
   tagline: "Law",
   blurb:
     "<p>The IAAL operations chief, Firestone is a lawyer from Shadow Earth who has found her calling in the halls of Amber.</p>",
 };
 
-otherCards["haim"] = {
+amberCourtCards["haim"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Thomas Haim, Esq.",
-  url: "./img/haim.png",
+  url: "../img/haim.png",
   tagline: "Service",
   blurb: "<p>Oberon's personal lawyer.</p>",
 };
 
-otherCards["besmer"] = {
+amberCourtCards["besmer"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Besmer Hara",
-  url: "./img/besmer.png",
+  url: "../img/besmer.png",
   tagline: "Instruction",
   blurb: "<p>Headmaster of Brandheim Academy.</p>",
 };
 
-otherCards["hargin"] = {
+amberCourtCards["hargin"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Professor Hargin",
-  url: "./img/hargin.png",
+  url: "../img/hargin.png",
   tagline: "Curiosity",
   blurb:
     "<p>A professor at Brandheim Academy and a former student of Borel.</p>",
 };
 
-otherCards["ramirez"] = {
+amberCourtCards["ramirez"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Ramirez",
-  url: "./img/ramirez.png",
+  url: "../img/ramirez.png",
   tagline: "Loyalty",
   blurb: "<p>Oberon's favorite falcon. Missing and greatly missed.</p>",
 };
 
-otherCards["filquoir"] = {
+amberCourtCards["filquoir"] = {
   type: "child",
   parent: "ambercourt-category",
   cardname: "Filquoir",
-  url: "./img/filquoir.png",
+  url: "../img/filquoir.png",
   tagline: "Cat",
   blurb:
     "<p>Filquoir may be the most exotic attendee of the court of Amber. A sentient cat with plush fur and brilliant sapphire eyes, the being has been known to bring incredibly powerful artifacts such as rings to those who show favor. Rumor has it that equally incredible bad luck comes across those who try to harm the flamboyant feline. Her laughter often rings throughout social events, as well as the begging for fish. Filquoir is rumored to have been around since the founding of Amber and has also been a fixture for the children of Oberon who grew up or resided in the castle.</p>",
 };
 
+const otherCards = {};
+
+otherCards["lasaircaite"] = {
+  type: "parent",
+  category: "lasaircaite-category",
+  cardname: "The Lasair Caite",
+  url: "../img/lasaircaite.png",
+  tagline: "",
+  blurb: "People of Chaos",
+};
+otherCards["shadow"] = {
+  type: "parent",
+  category: "shadow-category",
+  cardname: "Denizens of Shadow",
+  url: "../img/shadow.png",
+  tagline: "",
+  blurb: "",
+};
 // Chaos
 
 otherCards["pyson"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Pyson Chanicut",
-  url: "./img/pyson.png",
+  url: "../img/pyson.png",
   tagline: "Adventure",
   blurb:
     "<p>Son of Princess Ciara and the deceeased Caleb Cahanicut. He was raised in Chaos, out of the sight of Amber, and now spends his days adventuring across the Outlands.</p>",
@@ -441,17 +440,17 @@ otherCards["mikaya"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Mikaya Chanicut",
-  url: "./img/mikaya.png",
+  url: "../img/mikaya.png",
   tagline: "Potential",
   blurb:
-    "<p>Daughter of Princess Ciara and the deceeased Caleb Cahanicut, she was raised in Chaos out of ssight of Amber. She has become an active participant in the court and is an Advisor to King Swayvill.  However, as one among many, many advisors, she is frustrated by her relative powerlessness and the king's conservative nature. She has recently reached out to her relatives in Amber to see what other paths might be open to her.</p>",
+    "<p>Daughter of Princess Ciara and the deceeased Caleb Chanicut, she was raised in Chaos out of ssight of Amber. She has become an active participant in the court and is an Advisor to King Swayvill.  However, as one among many, many advisors, she is frustrated by her relative powerlessness and the king's conservative nature. She has recently reached out to her relatives in Amber to see what other paths might be open to her.</p>",
 };
 
 otherCards["galina"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Galina Sawall",
-  url: "./img/galina.png",
+  url: "../img/galina.png",
   tagline: "Silence",
   blurb:
     "<p>Milesia’s younger sister and daughter of King Swayvil of the Lasair Caite. Galina was appointed ambassador to Amber after the end of the second Lasair Caite war. While tensions remain high between Amber and the Lasair Caite, Galina has driven much of the effort to maintain the peace. Without much of a need or ability to trade with Amber or the Golden Circle, a lot of the ambassador’s focus has been on making sure efforts taken by the Thelbane to strengthen their position after a series of wars do not come across as unnecessarily bellicose.</p>",
@@ -461,7 +460,7 @@ otherCards["samson"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Samson Chanicut",
-  url: "./img/samson.png",
+  url: "../img/samson.png",
   tagline: "Trickster",
   blurb: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel</p>",
 };
@@ -470,16 +469,25 @@ otherCards["strowan"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Strowan Chanicut",
-  url: "./img/strowan.png",
+  url: "../img/strowan.png",
   tagline: "Riddles",
   blurb: "<p>Head of House Chanicut. Also goes by Argo to some./p>",
+};
+
+otherCards["caleb"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Caleb Chanicut",
+  url: "../img/caleb.png",
+  tagline: "Loss",
+  blurb: "<p>Deceased husband of Ciara, father of Mikaya and Pyson.</p>",
 };
 
 otherCards["simon"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Simon Helgram",
-  url: "./img/simon.png",
+  url: "../img/simon.png",
   tagline: "Outsider",
   blurb:
     "<p>An accomplished sorcerer within the Lasair Caite, Simon traveled to Amber’s court to see what all the fuss was about. He has his own small retinue but will profess to largely being a spectator. Coming from the house of Helgram, Simon does have enough weight in his homeland to assist in matters of complexity there.</p>",
@@ -489,7 +497,7 @@ otherCards["irina"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Auntie Irina Sawall",
-  url: "./img/irina.png",
+  url: "../img/irina.png",
   tagline: "Grandmother",
   blurb:
     "<p>Irina Sawall is one of the many aunties of the Laser Caite - their exact position and relations has become unclear over time, but their age, wisdom and power makes them an informal power in Chaos.  Irina is the archetypical scary old witch in the woods, surrounded by houses made of candy and creepy dolls.<p></p>She is one of the figures pressuring Borel to take up the mantle of keeper of the Abyss, going so far as to trap him in one of her ways in an attempt to persuade him. </p>",
@@ -499,7 +507,7 @@ otherCards["richeza"] = {
   type: "child",
   parent: "lasaircaite-category",
   cardname: "Richeza",
-  url: "./img/richeza.png",
+  url: "../img/richeza.png",
   tagline: "Spider",
   blurb:
     "<p>The loose and other worldly kingdoms of the Abyssal Reach are represented as one voice by Richeza, a demonic being who maintains a human form while in Amber. While the Reach may have interests and concerns that are occasionally floated to the crown of Amber and the associated court, far more often the Ambassador’s role is to hear of grievances and concerns about abyssal corruption from shadows within and beyond the Golden Circle. It is Richeza who tasks the Abyss Hunters to go combat the corruption of the Abyss where Amber or the others need such actions taken.</p>",
@@ -510,7 +518,7 @@ otherCards["prudence"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Prudence Taylor",
-  url: "./img/prudence.png",
+  url: "../img/prudence.png",
   tagline: "Propriety",
   blurb:
     "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
@@ -520,7 +528,7 @@ otherCards["wesley"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Kathryn Wesley",
-  url: "./img/wesley.png",
+  url: "../img/wesley.png",
   tagline: "Outnumbered",
   blurb:
     "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
@@ -530,7 +538,7 @@ otherCards["lucatiel"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Darkdiver Lucatiel",
-  url: "./img/lucatiel.png",
+  url: "../img/lucatiel.png",
   tagline: "Mercenary",
   blurb:
     "<p>Lucatiel is an Abyss Hunter famous for not being one of the beings of the Abyssal Reach. A shadow dweller, she picked up the cursed armor of a fallen hunter who had tried and failed to stave off the corruption of the Abyss within her shadow of Mirrah. While Mirrah fell, Lucatiel’s vengeance has made her a figure within the Reach. She serves as a mercenary to combat the Abyss if the Abyssal Reach is not able to respond quickly enough to save a shadow. </p>",
@@ -540,7 +548,7 @@ otherCards["zhao"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Zhao Lihua",
-  url: "./img/zhao.png",
+  url: "../img/zhao.png",
   tagline: "Enlightenment",
   blurb:
     "<p>A representative of the Jade Empire from the imperial seat of Penglai, Zhao Lihua has been honored to speak with the voice of the Emperor on matters of state at the court of Amber. Zhao Lihua has additional duties beyond matters of state, recording interesting tales from other shadows of the Golden Circle and seeking cultural exchanges as part of the Great Enlightenment ordered by Emperor Ban. </p>",
@@ -549,7 +557,7 @@ otherCards["almasi"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Hamoud Almasi",
-  url: "./img/almasi.png",
+  url: "../img/almasi.png",
   tagline: "Harmony",
   blurb:
     "<p>The Alhambran Ambassador professes to have no desires beyond experiencing the splendors of Amber and standing shoulder to shoulder in harmony with the royal family of the one true kingdom. That Alhambra holds strong monopolies in the spices, rare metals, and glass traded in Amber and the Golden Circle is not a secret. A lot of Ambassador Almasi’s efforts circle around highlighting the value of utilizing trade for mutual benefit rather than allowing other shadows to get a foothold in these commodities.  </p>",
@@ -559,7 +567,7 @@ otherCards["gramble"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Gramble",
-  url: "./img/gramble.png",
+  url: "../img/gramble.png",
   tagline: "Bargainer",
   blurb:
     "<p>There is some debate among circles on whether or not the demon Gramble is a nuisance or a serious threat in the court. Having declared itself Ambassador to the flame of Chaos, the demon rarely seems interested in politics and more in causing headaches. Showing up in varying forms from time to time, a common giveaway is when someone arrives claiming to be an ambassador from Weirmonken or Ghenesh since both lands have withheld sending an ambassador in protest of Amber’s domination of their respective territories. Efforts to kill the demon have been sub-optimal.</p>",
@@ -569,7 +577,7 @@ otherCards["gael"] = {
   type: "child",
   parent: "shadow-category",
   cardname: "Gael",
-  url: "./img/gael.png",
+  url: "../img/gael.png",
   tagline: "Caretaker",
   blurb:
     "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
@@ -581,7 +589,7 @@ placeCards["amber"] = {
   type: "parent",
   category: "amber-category",
   cardname: "Amber",
-  url: "./img/ambermap.png",
+  url: "../img/ambermap.png",
   tagline: "The Golden Realm",
   blurb:
     "<p>Amber is a realm that rests at the head of reality. When the pattern was created, mirror realms and copies of Amber spun into creation. The perfect copies of Amber were reflected into Rebma and the night city of Tir-Na Nog’th. A great void was cast beyond Arden and Garnath, upon the opposite end residing the Outlands and the Lasair Caite. The shadows slowly formed, filling the space between Amber and everywhere else with infinite imperfect reflections of Amber.</p> ",
@@ -591,7 +599,7 @@ placeCards["goldencircle"] = {
   type: "parent",
   category: "gc-category",
   cardname: "The Golden Circle",
-  url: "./img/goldencircle.png",
+  url: "../img/goldencircle.png",
   tagline: "Allies and Neighbors of Amber",
   blurb:
     "<p>Created by Queen Fina at Oberon’s command and considered a testament to her power, the shadows of the Golden Circle are the most recognizable shadows within the multiverse. These shadows represent the backbone of Amber’s trade network, being the easiest to travel to and have significant resources that are of value to Amber. Amber, in turn, provides the shadowpaths for the Golden Circle to trade with each other (conveniently with Amber as the hub for both the shadow paths and trade.)</p>",
@@ -601,7 +609,7 @@ placeCards["shadows"] = {
   type: "parent",
   category: "shadows-category",
   cardname: "Deeper Shadows",
-  url: "./img/shadowback.png",
+  url: "../img/shadowback.png",
   tagline: "What lies beyond",
   blurb: "<p></p>",
 };
@@ -610,7 +618,7 @@ placeCards["ambercity"] = {
   type: "child",
   parent: "amber-category",
   cardname: "Amber City",
-  url: "./img/ambercity.png",
+  url: "../img/ambercity.png",
   tagline: "Amber's Crown Jewel",
   blurb: "",
 };
@@ -619,7 +627,7 @@ placeCards["garnath"] = {
   type: "child",
   parent: "amber-category",
   cardname: "Garnath Mansion",
-  url: "./img/garnath.png",
+  url: "../img/garnath.png",
   tagline: "The king's not-so-private getaway",
   blurb:
     "<p>A vast reserve of land near Garnath  which is the King's private reserve.  There is a small village there (Garnath Village) which is entirely funded and designed by Oberon to provide him an ideal retreat location.</p><p>The surrounding area contains some of the most valuable properties in Amber, as noble estates in proximity to the reserve are considered in prime property.</p>",
@@ -628,7 +636,7 @@ placeCards["summerpalace"] = {
   type: "child",
   parent: "amber-category",
   cardname: "The Summer Palace",
-  url: "./img/summer.png",
+  url: "../img/summer.png",
   tagline: "Royal getaway and zoo",
   blurb:
     "<p>Located on an island near Bayle territory, this palace serves as a retreat for the king or queen, and includes numerous wonders, including the king's personal zoo.</p>",
@@ -638,7 +646,7 @@ placeCards["brandheim"] = {
   type: "child",
   parent: "amber-category",
   cardname: "Brandheim",
-  url: "./img/brandheim.png",
+  url: "../img/brandheim.png",
   tagline: "The Academy of Sorcery",
   blurb:
     "<p>Velka established Brandheim as a cornerstone of Amber’s future by building a bridge to the past. Memory is more than knowledge to Velka’s blood.</p><p>The Sorcerer’s Academy of Brandheim grew to be an institution focusing on far more than magics, but its origins and greatest achievements lie there.  Located high atop Kolvir, Brandheim has dedicated its existence to mastering the power of an ancient dragon scale taken from the long-gone realm Dworkin, Oberon, and Velka originate from. For Amberites not of royal blood, this is the closest to true power one can come to. </p>",
@@ -648,7 +656,7 @@ placeCards["arden"] = {
   type: "child",
   parent: "amber-category",
   cardname: "Arden",
-  url: "./img/ambercity.png",
+  url: "../img/ambercity.png",
   tagline: "The Eternal Forest",
   blurb:
     "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas</p>",
@@ -658,7 +666,7 @@ placeCards["rebma"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Rebma",
-  url: "./img/rebma.png",
+  url: "../img/rebma.png",
   tagline: "Everything's better, under da sea",
   blurb: "",
 };
@@ -667,7 +675,7 @@ placeCards["tir"] = {
   type: "child",
   parent: "amber-category",
   cardname: "Tir na Nog'th",
-  url: "./img/tir.png",
+  url: "../img/tir.png",
   tagline: "City of Ghosts and Shadows",
   blurb:
     "<p>Tir Na Nog’th is Amber’s ghostly reflection in the sky. It appears on moonlight nights, and can be accessed from a staircase at the top of Kolvir. Tir is known as a place of visions of the present and future, but those visions are just as often fears or hopes made manifest as well as any real providence of prophecy.</p><p>The moon city is dangerous to navigate as any interruption of moonlight, such as clouds, will cause the city to lose physicality or outright disappear depending on the level of obstruction. In addition, the ghosts of Tir Na Nog’th are not able to be communicated with in normal circumstances. The sole exceptions are for those who were fortunate enough to have a pattern blade forged for them (Ffordhir is the most famous example, though it is known that Oberon’s great blade Fremraval is also such a weapon) and children of Fina.</p>",
@@ -677,7 +685,7 @@ placeCards["minos"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Minos",
-  url: "./img/minos.png",
+  url: "../img/minos.png",
   tagline: "Lords of the waves",
   blurb:
     "<p>Minos is a seafaring nation in the golden circle, currently in a steadily simmering conflict with Begma .  Currently pulled by Ava after the death of the former Pirate King, Volund at the hand of Princess Fenella.</p><p>Using the chaos from Volund's death, Ava achieved control over Minos' fractured sea kings only to be challenged by unidentified assailants from the shadows utilizing cannons with an unknown powder that somehow ignites within Minos. Ava has openly accused Begma  of this complication, something the Golden Circle neighbor categorically denies. This is to say nothing the insistence from those under Ava that Amber is due for a bloody nose; the popular argument is not even Oberon's family should be allowed to randomly murder Minosian leadership.</p>",
@@ -687,7 +695,7 @@ placeCards["ghenesh"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Ghenesh",
-  url: "./img/ghenesh.png",
+  url: "../img/ghenesh.png",
   tagline: "Home of the Moonriders",
   blurb: "",
 };
@@ -696,7 +704,7 @@ placeCards["begma"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Begma",
-  url: "./img/begma.png",
+  url: "../img/begma.png",
   tagline: "Nation of Artifice",
   blurb:
     "<p>Begma may be the most progressive of Amber’s allies. It is a constitutional democracy that benefits from many wonders of engineering and technology which are unique to the nation. Masters of steam and clockwork, they produce daily wonders and very nearly daily disasters. One sage observed that Begma remains standing only because her people’s ability to create always slightly outmatches their ability to destroy.</p>",
@@ -706,7 +714,7 @@ placeCards["montevalno"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Montevalno",
-  url: "./img/alhambra.png",
+  url: "../img/alhambra.png",
   tagline: "Nation of Artistry",
   blurb:
     "<p>Montevalno professes to be the apex of civilization. There is no element of life in Montevalno which is not a reflection of art. The true measure of society’s success, as the Mon would state, is to provide enough means that each may pursue the calling of their heart.</p><p>On the one hand, this makes Montevalno a hub of artistic learning. Painting, sculpture, music, writing and every other art you can imagine is pursued to the most glorious of heights in the halls of the Collegia Montevalno. On the other hand, it produces a culture of insecure snobs and drama queens desperate for recognition for their latest masterpiece.</p><p>Still, the one thing it will never be is boring.</p>",
@@ -716,7 +724,7 @@ placeCards["penglai"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Penglai",
-  url: "./img/penglai.png",
+  url: "../img/penglai.png",
   tagline: "The Jade Empire",
   blurb: "",
 };
@@ -725,7 +733,7 @@ placeCards["alhambra"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Alhambra",
-  url: "./img/alhambra.png",
+  url: "../img/alhambra.png",
   tagline: "City of Gold and Glass",
   blurb: "",
 };
@@ -734,7 +742,7 @@ placeCards["weirmonken"] = {
   type: "child",
   parent: "gc-category",
   cardname: "Weirmonken",
-  url: "./img/weirmonken.png",
+  url: "../img/weirmonken.png",
   tagline: "Where shadows are darkest",
   blurb:
     "<p>The shadow of Weirmonken is truly two places.</p><p>In one place, it is a dark realm, skies marked by cloud and lightning, visible in slivers between the long fingers of the trees. This place is Weirmonken. The great forest is infiltrated by small clearings, tenuous roads, and struggling towns. It is a rough place to live for those who inhabit the land, lost settlements being replaced by new ones, and being built upon generations that endure and wonder about their lost past as indicated from great ruined castles swallowed by the woods and the broken great walls and shattered statues.</p><p>For those who visit Weirmonken and those who inhabit it, huddling around the fires at night, they realize they are not alone. The woods are alive with predator and prey, as the trees keep silent vigil over all, ancient trees viewing the fires of civilization as a distraction from eternal night. Some of the eyes watching those fires are from the second Weirmonken, and they are the Weir.</p>",
@@ -744,7 +752,7 @@ placeCards["outlands"] = {
   type: "child",
   parent: "shadows-category",
   cardname: "The Outlands",
-  url: "./img/outlands.png",
+  url: "../img/outlands.png",
   tagline: "Where Chaos begins",
   blurb:
     "<p>The term Outlands is used by Amberites to refer to the realm of the Lasair Caite, much to the exasperation of the Lasair Caite themselves. In reality, the Outlands represent  the shadows around the Lasair Caite and Ceset. These shadows are disconnected and unstable, leading to fractured kingdoms and seemingly unimaginable realms that float together more as islands rather than the contiguous fabric of reality that most pattern walkers are familiar with. The thinness of the shadows in conjunction with the instability introduced by the nearby Void means the entire area is riddle with warps, gates, and other connections between shadows. These artifacts are common enough that shadow travel is fairly common, if a bit unpredictable, in the Outlands.</p><p> Dangerous creatures stalk the Outlands’ impossible worlds, and the chaotic nature lends itself to those who wish to hide things of power or importance within. It is this very combination of danger, unpredictability, and lost and hidden wealth that makes the Outlands an appealing area to enter for the beings of the Lasair Caite. Treasure hunting, sport, and adventure abound in the Outlands. While the Outlands share almost nothing in common with the logistics of the Golden Circle, the Lasair Caite tend to look at the Outlands as all the shadow that they might want to see or have influence over. </p>",
@@ -754,7 +762,7 @@ placeCards["abyss"] = {
   type: "child",
   parent: "shadows-category",
   cardname: "The Abyss",
-  url: "./img/outlands.png",
+  url: "../img/outlands.png",
   tagline: "The end and the beginning",
   blurb: "",
 };
@@ -763,7 +771,7 @@ placeCards["ceset"] = {
   type: "child",
   parent: "shadows-category",
   cardname: "Ceset",
-  url: "./img/outlands.png",
+  url: "../img/outlands.png",
   tagline: "The name does not make the place",
   blurb:
     "<p>Ceset is the largest surviving civilization that predates the founding of Amber, sitting opposite reality at the end of shadow on an ancient land mass. The great names of the Lasair Caite came together in a bid to stop the scheme of rewriting reality by Oberon - even in the ensuing failure of that campaign, Ceset has stayed largely stable since the end of the war. King Swayvil rules over the subjugated land from the impossibly tall tower of the Thelbane, handling the increased complexities introduced in recent times.</p><p>  Known informally as the Outlands or the Edge by those in Amber, the name used by the Lasair Caite for their land is known as Ceset. Ceset is almost completely devoid of light; the exception is the Flame of Chaos which is visible from any point of the kingdom. While guests are graciously welcomed with varying light sources during their stay, navigating the lands can be treacherous for newcomers without one of the shapeshifting inhabitants assisting in movement through the land. For significant visits from dignitaries such as King Oberon or one of his children, great conjurations are cast to create a sunless sky that casts the land as one would expect on a clear moonlight night.</p> ",
@@ -773,10 +781,10 @@ placeCards["flame"] = {
   type: "child",
   parent: "shadows-category",
   cardname: "The Flame of Chaos",
-  url: "./img/flame.png",
+  url: "../img/flame.png",
   tagline: "All things burn",
   blurb:
     "<p>Very little is understood about the Flame of Chaos beyond its origins and consequences. Commonly agreed to have been sparked by the death of Oberon’s wife Milesia, the flame grew into a massive forge of life and entropy. To this day it produces an endless amount of demonic beings that flee into the Abyss. Most of these demons are never seen again, either lost within the depths of the Reach or going to places unknown. A smaller amount seems drawn to the edge of the Lasair Caite, engaging in an endless war with the military forces fortified along the edges of the Outlands. And yet a few seem to navigate the Abyss successfully, coming to one of the four kingdoms of the Reach and incorporating into the societies within.</p><p>The Flame itself is so large as to defy easy measurement - there is an active debate among scholars and sorcerers as to whether or not the flame’s growth continues or has halted. What is known is that, at the end of the Red Rebellion, Amber had surrounded the flame with checkpoints and that the greatest sorcerers of both Oberon and Swayvil’s kingdoms came together to extinguish the flame. All efforts failed.</p>",
 };
 
-export { amberCards, otherCards, placeCards };
+export { amberCards, amberCourtCards, otherCards, placeCards };

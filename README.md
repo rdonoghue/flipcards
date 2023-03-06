@@ -1,12 +1,10 @@
 # flipcards
 
-Seeing if I can put small HTML files here to then embed in Miro in an iframe
+## 3/16
 
-## NEXT STEPS (2/18 noon)
+TODO:
 
-- meaning text needs to pull from the other trump info
-- top margin is too big
-
-## Other Considerations
-
-- See if I can make a nice small card out of the bigger images
+- could I turn the flipcards from divs in to an unordered list?
+- need to seperate the redraw buttons from the length of the other columns
+- the background cards aren't resizing with the actual trumps
+- do I WANT the actual trumps resizing liek they are? Go back to pixels for the phone?

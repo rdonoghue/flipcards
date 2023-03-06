@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico?" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,18 +9,18 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="shared.css" />
-    <link rel="stylesheet" href="namedcards.css" />
-    <link rel="stylesheet" href="places.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/namedcards.css" />
+    <link rel="stylesheet" href="styles/places.css" />
 
     <script
-    src="places.js"
+    src="scripts/places.js"
     type="module"
     id="callcards"
     handoff="places"
     defer
   ></script>
-  <script src="shared.js" type="module" defer></script>
+  <script src="scripts/shared.js" type="module" defer></script>
 
 
   </head>
@@ -34,6 +34,7 @@
       
         <ul id="navigator">
         <li><a href="index.html">Scions of Amber</a></li>
+        <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
         <li ><a href="cards-other.html">Others of Note</a></li>
         <li class="active"><a href="places.html">Places</a></li>
         <li><a href="flipcards.html">The Spread</a></li>
@@ -47,7 +48,7 @@
         <div id="buttonList" class="sidenav"></div>
       </nav>
       <div class="cardholder">
-        <div class="card royalback" id="frontCard"></div>
+        <div class="card royalbackfull" id="frontCard"></div>
           <!-- <div class="cardbody amberback">
             <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
           </div> -->

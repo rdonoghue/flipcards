@@ -7,7 +7,12 @@ const scriptCall = document.getElementById("callcards").getAttribute("handoff");
 
 console.log(scriptCall);
 
-import { amberCards, otherCards, placeCards } from "./trumpdata.js";
+import {
+  amberCards,
+  amberCourtCards,
+  otherCards,
+  placeCards,
+} from "./trumpdata.js";
 
 var cardDetails;
 var pageType;
@@ -15,6 +20,9 @@ var pageType;
 if (scriptCall == "ambercards") {
   cardDetails = amberCards;
   pageType = "amber";
+} else if (scriptCall == "ambercourt") {
+  cardDetails = amberCourtCards;
+  pageType = "other";
 } else if (scriptCall == "othercards") {
   cardDetails = otherCards;
   pageType = "other";

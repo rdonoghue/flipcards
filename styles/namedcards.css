@@ -1,0 +1,424 @@
+.stoneback {
+  background: goldenrod;
+  background-image: url("../img/stoneback.png");
+  background-size: cover;
+}
+
+.starback {
+  background: purple;
+  background-image: url("../img/starback.png");
+  background-size: cover;
+}
+
+.fireback {
+  background: red;
+  background-image: url("../img/fireback.png");
+  background-size: cover;
+}
+
+.waveback {
+  background: lightseagreen;
+  background-image: url("../img/waveback.png");
+  background-size: cover;
+}
+
+.royalback {
+  background: green;
+  background-image: url("../img/royalback.png");
+  background-size: cover;
+}
+
+.royalbackfull {
+  background: green;
+  background-image: url("../img/royalback-full.png");
+  background-size: cover;
+}
+
+.serpentback {
+  background: black;
+  background-image: url("../img/serpentback.png");
+  background-size: cover;
+}
+
+.shipback {
+  background: orange;
+  background-image: url("../img/shipback.png");
+  background-size: cover;
+}
+.amberback {
+  background: goldenrod;
+  background-image: url("../img/amberback.png");
+  background-size: cover;
+}
+
+.shadowback {
+  background: brown;
+  background-image: url("../img/shadowback.png");
+  background-size: cover;
+}
+
+.lorec {
+  background-image: url("../img/lorec-web.png");
+  background-size: cover;
+}
+
+.anderon {
+  background-image: url("../img/anderon-web.png");
+  background-size: cover;
+}
+
+.aurielle {
+  background-image: url("../img/aurielle-web.png");
+  background-size: cover;
+}
+
+.bastard {
+  background-image: url("../img/bastard-web.png");
+  background-size: cover;
+}
+
+.suillir {
+  background-image: url("../img/suil-lir-web.png");
+  background-size: cover;
+}
+
+.fenella {
+  background-image: url("../img/fenella-web.png");
+  background-size: cover;
+}
+
+.roichard {
+  background-image: url("../img/roichard-web.png");
+  background-size: cover;
+}
+
+.cethlenn {
+  background-image: url("../img/cethlenn-web.png");
+  background-size: cover;
+}
+
+.ophelia {
+  background-image: url("../img/ophelia-web.png");
+  background-size: cover;
+}
+
+.borel {
+  background-image: url("../img/borel-web.png");
+  background-size: cover;
+}
+
+.ciara {
+  background-image: url("../img/ciara-web.png");
+  background-size: cover;
+}
+
+.bevin {
+  background-image: url("../img/bevin-web.png");
+  background-size: cover;
+}
+
+.alaric {
+  background-image: url("../img/alaric-web.png");
+  background-size: cover;
+}
+
+.pauol {
+  background-image: url("../img/pauol-web.png");
+  background-size: cover;
+}
+
+.liabelle {
+  background-image: url("../img/liabelle-web.png");
+  background-size: cover;
+}
+
+.diolinda {
+  background-image: url("../img/diolinda-web.png");
+  background-size: cover;
+}
+
+.oberon {
+  background-image: url("../img/oberon-web.png");
+  background-size: cover;
+}
+
+.queen,
+.eirashaol {
+  background-image: url("../img/eirashaol-web.png");
+  background-size: cover;
+}
+
+.mikaya {
+  background-image: url("../img/mikaya-web.png");
+  background-size: cover;
+}
+
+.pyson {
+  background-image: url("../img/pyson-web.png");
+  background-size: cover;
+}
+.ava {
+  background-image: url("../img/eva-web.png");
+  background-size: cover;
+}
+
+.velka {
+  background-image: url("../img/velka-web.png");
+  background-size: cover;
+}
+.fina {
+  background-image: url("../img/fina-web.png");
+  background-size: cover;
+}
+.milesia {
+  background-image: url("../img/milesia-web.png");
+  background-size: cover;
+}
+
+.samson {
+  background-image: url("../img/samson-web.png");
+  background-size: cover;
+}
+
+.dworkin {
+  background-image: url("../img/dworkin-web.png");
+  background-size: cover;
+}
+.gramble {
+  background-image: url("../img/gramble.png");
+  background-size: cover;
+}
+
+.salem {
+  background-image: url("../img/salem.png");
+  background-size: cover;
+}
+.edward {
+  background-image: url("../img/edward.png");
+  background-size: cover;
+}
+.arlan {
+  background-image: url("../img/arlan.png");
+  background-size: cover;
+}
+.richard {
+  background-image: url("../img/richard.png");
+  background-size: cover;
+}
+.ilyana {
+  background-image: url("../img/ilyana.png");
+  background-size: cover;
+}
+.desdemona {
+  background-image: url("../img/desdemona.png");
+  background-size: cover;
+}
+.rockscomb {
+  background-image: url("../img/rockscomb.png");
+  background-size: cover;
+}
+.kahlverian {
+  background-image: url("../img/kahlverian.png");
+  background-size: cover;
+}
+.firestone {
+  background-image: url("../img/firestone.png");
+  background-size: cover;
+}
+.pyson {
+  background-image: url("../img/pyson.png");
+  background-size: cover;
+}
+.mikaya {
+  background-image: url("../img/mikaya.png");
+  background-size: cover;
+}
+.galina {
+  background-image: url("../img/galina.png");
+  background-size: cover;
+}
+.samson {
+  background-image: url("../img/samson.png");
+  background-size: cover;
+}
+.strowan {
+  background-image: url("../img/strowan.png");
+  background-size: cover;
+}
+.simon {
+  background-image: url("../img/simon.png");
+  background-size: cover;
+}
+.irina {
+  background-image: url("../img/irina.png");
+  background-size: cover;
+}
+.richeza {
+  background-image: url("../img/richeza.png");
+  background-size: cover;
+}
+.prudence {
+  background-image: url("../img/prudence.png");
+  background-size: cover;
+}
+.wesley {
+  background-image: url("../img/wesley.png");
+  background-size: cover;
+}
+.lucatiel {
+  background-image: url("../img/lucatiel.png");
+  background-size: cover;
+}
+.zhao {
+  background-image: url("../img/zhao.png");
+  background-size: cover;
+}
+.almasi {
+  background-image: url("../img/almasi.png");
+  background-size: cover;
+}
+
+/* PLACES */
+
+.amber {
+  background-image: url("../img/ambermap.png");
+  background-size: cover;
+}
+
+.goldencircle {
+  background-image: url("../img/goldencircle.png");
+  background-size: cover;
+}
+
+.minos {
+  background-image: url("../img/minos.png");
+  background-size: cover;
+}
+.garnath {
+  background-image: url("../img/garnath.png");
+  background-size: cover;
+}
+
+.ambercity {
+  background-image: url("../img/ambercity.png");
+  background-size: cover;
+}
+
+.brandheim {
+  background-image: url("../img/brandheim.png");
+  background-size: cover;
+}
+
+.ghenesh {
+  background-image: url("../img/ghenesh.png");
+  background-size: cover;
+}
+
+.shadows {
+  background: brown;
+  background-image: url("../img/shadowback.png");
+  background-size: cover;
+}
+.weirmonken {
+  background-image: url("../img/weirmonken.png");
+  background-size: cover;
+}
+
+.arden {
+  background-image: url("../img/arden.png");
+  background-size: cover;
+}
+
+.tir {
+  background-image: url("../img/tir.png");
+  background-size: cover;
+}
+
+.rebma {
+  background-image: url("../img/rebma.png");
+  background-size: cover;
+}
+
+.montevalno {
+  background-image: url("../img/montevalno.png");
+  background-size: cover;
+}
+
+.begma {
+  background-image: url("../img/begma.png");
+  background-size: cover;
+}
+
+.penglai {
+  background-image: url("../img/penglai.png");
+  background-size: cover;
+}
+.alhambra {
+  background-image: url("../img/alhambra.png");
+  background-size: cover;
+}
+
+.flame {
+  background-image: url("../img/flame.png");
+  background-size: cover;
+}
+
+.ceset {
+  background-image: url("../img/ceset.png");
+  background-size: cover;
+}
+
+.abyss {
+  background-image: url("../img/abyss.png");
+  background-size: cover;
+}
+
+.outlands {
+  background-image: url("../img/outlands.png");
+  background-size: cover;
+}
+
+.summerpalace {
+  background-image: url("../img/summer.png");
+  background-size: cover;
+}
+
+.besmer {
+  background-image: url("../img/besmer.png");
+  background-size: cover;
+}
+
+.hargin {
+  background-image: url("../img/hargin.png");
+  background-size: cover;
+}
+
+.haim {
+  background-image: url("../img/haim.png");
+  background-size: cover;
+}
+
+.gael {
+  background-image: url("../img/gael.png");
+  background-size: cover;
+}
+
+.alvina {
+  background-image: url("../img/alvina.png");
+  background-size: cover;
+}
+
+.filquoir {
+  background-image: url("../img/filquoir.png");
+  background-size: cover;
+}
+
+.ramirez {
+  background-image: url("../img/ramirez.png");
+  background-size: cover;
+}
+
+.caleb {
+  background-image: url("../img/caleb.png");
+  background-size: cover;
+}
