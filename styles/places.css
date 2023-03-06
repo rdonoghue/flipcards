@@ -8,7 +8,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 1fr 3fr 3fr;
   gap: 2rem;
   margin-top: 4rem;
   position: relative;
@@ -52,6 +52,7 @@ button:hover {
 .cardholder {
   font-size: 1rem;
   position: relative;
+  height: 425px;
 }
 
 .card {
@@ -64,6 +65,7 @@ button:hover {
   border-radius: 2ch;
   position: relative;
   transform: rotate(-88deg);
+  transform-origin: 35% 40%;
   transition: all 0.15s ease-in-out;
   transform-style: preserve-3d;
   box-shadow: 2px 4px 8px rgb(0, 0, 0);
@@ -163,6 +165,10 @@ button:hover {
   text-align: center;
 }
 
+.textbox p:first-of-type {
+  margin-top: 0;
+}
+
 .z1 {
   z-index: -10;
 }
@@ -175,12 +181,15 @@ button:hover {
 
 .l1 {
   rotate: 90deg;
+  transform-origin: 65% 40%;
 }
 .l2 {
   rotate: 92deg;
+  transform-origin: 65% 40%;
 }
 .l3 {
   rotate: 87deg;
+  transform-origin: 65% 40%;
 }
 
 .preloader {

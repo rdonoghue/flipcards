@@ -8,7 +8,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-columns: 1fr 2fr 3fr;
   gap: 2rem;
   margin-top: 4rem;
   position: relative;
@@ -52,7 +52,8 @@ button:hover {
 }
 .card {
   /* height: 500px; */
-  max-width: 300px;
+  /* max-width: 300px; */
+  width: 300px;
   aspect-ratio: 3 / 5;
   background-color: white;
   margin: 2rem auto;
@@ -73,7 +74,7 @@ button:hover {
   width: 100%;
 }
 
-.cardcaption {
+/* .cardcaption {
   height: min(10%, 3rem);
   background-color: pink;
   position: absolute;
@@ -82,7 +83,7 @@ button:hover {
   width: 100%;
   text-align: center;
   display: none;
-}
+} */
 
 .cardReverse > .cardcaption {
   display: none;
@@ -168,7 +169,13 @@ button:hover {
 }
 
 .textbox {
-  visibility: visible; /* margin-left: 2rem; */
+  visibility: visible;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.textbox p:first-of-type {
+  margin-top: 0;
 }
 
 .textbox h2 {

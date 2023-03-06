@@ -3,7 +3,7 @@
 const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
 const zones = ["play"];
 
-import { amberCards, otherCards } from "./trumpdata.js";
+import { amberCards, otherCards } from "../trumpdata.js";
 const cardDetails = Object.assign(amberCards, otherCards);
 var liveDeck = deckSetup(cardDetails);
 var pileCard = document.getElementById("pile");

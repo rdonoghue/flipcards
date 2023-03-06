@@ -85,6 +85,11 @@ header a {
   color: rgb(246, 209, 164);
 }
 
+.centercolumn {
+  display: flex;
+  flex-direction: column;
+}
+
 .hamburger {
   /* visibility: hidden; */
   display: none;

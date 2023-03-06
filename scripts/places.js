@@ -121,7 +121,7 @@ function pickcard(cardId) {
 }
 
 function resetpage() {
-  document.getElementById("frontCard").classList = "card royalback";
+  document.getElementById("frontCard").classList = "card royalbackfull";
 
   document.getElementById("frontCard").style.transform = "".concat(
     "rotate(" + cardpivot() + "deg)"

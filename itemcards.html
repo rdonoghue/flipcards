@@ -8,27 +8,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:wght@300&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Jost:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/itemcards.css" />
     <link rel="stylesheet" href="styles/namedcards.css" />
-    <script src="scripts/itemcards.js" type="module"></script>
+    <script src="scripts/itemcards.js" type="module" defer></script>
 
     <title>Draw a Trump</title>
   </head>
   <body>
+    <div class="hidden helpoverlay"></div>
+    <div class="hidden helpdetails">
+      <ul>
+        <li>
+          <p>d</p>
+          <p>Turn active card 90 degrees right.</p>
+        </li>
+        <li>
+          <p>a</p>
+          <p>Turn active card 90 degrees left.</p>
+        </li>
+        <li>
+          <p>s</p>
+          <p>Flip card.</p>
+        </li>
+        <li>
+          <p>w</p>
+          <p>Return card to upright position.</p>
+        </li>
+        <li>
+          <p>e</p>
+          <p>Nudge card right.</p>
+        </li>
+        <li>
+          <p>q</p>
+          <p>Nudge card left.</p>
+        </li>
+        <li>
+          <p>b</p>
+          <p>Move front card to <b>b</b>ack.</p>
+        </li>
+        <li>
+          <p>r</p>
+          <p><b>R</b>eturn front card to the deck.</p>
+        </li>
+
+        <li>
+          <p>h</p>
+          <p>Hide deck and page elements.</p>
+        </li>
+        <li>
+          <p>u</p>
+          <p>Unhide deck and page elements.</p>
+        </li>
+        <li>
+          <p>?</p>
+          <p>Toggle help.</p>
+        </li>
+        <li>
+          <p>x</p>
+          <p>Reset the page.</p>
+        </li>
+      </ul>
+    </div>
+    <header>
+      <div class="hamburger">
+ <img src="img/menu.png" class="menuburger">
+  
+            </div>
+      
+        <ul id="navigator">
+        <li><a href="index.html">Scions of Amber</a></li>
+        <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
+        <li ><a href="cards-other.html">Others of Note</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="flipcards.html">The Spread</a></li>
+        <li><a href="draw1.html">Draw a Card</li>
+        <li><a href="divination.html">Divination</a></li>
+        <li class="active"><a href="itemcards.html">Tabletop</a></li>
+        <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
+      </ul>
+    </header>
     <main>
       <div class="deckspace"></div>
 
-      <button id="resetdeck">Reset</button>
-      <div id="playspace" class="playspace">
-        <div id="borel2" class="card r0" style="top: 112px; left: 770px">
-          <div class="cardface borel"></div>
-          <div class="lspot lefthandle"></div>
-        </div>
+      <div class="buttonholder">
+        <button id="resetdeck">Reset</button> <button id="gethelp">Help</button>
       </div>
+
+      <div id="playspace" class="playspace"></div>
     </main>
     <aside id="preloader" style="visibility: hidden"></aside>
   </body>
