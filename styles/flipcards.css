@@ -42,6 +42,18 @@ body {
   box-sizing: border-box;
 }
 
+.hcard {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0rem;
+  transform: rotate(270deg);
+
+  /* height: 30rem;
+  width: 20rem; */
+
+  /* margin-top: 30rem; */
+}
+
 .content {
   /* position: absolute; */
   width: 100%;
@@ -51,6 +63,16 @@ body {
   transition: transform 1s;
   transform-style: preserve-3d;
   box-sizing: border-box;
+}
+
+/* .hcontent {
+  transform: rotate(270deg);
+} */
+
+.hcontent {
+  width: 30rem;
+  height: 20rem;
+  border: 1px solid yellow;
 }
 
 .card:hover .content {
