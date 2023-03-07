@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.innerlist {
+  padding-left: 5rem;
+}
+.sessioncard {
+  float: right;
+  transform: rotate(1deg);
+  margin-left: 2rem;
+}
+
+.sessioncardalt {
+  float: left;
+  transform: rotate(-1deg);
+  margin-right: 2rem;
+}
+
+.sessions {
+  list-style: none;
+  padding-left: 0;
+}
+#session1 {
+  visibility: visible;
+}
+.session2 {
+  visibility: hidden;
+}
