@@ -278,6 +278,20 @@
   background-size: cover;
 }
 
+.allamu {
+  background-image: url("../img/allamu.png");
+  background-size: cover;
+}
+
+.ephraima {
+  background-image: url("../img/ephraima.png");
+  background-size: cover;
+}
+
+.pfeiffer {
+  background-image: url("../img/pfeiffer.png");
+  background-size: cover;
+}
 /* PLACES */
 
 .amber {
@@ -420,5 +434,10 @@
 
 .caleb {
   background-image: url("../img/caleb.png");
+  background-size: cover;
+}
+
+.starsbury {
+  background-image: url("../img/starsbury.png");
   background-size: cover;
 }

@@ -328,6 +328,26 @@ amberCourtCards["alvina"] = {
     "<p>Alvina Karm is the daughter of Richard Karm and Belinda Bayle and a veteran of the Red Rebellion and Abyssal Reach wars. A prodigy of Brandheim, Alvina's ability to control the power of the Crystal Scale is second only to her legendary inability to be killed. This particular legend culminates in Alvina's initiation as an Abyss Walker in a failed attempt to save the Outlands realm of Jugo from corruption inflicted by Chaos.</p><p>After the wars, Alvina's rare ability as a shadow walker outside of the royal family means she often serves as Karm's hand in affairs outside of Amber. The resulting reputation as a fixer means her presence abroad is rarely a sign of peace and stability in whatever realm she currently inhabits.</p>",
 };
 
+amberCourtCards["allamu"] = {
+  type: "child",
+  parent: "ambernobility-category",
+  cardname: "Allamu Bayle",
+  url: "../img/allamu.png",
+  tagline: "Appearances",
+  blurb:
+    "<p>Allamu Bayle is, famously, the agricultural advisor to the Golden Circle. Infamously, Allamu  Bayle is the Master of White Wines for House Bayle.  While the legend of  Bayle's Piss predates Allamu's handling of that particular brand,  the  Bayle's uncontested genius for understanding the arts and sciences of growing grapes has yet to produce a palatable wine fit more than guzzling by the bottle while polishing away fish in the harbor.</p><p>While Countess Bayle is the face of House Bayle within Amber, Allamu is the most recognizable Bayle within the Golden Circle. Most of his time is spent in the shadows, only intermittently returning to seasonally adjust the grapes for the next barreling of whites and  Oberon's constant heckling.</p>",
+};
+
+amberCourtCards["ephraima"] = {
+  type: "child",
+  parent: "ambernobility-category",
+  cardname: "Ephraima Bayle",
+  url: "../img/ephraima.png",
+  tagline: "Independence",
+  blurb:
+    "<p>Ephraima Bayle is the black sheep of House Bayle, having chosen a life of military service instead of joining the family business. Technically still a member of House Bayle, the noble is cut off financially.</p><p>Prince Alaric made Ephraima Knight of the Unicorn, the highest title of knighthood,  for her valor in the Red Rebellion and Abyssal Reach war. Ephraima has used the lands and money from her knighthood to start a life away from the rest of her family.</p>",
+};
+
 amberCourtCards["desdemona"] = {
   type: "child",
   parent: "ambercourt-category",
@@ -415,6 +435,16 @@ amberCourtCards["filquoir"] = {
     "<p>Filquoir may be the most exotic attendee of the court of Amber. A sentient cat with plush fur and brilliant sapphire eyes, the being has been known to bring incredibly powerful artifacts such as rings to those who show favor. Rumor has it that equally incredible bad luck comes across those who try to harm the flamboyant feline. Her laughter often rings throughout social events, as well as the begging for fish. Filquoir is rumored to have been around since the founding of Amber and has also been a fixture for the children of Oberon who grew up or resided in the castle.</p>",
 };
 
+amberCourtCards["pfeiffer"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Pfeiffer",
+  url: "../img/pfeiffer.png",
+  tagline: "The Apprentice",
+  blurb:
+    "<p>Pfieffer is employed running the front desk at the Masters Gallery in Amber City.  He captured Dworkin 's eye working as a street caricaturist, and has had his talent cultivated since, though he is terribly put upon in the process.  He's a good kid.</p>",
+};
+
 const otherCards = {};
 
 otherCards["goldencircle"] = {
@@ -471,6 +501,16 @@ otherCards["prudence"] = {
   tagline: "Propriety",
   blurb:
     "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
+};
+
+otherCards["wellington"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Count Chester Wellington",
+  url: "../img/wellington.png",
+  tagline: "The Rope's End",
+  blurb:
+    "<p>Count St. Arsbury Chester Wellington is the last in a long bloodline tied to Weirmonken. With Amber's displacement of the Weir as the dominant ruling force in the shadow, people long oppressed stepped into the reigns of local government, with the Wellington family rising to authority and prominence in St. Arsbury.</p><p>Chester Wellington has only very recently come to his title, his family being slaughtered in the count's mansion in a reprisal by the Weir. Chester was on an unannounced trip to Amber with the Elderhorn Lodge when the attack occurred. A lifelong bachelor, there has been significant pressure to find a suitable wife to continue the Wellington bloodline while there is still time.</p>",
 };
 
 otherCards["wesley"] = {
@@ -767,6 +807,16 @@ placeCards["weirmonken"] = {
   tagline: "Where shadows are darkest",
   blurb:
     "<p>The shadow of Weirmonken is truly two places.</p><p>In one place, it is a dark realm, skies marked by cloud and lightning, visible in slivers between the long fingers of the trees. This place is Weirmonken. The great forest is infiltrated by small clearings, tenuous roads, and struggling towns. It is a rough place to live for those who inhabit the land, lost settlements being replaced by new ones, and being built upon generations that endure and wonder about their lost past as indicated from great ruined castles swallowed by the woods and the broken great walls and shattered statues.</p><p>For those who visit Weirmonken and those who inhabit it, huddling around the fires at night, they realize they are not alone. The woods are alive with predator and prey, as the trees keep silent vigil over all, ancient trees viewing the fires of civilization as a distraction from eternal night. Some of the eyes watching those fires are from the second Weirmonken, and they are the Weir.</p>",
+};
+
+placeCards["starsbury"] = {
+  type: "child",
+  parent: "gc-category",
+  cardname: "St. Arsbury",
+  url: "../img/starsbury.png",
+  tagline: "",
+  blurb:
+    "<p>St. Arsbury is a recovered ruin expanded into a large town at the border of Arden and Weirmonken.  The town's origin and who St. Arsbury was has been lost to time, but the name has stuck over the centuries.  The farthest most visitors to Weirmonken ever go, the city has changed hands multiple times in recent years due to Weir violence or the passing of local administrations put in place by the crown of Amber. With no formal regency currently established for Weirmonken, the informal ruler of Weirmonken has been the Count of St. Arsbury.</p><p>The city's economy is built on two pillars - local natural resources and subsidies from the Crown of Amber for any who agree to relocate from Amber and live in Weirmonken. While the subsidies are good on paper, Weirmonken's lack of industry, widescale agriculture, and anything that requires not being constantly harried by the Weir means a significant mix of price inflation and trade deficits. The natural goods that St. Arsbury trades to Amber are of significant value, however. Furs and pelts from the shadow are plentiful and in exceedingly high demand across the golden circle for their unparalleled quality. Many of the lumber products shipped from Weirmonken are prized for the variety of colors and use in craftsman goods. These raw materials have been a boon in recent years as many rebuild showings of wealth in the wake of the Red Rebellion.</p><p>The newly minted Count of St. Arsbury is Chester Wellington, who received the title after the death of his father at the hands of Weir assassins.</p>",
 };
 
 placeCards["outlands"] = {
