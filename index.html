@@ -13,30 +13,27 @@
     <link rel="stylesheet" href="styles/namedcards.css" />
 
     <script
-    src="scripts/cardpage.js"
-    type="module"
-    handoff="ambercards"
-    id="callcards"
-  ></script>
-  <script src="scripts/shared.js" type="module" defer></script>
-
-
+      src="scripts/cardpage.js"
+      type="module"
+      handoff="ambercards"
+      id="callcards"
+    ></script>
+    <script src="scripts/shared.js" type="module" defer></script>
   </head>
   <body tag="amber">
     <div class="overlay"></div>
     <header>
       <div class="hamburger">
- <img src="img/menu.png" class="menuburger">
-  
-            </div>
-      
-        <ul id="navigator">
+        <img src="img/menu.png" class="menuburger" />
+      </div>
+
+      <ul id="navigator">
         <li class="active"><a href="index.html">Scions of Amber</a></li>
         <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
         <li><a href="cards-other.html">Others of Note</a></li>
         <li><a href="places.html">Places</a></li>
         <li><a href="flipcards.html">The Spread</a></li>
-        <li><a href="draw1.html">Draw a Card</li>
+        <li><a href="draw1.html">Draw a Card</a></li>
         <li><a href="divination.html">Divination</a></li>
         <li><a href="itemcards.html">Tabletop</a></li>
         <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
@@ -47,43 +44,45 @@
         <div id="buttonList" class="sidenav"></div>
       </nav>
       <div class="centercolumn">
-      <div id="char-blurb">Prosperity</div>
+        <div id="char-blurb">Prosperity</div>
 
-      <div class="cardholder">
-        <div class="card cardReverse" id="frontCard">
-          <div class="cardbody">
-            <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
+        <div class="cardholder">
+          <div class="card cardReverse" id="frontCard">
+            <div class="cardbody">
+              <img
+                class="trump"
+                id="trumpImage"
+                src="/img/royalback-full.png"
+              />
+            </div>
+            <div class="cardcaption">
+              <p class="cardcaptiontext" id="cardname"></p>
+            </div>
           </div>
-          <div class="cardcaption">
-            <p class="cardcaptiontext" id="cardname"></p>
-          </div>
-        </div>
-        
-        <div id="cardmeaning"></div>
-       
-        <div class="bottombox">
-          <div id="cardmanip">
-            <button id="pickrandom">Random Draw</button>
-            <button id="resetpage">Reset</button>
-          </div>
-        </div>
 
-        <div class="fauxcard backdeck l1" id="backdeck1">
-          <div class="fauxcardback royalback"></div>
-        </div>
-        <div class="fauxcard backdeck l2" id="backdeck1">
-          <div class="fauxcardback royalback"></div>
-        </div>
-        <div class="fauxcard backdeck l3" id="backdeck1">
-          <div class="fauxcardback royalback"></div>
+          <div id="cardmeaning"></div>
+
+          <div class="bottombox">
+            <div id="cardmanip">
+              <button id="pickrandom">Random Draw</button>
+              <button id="resetpage">Reset</button>
+            </div>
+          </div>
+
+          <div class="fauxcard backdeck l1" id="backdeck1">
+            <div class="fauxcardback royalback"></div>
+          </div>
+          <div class="fauxcard backdeck l2" id="backdeck1">
+            <div class="fauxcardback royalback"></div>
+          </div>
+          <div class="fauxcard backdeck l3" id="backdeck1">
+            <div class="fauxcardback royalback"></div>
+          </div>
         </div>
       </div>
-    </div>
       <div class="textbox" id="chardesc">
         <div id="char-desc">Welcome to the Prosperity Court of Amber.</div>
       </div>
     </main>
   </body>
-
-
 </html>

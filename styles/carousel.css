@@ -1,0 +1,36 @@
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-rows: repeat(4, 225px);
+  border: 1px solid yellow;
+  list-style: none;
+  gap: 1rem;
+  width: 100%;
+  grid-auto-flow: column;
+}
+
+.even {
+  grid-row: 2 / 4;
+}
+
+.odd1 {
+  grid-row: 1/ 3;
+}
+
+.odd2 {
+  grid-row: 3 / 5;
+}
+
+.carousel li {
+  border: 1px solid yellow;
+}
+
+img {
+  /* display: block; */
+  height: 200px;
+  width: 300px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 4px solid white;
+  border-radius: 5px;
+}
