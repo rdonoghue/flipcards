@@ -1,7 +1,16 @@
 "use strict";
 // INITIAL VALUES
 import { amberCards, otherCards } from "./trumpdata.js";
-const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
+const omitList = [
+  "unknown",
+  "shadow",
+  "ambercourt",
+  "lasaircaite",
+  "ambernobility",
+  "ambercourt",
+  "goldencircle",
+  "shadow",
+];
 
 // const cardDetails = amberCards;
 const cardDetails = Object.assign(amberCards, otherCards);

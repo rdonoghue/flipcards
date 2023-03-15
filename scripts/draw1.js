@@ -1,6 +1,15 @@
 "use strict";
 // INITIAL VALUES
-const omitList = ["unknown", "shadow", "ambercourt", "lasaircaite"];
+const omitList = [
+  "unknown",
+  "shadow",
+  "ambercourt",
+  "lasaircaite",
+  "ambernobility",
+  "ambercourt",
+  "goldencircle",
+  "shadow",
+];
 const zones = ["play"];
 
 import { amberCards, otherCards } from "./trumpdata.js";
