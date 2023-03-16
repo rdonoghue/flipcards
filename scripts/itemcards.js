@@ -25,6 +25,7 @@ var allCards = Object.assign(
   otherCards,
   placeCards
 );
+let currentHoverTarget;
 var cardIndex = deckSetup(allCards);
 var cardsInDeck = document.getElementsByClassName("indeck");
 const deckOutline = document.querySelector(".deckspace");
@@ -33,6 +34,7 @@ const overlayElement = document.querySelector(".helpoverlay");
 const helpElement = document.querySelector(".helpdetails");
 const helpButton = document.getElementById("gethelp");
 const pageHeader = document.querySelector("header");
+const cardInfo = document.getElementById("cardInfo");
 
 var activeCard;
 // FUNCTIONAL BUTTONS
@@ -47,6 +49,7 @@ createDeck();
 var moveCard = document.getElementsByClassName("card");
 for (let k = 0; k < moveCard.length; k++) {
   dragElement(moveCard[k]);
+  infoHover(moveCard[k]);
 }
 
 // FUNCTIONS
@@ -114,6 +117,12 @@ function getKeyboardInput(event) {
     console.log("show help overlay");
     console.log(overlayElement.classList);
     toggleHelp();
+  } else if (event.key == "Escape") {
+    if (overlayElement.classList[0] !== "hidden") {
+      toggleHelp();
+    }
+  } else if (event.key === "i") {
+    cardInfo.classList.toggle("hidden");
   }
   // else if (event.key == "1") {
   //   console.log("Active Card: " + activeCard.id);
@@ -129,6 +138,10 @@ function getKeyboardInput(event) {
   }, 500);
 
   activeCard = activeCard.parentNode.lastChild;
+}
+
+function infoHover(elmnt) {
+  elmnt.onmouseover = updateInfo;
 }
 
 function dragElement(elmnt) {
@@ -183,6 +196,16 @@ function dragElement(elmnt) {
   }
 }
 
+function updateInfo(e) {
+  const hoverCard = e.target.id;
+  if (hoverCard !== currentHoverTarget) {
+    currentHoverTarget = hoverCard;
+    cardInfo.innerHTML = `<h2>${allCards[hoverCard].cardname}</h2>
+  <h3>${allCards[hoverCard].tagline}</h3>
+  ${allCards[hoverCard].blurb}`;
+  }
+}
+
 function createDeck() {
   var location = document.getElementById("playspace");
   for (let k in cardIndex) {
@@ -192,7 +215,8 @@ function createDeck() {
     let myCard = document.createElement("div");
     myCard.setAttribute("id", cardIndex[k]);
     myCard.setAttribute("class", "card");
-    myCard.innerHTML = "<div class='cardface " + cardID + "'></div>";
+    myCard.innerHTML =
+      "<div class='cardface " + cardID + "' id='" + cardID + "'></div>";
     myCard.classList.add("indeck");
     location.appendChild(myCard);
     activeCard = myCard;
