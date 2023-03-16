@@ -9,10 +9,22 @@ const omitList = [
   "ambercourt",
   "goldencircle",
   "shadow",
+  "shadows",
+  "amber",
 ];
 
-import { amberCards, amberCourtCards, otherCards } from "./trumpdata.js";
-var allCards = Object.assign(amberCards, amberCourtCards, otherCards);
+import {
+  amberCards,
+  amberCourtCards,
+  otherCards,
+  placeCards,
+} from "./trumpdata.js";
+var allCards = Object.assign(
+  amberCards,
+  amberCourtCards,
+  otherCards,
+  placeCards
+);
 var cardIndex = deckSetup(allCards);
 var cardsInDeck = document.getElementsByClassName("indeck");
 const deckOutline = document.querySelector(".deckspace");

@@ -1,6 +1,6 @@
 "use strict";
 // INITIAL VALUES
-import { amberCards, otherCards } from "./trumpdata.js";
+import { amberCards, amberCourtCards, otherCards } from "./trumpdata.js";
 const omitList = [
   "unknown",
   "shadow",
@@ -13,7 +13,7 @@ const omitList = [
 ];
 
 // const cardDetails = amberCards;
-const cardDetails = Object.assign(amberCards, otherCards);
+const cardDetails = Object.assign(amberCards, amberCourtCards, otherCards);
 var liveDeck = shuffle(cardDetails);
 
 const zones = ["past", "present", "future"];
