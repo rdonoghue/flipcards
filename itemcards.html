@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.ico?" type="image/x-icon" />
+    <!-- <link rel="icon" href="img/unicorn.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="img/unicorn.ico" type="image/x-icon" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +22,49 @@
   </head>
   <body>
     <div class="hidden helpoverlay"></div>
+    <div class="hidden deckdetails">
+      <h3>Customize Deck</h3>
+      <p>Currently showing:</p>
+      <form id="customizeDeck" action="" method="POST">
+        <div class="tidycheckboxes">
+          <label class="cbholder"
+            >Scions of Amber
+            <input type="checkbox" name="scions" id="cb-scions" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="cbholder"
+            >Amber Nobility
+            <input type="checkbox" name="nobles" id="cb-nobles" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="cbholder"
+            >Citizens of Amber
+            <input type="checkbox" name="citizens" id="cb-citizens" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="cbholder"
+            >Denizens of Shadow
+            <input type="checkbox" name="shadows" id="cb-shadows" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="cbholder"
+            >Lasair Caite
+            <input type="checkbox" name="lc" id="cb-lc" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="cbholder"
+            >Places
+            <input type="checkbox" name="places" id="cb-places" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="btn2-holder">
+          <button class="btn2">Submit</button>
+        </div>
+        <div class="closex" id="closex">X</div>
+      </form>
+    </div>
     <div class="hidden helpdetails">
       <ul>
         <li>
@@ -57,11 +102,7 @@
 
         <li>
           <p>h</p>
-          <p>Hide deck and page elements.</p>
-        </li>
-        <li>
-          <p>u</p>
-          <p>Unhide deck and page elements.</p>
+          <p>Hide/unhide deck and page elements.</p>
         </li>
         <li>
           <p>?</p>
@@ -102,7 +143,8 @@
       <div class="deckspace"></div>
 
       <div class="buttonholder">
-        <button id="resetdeck">Reset</button> <button id="gethelp">Help</button>
+        <button id="resetdeck">Reset</button> <button id="gethelp">Help</button
+        ><button id="config">Configure</button>
       </div>
 
       <div id="playspace" class="playspace"></div>

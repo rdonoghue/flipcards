@@ -1,62 +1,159 @@
 "use strict";
 // INITIAL VALUES
-const omitList = [
-  "unknown",
-  "shadow",
-  "ambercourt",
-  "lasaircaite",
-  "ambernobility",
-  "ambercourt",
-  "goldencircle",
-  "shadow",
-  "shadows",
-  "amber",
-];
-
 import {
   amberCards,
   amberCourtCards,
   otherCards,
   placeCards,
 } from "./trumpdata.js";
-var allCards = Object.assign(
+const allCards = Object.assign(
   amberCards,
   amberCourtCards,
   otherCards,
   placeCards
 );
+
+var showCards = {
+  scions: [true, document.getElementById("cb-scions")],
+  nobles: [true, document.getElementById("cb-nobles")],
+  citizens: [true, document.getElementById("cb-citizens")],
+  shadows: [true, document.getElementById("cb-shadows")],
+  lc: [true, document.getElementById("cb-lc")],
+  places: [true, document.getElementById("cb-places")],
+};
+
 let currentHoverTarget;
 var cardIndex = deckSetup(allCards);
 var cardsInDeck = document.getElementsByClassName("indeck");
 const deckOutline = document.querySelector(".deckspace");
-var resetButton = document.getElementById("resetdeck");
+const resetButton = document.getElementById("resetdeck");
+const configButton = document.getElementById("config");
+const configClose = document.getElementById("closex");
+
 const overlayElement = document.querySelector(".helpoverlay");
 const helpElement = document.querySelector(".helpdetails");
+const custElement = document.querySelector(".deckdetails");
+
+const customizeDeck = document.getElementById("customizeDeck");
 const helpButton = document.getElementById("gethelp");
 const pageHeader = document.querySelector("header");
 const cardInfo = document.getElementById("cardInfo");
+var moveCard = document.getElementsByClassName("card");
 
 var activeCard;
 // FUNCTIONAL BUTTONS
-overlayElement.addEventListener("click", toggleHelp);
+overlayElement.addEventListener("click", clearOverlays);
 resetButton.addEventListener("click", resetDeck);
 helpButton.addEventListener("click", toggleHelp);
+configButton.addEventListener("click", toggleCustomize);
+configClose.addEventListener("click", toggleCustomize);
 document.addEventListener("keypress", getKeyboardInput);
+customizeDeck.addEventListener("submit", updateDeck);
 
 // CORE ACTIONS
+
 createDeck();
 
-var moveCard = document.getElementsByClassName("card");
-for (let k = 0; k < moveCard.length; k++) {
-  dragElement(moveCard[k]);
-  infoHover(moveCard[k]);
-}
+// for (let k in cardIndex) {
+//   console.log(k + ": " + cardIndex[k]);
+// }
+// for (let k in cardIndex) {
+//   let catString;
+//   if (typeof allCards[cardIndex[k]]["category"] !== "undefined") {
+//     catString = allCards[cardIndex[k]]["category"];
+//   } else {
+//     catString = "None";
+//   }
+//   console.log(k + ": " + cardIndex[k] + " - " + catString);
+// if (cardIndex[k]["category"]) {
+//   console.log(allCards[cardIndex[k]]["category"]);
+// } else {
+//   console.log("Undefined");
+// }
+// }
 
 // FUNCTIONS
 
+function shuffleAnimation() {
+  var location = document.getElementById("playspace");
+  const card1 = location.getElementsByClassName("card")[1];
+  const card2 = location.getElementsByClassName("card")[2];
+  const card3 = location.getElementsByClassName("card")[3];
+  const card4 = location.getElementsByClassName("card")[4];
+
+  card1.style.transition = "0.5s ease";
+  card2.style.transition = "0.5s ease";
+  card1.style.transition = "0.5s ease";
+  card2.style.transition = "0.5s ease";
+
+  card1.style.transform = "rotate(8deg)";
+  card2.style.transform = "rotate(-5deg)";
+  card3.style.transform = "rotate(6deg)";
+  card4.style.transform = "rotate(-4deg)";
+
+  setTimeout(function () {
+    card1.style.transform = "rotate(0deg)";
+    card2.style.transform = "rotate(0deg)";
+    card3.style.transform = "rotate(0deg)";
+    card4.style.transform = "rotate(0deg)";
+  }, 500);
+}
+
+function setCheckboxes() {
+  for (let k of Object.keys(showCards)) {
+    console.log(k);
+    showCards[k][1].checked = false;
+
+    if (showCards[k][0]) {
+      console.log(showCards[k][1]);
+      showCards[k][1].checked = true;
+    }
+  }
+}
+
+function updateDeck(event) {
+  clearOverlays();
+  event.preventDefault();
+  const formData = new FormData(event.target);
+
+  for (let k of Object.keys(showCards)) {
+    console.log(k + ": " + formData.get(k));
+    if (formData.get(k)) {
+      showCards[k][0] = true;
+    } else {
+      showCards[k][0] = false;
+    }
+  }
+  resetDeck();
+}
+
+function clearOverlays() {
+  custElement.classList.add("hidden");
+  helpElement.classList.add("hidden");
+  overlayElement.classList.add("hidden");
+}
+
 function toggleHelp() {
-  overlayElement.classList.toggle("hidden");
+  custElement.classList.add("hidden");
   helpElement.classList.toggle("hidden");
+  if (helpElement.classList.contains("hidden")) {
+    overlayElement.classList.add("hidden");
+  } else {
+    overlayElement.classList.remove("hidden");
+  }
+}
+
+function toggleCustomize() {
+  setCheckboxes();
+
+  helpElement.classList.add("hidden");
+  custElement.classList.toggle("hidden");
+  console.log(custElement.classList.contains("hidden"));
+  if (custElement.classList.contains("hidden")) {
+    overlayElement.classList.add("hidden");
+  } else {
+    overlayElement.classList.remove("hidden");
+  }
 }
 
 function getKeyboardInput(event) {
@@ -91,18 +188,49 @@ function getKeyboardInput(event) {
     resetDeck();
   } else if (event.key == "h") {
     for (let cardToHide of cardsInDeck) {
-      cardToHide.style.visibility = "hidden";
+      if (cardToHide.style.visibility !== "hidden") {
+        cardToHide.style.visibility = "hidden";
+      } else {
+        cardToHide.style.visibility = "visible";
+      }
     }
-    deckOutline.style.visibility = "hidden";
-    resetButton.style.visibility = "hidden";
-    helpButton.style.visibility = "hidden";
-    pageHeader.style.visibility = "hidden";
+    if (deckOutline.style.visibility !== "hidden") {
+      deckOutline.style.visibility = "hidden";
+    } else {
+      deckOutline.style.visibility = "visible";
+    }
+    if (resetButton.style.visibility !== "hidden") {
+      resetButton.style.visibility = "hidden";
+    } else {
+      resetButton.style.visibility = "visible";
+    }
+    if (helpButton.style.visibility !== "hidden") {
+      helpButton.style.visibility = "hidden";
+    } else {
+      helpButton.style.visibility = "visible";
+    }
+    if (configButton.style.visibility !== "hidden") {
+      configButton.style.visibility = "hidden";
+    } else {
+      configButton.style.visibility = "visible";
+    }
+    if (pageHeader.style.visibility !== "hidden") {
+      pageHeader.style.visibility = "hidden";
+    } else {
+      pageHeader.style.visibility = "visible";
+    }
+    // deckOutline.style.visibility = "hidden";
+    // resetButton.style.visibility = "hidden";
+    // helpButton.style.visibility = "hidden";
+    // pageHeader.style.visibility = "hidden";
   } else if (event.key == "u") {
     for (let cardToHide of cardsInDeck) {
       cardToHide.style.visibility = "visible";
     }
     deckOutline.style.visibility = "visible";
     resetButton.style.visibility = "visible";
+    configButton.style.visibility = "visible";
+
     helpButton.style.visibility = "visible";
     pageHeader.style.visibility = "visible";
   } else if (event.key == "t") {
@@ -117,13 +245,14 @@ function getKeyboardInput(event) {
     console.log("show help overlay");
     console.log(overlayElement.classList);
     toggleHelp();
-  } else if (event.key == "Escape") {
-    if (overlayElement.classList[0] !== "hidden") {
-      toggleHelp();
-    }
+  } else if (event.key === "`") {
+    clearOverlays();
   } else if (event.key === "i") {
     cardInfo.classList.toggle("hidden");
+  } else if (event.key === "c") {
+    toggleCustomize();
   }
+
   // else if (event.key == "1") {
   //   console.log("Active Card: " + activeCard.id);
   //   console.log(cardsInDeck.length);
@@ -208,7 +337,10 @@ function updateInfo(e) {
 
 function createDeck() {
   var location = document.getElementById("playspace");
+  location.innerHTML = "";
   for (let k in cardIndex) {
+    // console.log(k);
+    // console.log(cardIndex[k]);
     let myKey = cardIndex[k];
     let cardID = cardIndex[k];
     allCards[myKey]["angle"] = 0;
@@ -221,23 +353,58 @@ function createDeck() {
     location.appendChild(myCard);
     activeCard = myCard;
   }
+  for (let k = 0; k < moveCard.length; k++) {
+    dragElement(moveCard[k]);
+    infoHover(moveCard[k]);
+    moveCard[k].style = "";
+  }
+  shuffleAnimation();
 }
 
 function deckSetup(deck) {
   let cardList = Object.keys(deck);
-  for (let k in deck) {
-    deck[k]["angle"] = 0;
-  }
-  for (let k in omitList) {
-    let badCardNum = cardList.indexOf(omitList[k]);
-    let badCardName = omitList[k];
-    delete allCards[badCardName];
-    cardList.splice(badCardNum, 1);
-  }
+  let trueList = [];
+  let finalList = [];
 
-  cardList = shuffleArray(cardList);
+  for (let k of Object.keys(showCards)) {
+    if (showCards[k][0]) {
+      trueList.push(k);
+    }
+  }
+  // console.log("Using: " + trueList);
+  // console.log(`${cardList.length} cards in deck`);
 
-  return cardList;
+  for (let k of cardList) {
+    const cardCat = allCards[k]["category"];
+    if (!trueList.includes(cardCat)) {
+      // console.log(`Deleting ${k}`);
+    } else {
+      // console.log(`Adding ${k} to the deck`);
+      finalList.push(k);
+    }
+
+    // cardList[k]["angle"] = 0;
+    // const cardCat = allCards[k]["category"];
+
+    // if (!trueList.includes(cardCat)) {
+    // console.log(`${k}: nope`);
+    //     let badCardNum = cardList.indexOf(omitList[k]);
+    //     delete allCards[k];
+    //     cardList.splice(badCardNum, 1);
+    // } else {
+    // console.log(`${k}: yup`);
+    // }
+    // }
+    // for (let k in omitList) {
+    //   // let badCardNum = cardList.indexOf(omitList[k]);
+    //   let badCardName = omitList[k];
+    //   delete allCards[badCardName];
+    //   cardList.splice(badCardNum, 1);
+  }
+  // console.log(`${finalList.length} cards in deck`);
+
+  finalList = shuffleArray(finalList);
+  return finalList;
 }
 
 function shuffleArray(array) {
@@ -249,66 +416,8 @@ function shuffleArray(array) {
   }
   return array;
 }
-// function placeFirstCard() {
-//   var cardInit = document.getElementById("carddeck");
-//   cardInit.addEventListener("click", function () {
-//     revealCard();
-//   });
-// }
-
-// function revealCard() {
-//   var cardsLeft = cardIndex.length;
-
-//   var myCard = cardIndex.pop();
-//   cardContainer.classList.add("frozen");
-//   console.log(cardIndex.length + " cards left");
-//   console.log("You clicked it! " + cardFront.classList);
-//   cardFront.setAttribute("class", "cardface cardfront");
-//   cardFront.classList.add(myCard);
-//   cardContainer.classList.toggle("is-flipped");
-
-//   setTimeout(function () {
-//     cardBack.setAttribute("class", "cardface cardback");
-//     underCard.setAttribute("class", "cardface cardback");
-//     if (cardsLeft > 0) {
-//       cardBack.classList.add(myCard);
-//       underCard.classList.add(myCard);
-//     } else {
-//       cardBack.classList.add("royalback");
-//       underCard.classList.add("hidden");
-//     }
-//   }, 250);
-//   setTimeout(function () {
-//     cardContainer.classList.add("hidden");
-
-//     cardContainer.classList.toggle("is-flipped");
-//   }, 251);
-//   console.log("Remaining Deck: " + cardIndex);
-//   if (cardsLeft > 0) {
-//     setTimeout(function () {
-//       cardContainer.classList.remove("hidden");
-//       cardContainer.classList.remove("frozen");
-//     }, 600);
-//   } else {
-//     cardFront.classList = "cardface cardfront royalback";
-//     setTimeout(function () {
-//       cardContainer.classList.remove("frozen");
-//       backDeck.classList.add("hidden");
-//     }, 500);
-//   }
-//   console.log(underCard.classList);
-// }
 
 function resetDeck() {
-  location.reload();
-  // cardIndex = deckSetup(allCards);
-
-  // cardBack.classList = "cardface cardback royalback vibrate";
-  // underCard.classList = "cardface cardback royalback";
-  // cardFront.classList = "cardface cardfront";
-  // cardContainer.classList = "card allcards";
-  // backDeck.classList = "fauxcard backdeck l1 allcards";
-  // setTimeout(function () {
-  //   cardBack.classList = "cardface cardback royalback";
-  // }, 400);
+  cardIndex = deckSetup(allCards);
+  createDeck();
 }

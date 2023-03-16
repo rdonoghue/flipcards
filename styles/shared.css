@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: max(0.5rem 1.5rem);
+  font-size: 1.5rem;
 }
 
 a {
@@ -114,6 +114,20 @@ header a {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 20;
   visibility: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 64rem) {
+  header li {
+    font-size: 1rem;
+    padding-right: 4px;
+    padding-left: 4px;
+
+    margin-left: 5px;
+  }
 }
 
 @media (max-width: 48rem) {
