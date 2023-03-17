@@ -889,7 +889,7 @@ otherCards["lucatiel"] = {
   cardname: "Darkdiver Lucatiel",
   url: "../img/lucatiel.png",
   tagline: "Mercenary",
-  class: "lc",
+  class: "shadows",
   oneline: "Abyss Hunter",
 
   blurb:
@@ -926,6 +926,21 @@ otherCards["gael"] = {
     "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
   details:
     "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
+};
+
+otherCards["kaathe"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Kaathe",
+  url: "../img/kaathe.png",
+  tagline: "Sleep",
+  class: "shadows",
+  oneline: "The Dreamer who Must No Awaken",
+
+  blurb:
+    "<p>The Dreamer that must not be awakened. The creature is speculated to be one of the old Gods Oberon defeated and is surly, bored, and hungry. Not much else is known. </p>",
+  details:
+    "<p>The Dreamer that must not be awakened. The creature is speculated to be one of the old Gods Oberon defeated and is surly, bored, and hungry. Not much else is known. </p>",
 };
 
 const placeCards = {};
