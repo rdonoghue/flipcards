@@ -71,6 +71,7 @@ function buildCategories(cardList) {
 function setup(cardList) {
   for (var k in cardList) {
     if (cardDetails[k]["type"] == "child") {
+      console.log(k);
       let parentContainer = document.getElementById(cardList[k]["parent"]);
       var newButton = document.createElement("button");
       newButton.id = k;
@@ -92,11 +93,6 @@ function setup(cardList) {
     resetpage();
   });
 }
-
-// }
-// document.getElementById("pickrandom").addEventListener("click", function () {
-//   shuffle();
-// }
 
 function cardpivot() {
   return Math.floor(Math.random() * 12) - 6;

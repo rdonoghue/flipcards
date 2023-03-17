@@ -424,7 +424,7 @@ function deckSetup(deck) {
   // console.log(`${cardList.length} cards in deck`);
 
   for (let k of cardList) {
-    const cardCat = allCards[k]["category"];
+    const cardCat = allCards[k]["class"];
     if (!trueList.includes(cardCat)) {
       // console.log(`Deleting ${k}`);
     } else {
