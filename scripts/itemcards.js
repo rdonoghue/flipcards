@@ -85,12 +85,12 @@ function toggleGreenScreen() {
   if (pageBody.classList.contains("greenscreen")) {
     console.log("Hulk time");
     for (const k of allCards) {
-      console.log(k);
       k.classList.add("noshadow");
     }
   } else {
-    console.log("Puny banner!");
-    k.classList.remove("noshadow");
+    for (const k of allCards) {
+      k.classList.remove("noshadow");
+    }
   }
 }
 
