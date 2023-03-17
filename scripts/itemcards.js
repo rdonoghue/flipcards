@@ -21,9 +21,10 @@ var showCards = {
   lc: [true, document.getElementById("cb-lc")],
   places: [true, document.getElementById("cb-places")],
 };
-
+let greenScreen = 0;
 let currentHoverTarget;
 var cardIndex = deckSetup(allCards);
+const pageBody = document.querySelector("body");
 var cardsInDeck = document.getElementsByClassName("indeck");
 const deckOutline = document.querySelector(".deckspace");
 const resetButton = document.getElementById("resetdeck");
@@ -38,7 +39,9 @@ const customizeDeck = document.getElementById("customizeDeck");
 const helpButton = document.getElementById("gethelp");
 const pageHeader = document.querySelector("header");
 const cardInfo = document.getElementById("cardInfo");
-var moveCard = document.getElementsByClassName("card");
+const fishList = document.getElementById("fishcards");
+const fishForm = document.getElementById("gofish");
+const moveCard = document.getElementsByClassName("card");
 
 var activeCard;
 // FUNCTIONAL BUTTONS
@@ -49,6 +52,7 @@ configButton.addEventListener("click", toggleCustomize);
 configClose.addEventListener("click", toggleCustomize);
 document.addEventListener("keypress", getKeyboardInput);
 customizeDeck.addEventListener("submit", updateDeck);
+fishForm.addEventListener("submit", fishCard);
 
 // CORE ACTIONS
 
@@ -73,6 +77,47 @@ createDeck();
 // }
 
 // FUNCTIONS
+
+function toggleGreenScreen() {
+  pageBody.classList.toggle("greenscreen");
+  var allCards = document.querySelectorAll(".card");
+
+  if (pageBody.classList.contains("greenscreen")) {
+    console.log("Hulk time");
+    for (const k of allCards) {
+      console.log(k);
+      k.classList.add("noshadow");
+    }
+  } else {
+    console.log("Puny banner!");
+    k.classList.remove("noshadow");
+  }
+}
+
+function fishCard(event) {
+  clearOverlays();
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const chosenCard = formData.get("fishcards");
+  console.log(chosenCard);
+  const cardLoc = document.getElementById(chosenCard);
+  console.log(cardLoc);
+  cardLoc.parentNode.appendChild(cardLoc);
+
+  //  elmnt.parentNode.appendChild(elmnt);
+}
+
+function setUpFish() {
+  fishList.innerHTML = "";
+  const sortedList = cardIndex.sort();
+  const selectList = fishList;
+  for (let k of sortedList) {
+    var option = document.createElement("option");
+    option.text = allCards[k]["cardname"];
+    option.value = k;
+    selectList.add(option);
+  }
+}
 
 function shuffleAnimation() {
   var location = document.getElementById("playspace");
@@ -145,6 +190,7 @@ function toggleHelp() {
 
 function toggleCustomize() {
   setCheckboxes();
+  setUpFish();
 
   helpElement.classList.add("hidden");
   custElement.classList.toggle("hidden");
@@ -251,6 +297,8 @@ function getKeyboardInput(event) {
     cardInfo.classList.toggle("hidden");
   } else if (event.key === "c") {
     toggleCustomize();
+  } else if (event.key === "g") {
+    toggleGreenScreen();
   }
 
   // else if (event.key == "1") {
@@ -358,6 +406,7 @@ function createDeck() {
     infoHover(moveCard[k]);
     moveCard[k].style = "";
   }
+  setUpFish();
   shuffleAnimation();
 }
 

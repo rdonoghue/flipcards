@@ -4,11 +4,10 @@
 
 TODO:
 
-- need to seperate the redraw buttons from the length of the other columns
-- the background cards aren't resizing with the actual trumps
-- QUESTION: do I WANT the actual trumps resizing liek they are? Go back to pixels for the phone?
+- Mobile is still half assed, but I'm not 100% sure how this SHOULD work on a phone
+- Ugh, I really may need to get the data source switched over to JSON at some point here. No actual need yet, but it's getting cumbersome enough that I can feel the pressure.
+- Same for a general site overhaul. Initially built this all kind fo flat. I pulled the scripts and styles into folders and that had helped some, but the tabletop keep getting more complicated, and I really should break it up for ease of management.
 
 IDEA:
 
 - Move the header build into Javascript so I can stop updating it everywhere.
-- could I turn the flipcards from divs in to an unordered list?
