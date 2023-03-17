@@ -469,4 +469,12 @@ function shuffleArray(array) {
 function resetDeck() {
   cardIndex = deckSetup(allCards);
   createDeck();
+  cardInfo.classList.add("hidden");
+
+  // for (let k of Object.keys(showCards)) {
+  //   console.log(k);
+  //   showCards[k][0] = true;
+  // }
+
+  // console.log(showCards);
 }
