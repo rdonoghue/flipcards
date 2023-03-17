@@ -294,7 +294,9 @@ button {
 }
 
 .cardinfo {
-  min-height: 200px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 8rem;
   width: 350px;
   border: 1px dashed rgb(246, 209, 164);
   border-radius: 15px;
@@ -329,6 +331,13 @@ button {
   color: rgb(22, 22, 22);
   margin: 0;
   padding: 0 2ch 2ch 2ch;
+}
+
+.cardinfo .tagline {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgb(62, 18, 22);
 }
 
 .spacer {

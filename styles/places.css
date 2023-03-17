@@ -154,6 +154,14 @@ button:hover {
 #char-desc {
   padding: 0 1ch;
 }
+#char-oneline {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: "Aboreto", cursive;
+  color: rgb(246, 209, 164);
+  padding-bottom: 1rem;
+}
 
 .textbox {
   visibility: visible; /* margin-left: 2rem; */

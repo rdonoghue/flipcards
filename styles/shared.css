@@ -120,6 +120,14 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  cursor: pointer;
+}
+
+.trump-button {
+  cursor: pointer;
+}
+
 @media (max-width: 64rem) {
   header li {
     font-size: 1rem;

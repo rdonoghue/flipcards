@@ -120,10 +120,14 @@ function pickcard(cardId) {
   document.getElementById("frontCard").style.transform = "".concat(
     "rotate(" + cardpivot() + "deg)"
   );
+  document.getElementById("char-oneline").innerHTML =
+    cardDetails[cardId]["oneline"];
+
   document.getElementById("char-blurb").innerHTML =
     cardDetails[cardId]["cardname"];
 
-  document.getElementById("char-desc").innerHTML = cardDetails[cardId]["blurb"];
+  document.getElementById("char-desc").innerHTML =
+    cardDetails[cardId]["details"];
 
   document.getElementById("frontCard").classList.add("cardFace");
   document.getElementById("frontCard").classList.remove("cardReverse");

@@ -377,9 +377,9 @@ function updateInfo(e) {
   const hoverCard = e.target.id;
   if (hoverCard !== currentHoverTarget) {
     currentHoverTarget = hoverCard;
-    cardInfo.innerHTML = `<h2>${allCards[hoverCard].cardname}</h2>
-  <h3>${allCards[hoverCard].tagline}</h3>
-  ${allCards[hoverCard].blurb}`;
+    cardInfo.innerHTML = `<div><h2>${allCards[hoverCard].cardname}</h2></div>
+  <div><h3>${allCards[hoverCard].oneline}</h3></div>
+  <div class="tagline">${allCards[hoverCard].tagline}</div>`;
   }
 }
 
