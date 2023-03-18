@@ -1,8 +1,11 @@
 # flipcards
 
-## 3/16
+## Small TODO:
 
-TODO:
+- add some help text to the pages (tabletop, divination etc) so peopel know they can move the cards
+- decide if I keep draw 1 (probably not?)
+
+## Big TODO:
 
 - Mobile is still half assed, but I'm not 100% sure how this SHOULD work on a phone
 - Ugh, I really may need to get the data source switched over to JSON at some point here. No actual need yet, but it's getting cumbersome enough that I can feel the pressure.
