@@ -42,6 +42,7 @@ const cardInfo = document.getElementById("cardInfo");
 const fishList = document.getElementById("fishcards");
 const fishForm = document.getElementById("gofish");
 const moveCard = document.getElementsByClassName("card");
+const cardFaces = document.getElementsByClassName("cardface");
 
 var activeCard;
 // FUNCTIONAL BUTTONS
@@ -77,6 +78,18 @@ createDeck();
 // }
 
 // FUNCTIONS
+
+function zoomCard() {
+  activeCard.firstElementChild.classList.toggle("zoomcard");
+  // activeCard.classList.toggle("zoomcard");
+}
+
+function unZoomAll() {
+  for (let k of cardFaces) {
+    console.log(k);
+    k.classList.remove("zoomcard");
+  }
+}
 
 function toggleGreenScreen() {
   pageBody.classList.toggle("greenscreen");
@@ -299,6 +312,8 @@ function getKeyboardInput(event) {
     toggleCustomize();
   } else if (event.key === "g") {
     toggleGreenScreen();
+  } else if (event.key === "z") {
+    zoomCard();
   }
 
   // else if (event.key == "1") {
@@ -374,8 +389,11 @@ function dragElement(elmnt) {
 }
 
 function updateInfo(e) {
+  console.log(e.target);
+  console.log(e.target.id);
+
   const hoverCard = e.target.id;
-  if (hoverCard !== currentHoverTarget) {
+  if (hoverCard && hoverCard !== currentHoverTarget) {
     currentHoverTarget = hoverCard;
     cardInfo.innerHTML = `<div><h2>${allCards[hoverCard].cardname}</h2></div>
   <div><h3>${allCards[hoverCard].oneline}</h3></div>
@@ -393,7 +411,7 @@ function createDeck() {
     let cardID = cardIndex[k];
     allCards[myKey]["angle"] = 0;
     let myCard = document.createElement("div");
-    myCard.setAttribute("id", cardIndex[k]);
+    // myCard.setAttribute("id", cardIndex[k]);
     myCard.setAttribute("class", "card");
     myCard.innerHTML =
       "<div class='cardface " + cardID + "' id='" + cardID + "'></div>";
@@ -420,37 +438,14 @@ function deckSetup(deck) {
       trueList.push(k);
     }
   }
-  // console.log("Using: " + trueList);
-  // console.log(`${cardList.length} cards in deck`);
 
   for (let k of cardList) {
     const cardCat = allCards[k]["class"];
     if (!trueList.includes(cardCat)) {
-      // console.log(`Deleting ${k}`);
     } else {
-      // console.log(`Adding ${k} to the deck`);
       finalList.push(k);
     }
-
-    // cardList[k]["angle"] = 0;
-    // const cardCat = allCards[k]["category"];
-
-    // if (!trueList.includes(cardCat)) {
-    // console.log(`${k}: nope`);
-    //     let badCardNum = cardList.indexOf(omitList[k]);
-    //     delete allCards[k];
-    //     cardList.splice(badCardNum, 1);
-    // } else {
-    // console.log(`${k}: yup`);
-    // }
-    // }
-    // for (let k in omitList) {
-    //   // let badCardNum = cardList.indexOf(omitList[k]);
-    //   let badCardName = omitList[k];
-    //   delete allCards[badCardName];
-    //   cardList.splice(badCardNum, 1);
   }
-  // console.log(`${finalList.length} cards in deck`);
 
   finalList = shuffleArray(finalList);
   return finalList;
@@ -470,6 +465,7 @@ function resetDeck() {
   cardIndex = deckSetup(allCards);
   createDeck();
   cardInfo.classList.add("hidden");
+  unZoomAll();
 
   // for (let k of Object.keys(showCards)) {
   //   console.log(k);
