@@ -1,0 +1,147 @@
+main {
+  display: grid;
+  grid-template-columns: 12rem auto 12rem;
+  margin-top: 4rem;
+  /* border: 2px solid yellow;
+  background-color: gray; */
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(246, 209, 164);
+  font-family: "Aboreto", cursive;
+  text-align: center;
+}
+
+.content {
+  padding: 0 1rem;
+  margin: 0 2rem;
+}
+
+.side {
+  position: relative;
+  /* border: 1px solid teal; */
+}
+
+.credits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.creditbox {
+  background-color: rgb(246, 209, 164);
+  min-height: 100px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.creditbox a {
+  color: darkgreen;
+}
+
+.creditbox a:visited {
+  color: rgb(6, 82, 6);
+}
+
+.creditbox a:hover {
+  color: darkmagenta;
+}
+
+.creditbox h3 {
+  color: rgb(62, 18, 22);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.creditbox p,
+.creditbox ul {
+  color: rgb(62, 18, 22);
+  text-align: left;
+  margin: 0;
+}
+
+.creditbox ul {
+  list-style: disc;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  width: 150px;
+  aspect-ratio: 3 / 5;
+  background-color: white;
+  margin: 0;
+  border: 5px solid white;
+  border-radius: 10px;
+  flex-direction: column;
+  position: absolute;
+  transition: all 0.15s ease-in-out;
+  transform-style: preserve-3d;
+  box-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+.cardback {
+  background-image: url(/img/royalback-full.png);
+  background-size: cover;
+  transform: rotate(4deg);
+  top: 0;
+  right: 1rem;
+}
+
+.oberon {
+  background-image: url(/img/oberon.png);
+  background-size: cover;
+  transform: rotate(4deg);
+  top: 0;
+  left: 1rem;
+}
+
+.borel {
+  background-image: url(/img/borel.png);
+  background-size: cover;
+  transform: rotate(-6deg);
+  top: 175px;
+  right: 1.5rem;
+}
+
+.eira {
+  background-image: url(/img/eirashaol.png);
+  background-size: cover;
+  transform: rotate(-6deg);
+  top: 175px;
+  left: 0.75rem;
+}
+
+.cethlenn {
+  background-image: url(/img/cethlenn.png);
+  background-size: cover;
+  transform: rotate(5deg);
+  top: 350px;
+  right: 0.5rem;
+}
+.galina {
+  background-image: url(/img/galina.png);
+  background-size: cover;
+  transform: rotate(5deg);
+  top: 350px;
+  left: 1rem;
+}
+
+.liabelle {
+  background-image: url(/img/liabelle.png);
+  background-size: cover;
+  transform: rotate(-4deg);
+  top: 525px;
+  right: 0.75rem;
+}
+.serpent {
+  background-image: url(/img/serpentback.png);
+  background-size: cover;
+  transform: rotate(-4deg);
+  top: 525px;
+  left: 0.75rem;
+}

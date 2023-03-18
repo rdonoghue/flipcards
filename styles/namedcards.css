@@ -451,3 +451,8 @@
   background-image: url("../img/kaathe.png");
   background-size: cover;
 }
+
+.tribute {
+  background-image: url("../img/tribute.png");
+  background-size: cover;
+}

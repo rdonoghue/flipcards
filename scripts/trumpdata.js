@@ -627,6 +627,20 @@ amberCourtCards["filquoir"] = {
     "<p>Filquoir may be the most exotic attendee of the court of Amber. A sentient cat with plush fur and brilliant sapphire eyes, the being has been known to bring incredibly powerful artifacts such as rings to those who show favor. Rumor has it that equally incredible bad luck comes across those who try to harm the flamboyant feline. Her laughter often rings throughout social events, as well as the begging for fish. Filquoir is rumored to have been around since the founding of Amber and has also been a fixture for the children of Oberon who grew up or resided in the castle.</p>",
 };
 
+amberCourtCards["tribute"] = {
+  type: "child",
+  parent: "ambercourt-category",
+  cardname: "Tribute",
+  url: "../img/tribute.png",
+  tagline: "Tribute",
+  class: "citizens",
+  oneline: "Borel's Flaming Peacock",
+  blurb:
+    "<p>Spared from Oberon's wrath by Borel and fed on a diet of his blood, Tribute can transform into a fiery creature at his master's command.  Still makes incredibly annoying noises, though.</p>",
+  details:
+    "<p>Spared from Oberon's wrath by Borel and fed on a diet of his blood, Tribute can transform into a fiery creature at his master's command.  Still makes incredibly annoying noises, though.</p>",
+};
+
 amberCourtCards["pfeiffer"] = {
   type: "child",
   parent: "ambercourt-category",

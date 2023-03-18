@@ -59,34 +59,14 @@ fishForm.addEventListener("submit", fishCard);
 
 createDeck();
 
-// for (let k in cardIndex) {
-//   console.log(k + ": " + cardIndex[k]);
-// }
-// for (let k in cardIndex) {
-//   let catString;
-//   if (typeof allCards[cardIndex[k]]["category"] !== "undefined") {
-//     catString = allCards[cardIndex[k]]["category"];
-//   } else {
-//     catString = "None";
-//   }
-//   console.log(k + ": " + cardIndex[k] + " - " + catString);
-// if (cardIndex[k]["category"]) {
-//   console.log(allCards[cardIndex[k]]["category"]);
-// } else {
-//   console.log("Undefined");
-// }
-// }
-
 // FUNCTIONS
 
 function zoomCard() {
   activeCard.firstElementChild.classList.toggle("zoomcard");
-  // activeCard.classList.toggle("zoomcard");
 }
 
 function unZoomAll() {
   for (let k of cardFaces) {
-    console.log(k);
     k.classList.remove("zoomcard");
   }
 }
@@ -96,7 +76,6 @@ function toggleGreenScreen() {
   var allCards = document.querySelectorAll(".card");
 
   if (pageBody.classList.contains("greenscreen")) {
-    console.log("Hulk time");
     for (const k of allCards) {
       k.classList.add("noshadow");
     }
@@ -114,8 +93,8 @@ function fishCard(event) {
   const chosenCard = formData.get("fishcards");
   console.log(chosenCard);
   const cardLoc = document.getElementById(chosenCard);
-  console.log(cardLoc);
-  cardLoc.parentNode.appendChild(cardLoc);
+  const cardHolder = cardLoc.parentNode;
+  cardHolder.parentNode.appendChild(cardHolder);
 
   //  elmnt.parentNode.appendChild(elmnt);
 }
@@ -159,7 +138,7 @@ function shuffleAnimation() {
 
 function setCheckboxes() {
   for (let k of Object.keys(showCards)) {
-    console.log(k);
+    // console.log(k);
     showCards[k][1].checked = false;
 
     if (showCards[k][0]) {
@@ -175,7 +154,7 @@ function updateDeck(event) {
   const formData = new FormData(event.target);
 
   for (let k of Object.keys(showCards)) {
-    console.log(k + ": " + formData.get(k));
+    // console.log(k + ": " + formData.get(k));
     if (formData.get(k)) {
       showCards[k][0] = true;
     } else {
@@ -207,7 +186,7 @@ function toggleCustomize() {
 
   helpElement.classList.add("hidden");
   custElement.classList.toggle("hidden");
-  console.log(custElement.classList.contains("hidden"));
+  // console.log(custElement.classList.contains("hidden"));
   if (custElement.classList.contains("hidden")) {
     overlayElement.classList.add("hidden");
   } else {
@@ -301,8 +280,8 @@ function getKeyboardInput(event) {
   } else if (event.key == "b") {
     activeCard.parentNode.prepend(activeCard);
   } else if (event.key == "?") {
-    console.log("show help overlay");
-    console.log(overlayElement.classList);
+    // console.log("show help overlay");
+    // console.log(overlayElement.classList);
     toggleHelp();
   } else if (event.key === "`") {
     clearOverlays();
@@ -389,8 +368,8 @@ function dragElement(elmnt) {
 }
 
 function updateInfo(e) {
-  console.log(e.target);
-  console.log(e.target.id);
+  // console.log(e.target);
+  // console.log(e.target.id);
 
   const hoverCard = e.target.id;
   if (hoverCard && hoverCard !== currentHoverTarget) {

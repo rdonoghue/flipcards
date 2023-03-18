@@ -10,16 +10,8 @@
     />
 
     <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/cardpage.css" />
-    <link rel="stylesheet" href="styles/namedcards.css" />
+    <link rel="stylesheet" href="styles/text.css" />
 
-    <script
-      src="scripts/cardpage.js"
-      type="module"
-      handoff="ambercards"
-      id="callcards"
-      defer
-    ></script>
     <script src="scripts/shared.js" type="module" defer></script>
   </head>
   <body tag="amber">
@@ -30,7 +22,8 @@
       </div>
 
       <ul id="navigator">
-        <li class="active"><a href="index.html">Scions of Amber</a></li>
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="scions.html">Scions of Amber</a></li>
         <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
         <li><a href="cards-other.html">Others of Note</a></li>
         <li><a href="places.html">Places</a></li>
@@ -42,49 +35,109 @@
       </ul>
     </header>
     <main>
-      <nav>
-        <div id="buttonList" class="sidenav"></div>
-      </nav>
-      <div class="centercolumn">
-        <div id="char-blurb">Prosperity</div>
-
-        <div class="cardholder">
-          <div class="card cardReverse" id="frontCard">
-            <div class="cardbody">
-              <img
-                class="trump"
-                id="trumpImage"
-                src="/img/royalback-full.png"
-              />
-            </div>
-            <div class="cardcaption">
-              <p class="cardcaptiontext" id="cardname"></p>
-            </div>
+      <div class="side">
+        <div class="card cardback"></div>
+        <div class="card borel"></div>
+        <div class="card cethlenn"></div>
+        <div class="card liabelle"></div>
+      </div>
+      <div class="content">
+        <h1>Prosperity</h1>
+        <p>
+          Prosperity is a roleplaying game based loosely on Roger Zelazny's
+          <i>Amber</i> novels. It includes concepts from the novels and the
+          Amber DRPG, but the children of Oberon and many of the powers and
+          secrets of the universe are different in ways we are discovering
+          through play.
+        </p>
+        <p>
+          In the game, Amber has spent much of its history at war, so it is
+          noteworthy that it has entered a period of peace, and in recognition
+          of this, Oberon has declared the <b>Prosperity Court</b> in
+          celebration. His children have been called back from across shadow to
+          celebrate.
+        </p>
+        <p>
+          The game is being played with a homebrew system taking influences from
+          the Amber DRPG, Fate and Blades in the Dark. This site was created
+          because trumps have always been one of the very fun parts of any Amber
+          game, and we really just wanted to pull them all into one place.
+        </p>
+        <h2>Credits</h2>
+        <div class="credits">
+          <div class="creditbox">
+            <h3>People</h3>
+            <ul>
+              <li>Morgan (GM and Designer)</li>
+              <li>Beth (Cethlenn)</li>
+              <li>Deborah (Liabelle)</li>
+              <li>Rob (Borel)</li>
+            </ul>
           </div>
-
-          <div id="cardmeaning"></div>
-
-          <div class="bottombox">
-            <div id="cardmanip">
-              <button id="pickrandom" class="btn">Random Draw</button>
-              <button id="resetpage" class="btn">Reset</button>
-            </div>
+          <div class="creditbox">
+            <h3>Art</h3>
+            <ul>
+              <li>
+                Anderon:
+                <a href="https://www.artstation.com/kyanfiltiarn"
+                  >Kurt Ian Ferrer</a
+                >
+              </li>
+              <li>
+                Velka:
+                <a href="https://www.artstation.com/lucassoo">Lucas Soo</a>
+              </li>
+              <li>
+                All other Scion trumps:
+                <a href="https://baconstrap.carbonmade.com/">Mattias Nyström</a>
+              </li>
+            </ul>
+            <p>Other images generated with Midjourney</p>
           </div>
-
-          <div class="fauxcard backdeck l1" id="backdeck1">
-            <div class="fauxcardback royalback"></div>
+          <div class="creditbox">
+            <h3>Influences</h3>
+            <ul>
+              <li>
+                <a href="https://www.drivethrurpg.com/product/1447/Amber"
+                  >Amber Diceless Roelplaying</a
+                >
+              </li>
+              <li><a href="https://fate-srd.com/">Fate</a></li>
+              <li>
+                <a href="https://evilhat.com/product/blades-in-the-dark/"
+                  >Blades in the Dark</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.drivethrurpg.com/product/119779/Lords-of-Gossamer--Shadow-Diceless"
+                  >Lords of Gossamer and Shadow</a
+                >
+              </li>
+              <li>
+                <a href="https://smallcoolgames.itch.io/vergence">Vergence</a>
+              </li>
+            </ul>
           </div>
-          <div class="fauxcard backdeck l2" id="backdeck1">
-            <div class="fauxcardback royalback"></div>
-          </div>
-          <div class="fauxcard backdeck l3" id="backdeck1">
-            <div class="fauxcardback royalback"></div>
+          <div class="creditbox">
+            <h3>Site</h3>
+            <p>
+              Rob built this site as something of a learning project, so it's
+              definitely a bit janky in places. For the moment, it's a static
+              site (in order to simplify hosting) and things like the mobile
+              experience are lacking, but it's slowly getting improved. Source
+              is viewable on
+              <a href="https://github.com/rdonoghue/flipcards">github</a> and is
+              hosted on <a href="https://www.netlify.com/">netlify</a>.
+            </p>
           </div>
         </div>
       </div>
-      <div class="textbox" id="chardesc">
-        <div id="char-oneline"></div>
-        <div id="char-desc">Welcome to the Prosperity Court of Amber.</div>
+      <div class="side">
+        <div class="card oberon"></div>
+        <div class="card eira"></div>
+        <div class="card galina"></div>
+        <div class="card serpent"></div>
       </div>
     </main>
   </body>
