@@ -148,7 +148,6 @@ h3 {
   main {
     display: flex;
     width: 100%;
-    border: 2px solid pink;
     margin: 0;
   }
   .content {
