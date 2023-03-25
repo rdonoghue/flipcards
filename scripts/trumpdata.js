@@ -1068,6 +1068,21 @@ placeCards["arden"] = {
     "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas</p>",
 };
 
+placeCards["makingwaves"] = {
+  type: "child",
+  parent: "amber-category",
+  cardname: "Making Waves",
+  url: "../img/makingwaves.png",
+  tagline: "Celebration",
+  oneline: "Making Waves",
+
+  class: "places",
+  blurb:
+    "<p>A popular bar/club in Amber City, owned and operated by Rockscomb. It's a popular musical venue, and has a number of decorative features straongly influenced by Rockscomb's home shadow.</p>",
+  details:
+    "<p>A popular bar/club in Amber City, owned and operated by Rockscomb. It's a popular musical venue, and has a number of decorative features straongly influenced by Rockscomb's home shadow.</p>",
+};
+
 placeCards["rebma"] = {
   type: "child",
   parent: "gc-category",
