@@ -264,6 +264,7 @@ button {
 
 .deckholder {
   position: relative;
+  margin: 0 1rem;
   /* border: 1px solid pink; */
 }
 
