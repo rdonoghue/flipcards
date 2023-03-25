@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/divination.css" />
     <link rel="stylesheet" href="styles/namedcards.css" />
-    <script src="scripts/divination.js" type="module" defer></script>
+    <script src="scripts/makeheader.js" type="module" defer></script>
     <script src="scripts/shared.js" type="module" defer></script>
+    <script src="scripts/divination.js" type="module" defer></script>
 
     <title>Trump Divination</title>
   </head>
@@ -42,46 +43,46 @@
         <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
       </ul>
     </header>
+    <div class="controls">
+      <button class="reset-button" id="resetSpread">Draw a New Spread</button>
+    </div>
     <main>
-      <div class="controls">
-        <button id="resetSpread">Draw a New Spread</button>
-        <!-- <button id="facedown">Face Down</button> -->
-        <!-- <button id="faceup">Face up</button> -->
-      </div>
       <div class="columnWrapper">
-        <div class="cardmeaning" id="pastmeaning"></div>
         <div class="playcard" id="pastspace">
+          <div class="cardtime">The Past</div>
           <div class="flipspace">
             <div class="card" id="cardpast">
               <div class="cardface cardback stoneback"></div>
               <div id="past" class="cardface cardfront"></div>
             </div>
           </div>
-          <h2>The Past</h2>
+          <div class="cardmeaning" id="pastmeaning"></div>
         </div>
       </div>
       <div class="columnWrapper">
-        <div class="cardmeaning" id="presentmeaning"></div>
         <div class="playcard" id="presentspace">
+          <div class="cardtime">The Present</div>
+
           <div class="flipspace">
             <div class="card" id="cardpresent">
               <div class="cardface cardback starback"></div>
               <div id="present" class="cardface cardfront"></div>
             </div>
           </div>
-          <h2>The Present</h2>
+          <div class="cardmeaning" id="presentmeaning"></div>
         </div>
       </div>
       <div class="columnWrapper">
-        <div class="cardmeaning" id="futuremeaning"></div>
         <div class="playcard" id="futurespace">
+          <div class="cardtime">The Future</div>
+
           <div class="flipspace">
             <div class="card" id="cardfuture">
               <div class="cardface cardback fireback"></div>
               <div id="future" class="cardface cardfront"></div>
             </div>
           </div>
-          <h2>The Future</h2>
+          <div class="cardmeaning" id="futuremeaning"></div>
         </div>
       </div>
     </main>

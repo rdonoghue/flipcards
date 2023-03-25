@@ -51,6 +51,7 @@ function buildCategories(cardList) {
 
       var newButton = document.createElement("button");
       newButton.id = k;
+      newButton.classList.add("trump-button");
       newButton.addEventListener("click", function () {
         pickcard(this.id);
       });
@@ -114,8 +115,8 @@ function pickcard(cardId) {
   );
   document.getElementById("char-oneline").innerHTML =
     cardDetails[cardId]["oneline"];
-  // document.getElementById("char-blurb").innerHTML =
-  //   cardDetails[cardId]["cardname"];
+  document.getElementById("char-blurb").innerHTML =
+    cardDetails[cardId]["cardname"];
 
   document.getElementById("char-desc").innerHTML =
     cardDetails[cardId]["details"];
@@ -130,7 +131,7 @@ function resetpage() {
     "rotate(" + cardpivot() + "deg)"
   );
   document.getElementById("cardmeaning").innerHTML = "<p> </p>";
-
+  document.getElementById("char-oneline").innerHTML = "<p> </p>";
   document.getElementById("char-blurb").innerHTML = "Prosperity";
   document.getElementById("char-desc").innerHTML =
     "<p>Welcome to the Prosperity Court</p>";

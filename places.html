@@ -13,31 +13,30 @@
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/namedcards.css" />
     <link rel="stylesheet" href="styles/places.css" />
+    <link rel="stylesheet" href="styles/infocards.css" />
+
+    <script src="scripts/makeheader.js" type="module" defer></script>
+    <script src="scripts/shared.js" type="module" defer></script>
 
     <script
-    src="scripts/places.js"
-    type="module"
-    id="callcards"
-    handoff="places"
-    defer
-  ></script>
-  <script src="scripts/shared.js" type="module" defer></script>
-
-
+      src="scripts/places.js"
+      type="module"
+      id="callcards"
+      handoff="places"
+      defer
+    ></script>
   </head>
   <body tag="other">
     <div class="overlay"></div>
     <header>
       <div class="hamburger">
- <img src="img/menu.png" class="menuburger">
-  
-            </div>
-      
-        <ul id="navigator">
-          <li><a href="index.html">About</a></li>
-          <li><a href="scions.html">Scions of Amber</a></li>
+        <img src="img/menu.png" class="menuburger" />
+      </div>
+      <ul id="navigator">
+        <li><a href="index.html">About</a></li>
+        <li><a href="scions.html">Scions of Amber</a></li>
         <li><a href="cards-ambercourt.html">The Court of Amber</a></li>
-        <li ><a href="cards-other.html">Others of Note</a></li>
+        <li><a href="cards-other.html">Others of Note</a></li>
         <li class="active"><a href="places.html">Places</a></li>
         <li><a href="flipcards.html">The Spread</a></li>
         <li><a href="draw1.html">Draw a Card</a></li>
@@ -51,41 +50,30 @@
         <div id="buttonList" class="sidenav"></div>
       </nav>
       <div class="centercolumn">
+        <div id="cardmanip">
+          <button id="pickrandom" class="btn">Random Draw</button>
+          <button id="resetpage" class="btn">Reset</button>
+        </div>
         <div id="char-blurb">Locations</div>
-      <div class="cardholder">
-        <div class="card royalbackfull rotate180" id="frontCard"></div>
-          <!-- <div class="cardbody amberback">
-            <img class="trump" id="trumpImage" src="/img/royalback-full.png" />
-          </div> -->
+        <div class="cardholder">
+          <div class="card royalbackfull rotate180" id="frontCard"></div>
           <div class="fauxcardholder z1">
-        <div class="fauxcard l1 royalbackfull"></div>
-
-      </div>
-      <div class="fauxcardholder z2">
-        <div class="fauxcard l2  royalbackfull"></div>
-
-      </div>
-      <div class="fauxcardholder z3">
-        <div class="fauxcard l3 royalbackfull"></div>
-
-      </div>
-        <div id="cardmeaning"></div>
-        <div class="bottombox">
-          <div id="cardmanip">
-            <button id="pickrandom" class="btn">Random Draw</button>
-            <button id="resetpage" class="btn">Reset</button>
+            <div class="fauxcard l1 royalbackfull"></div>
+          </div>
+          <div class="fauxcardholder z2">
+            <div class="fauxcard l2 royalbackfull"></div>
+          </div>
+          <div class="fauxcardholder z3">
+            <div class="fauxcard l3 royalbackfull"></div>
           </div>
         </div>
 
+        <div id="cardmeaning"></div>
       </div>
-    </div>      </div>
-
- 
       <div class="textbox" id="chardesc">
         <div id="char-oneline"></div>
         <div id="char-desc">Welcome to the Prosperity Court of Amber.</div>
       </div>
     </main>
   </body>
-
 </html>

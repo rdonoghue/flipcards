@@ -1,0 +1,29 @@
+.thumbnails {
+  display: none;
+}
+
+.thumbnailcard {
+  background-color: bisque;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+@media (max-width: 767.98px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidenav {
+    overflow-y: auto;
+    height: 4rem;
+  }
+  .trump-button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+}
