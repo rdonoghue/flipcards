@@ -98,7 +98,7 @@ amberCards["dworkin"] = {
   blurb:
     "<p>Formerly the royal court sorcerer, the hunchback Dworkin ceded the role in recent years to Princess Ciara, turning his attention to his art. His agents, wearing traditional red cloaks with the Unicorn embroidered in gold, can be found doing all manner of odd tasks throughout the golden circle.</p>",
   details:
-    "<p>Formerly the royal court sorcerer, the hunchback Dworkin ceded the role in recent years to Princess Ciar. Becoming more elusive as a result, the old dwarf tends to operate by sending trusted servants and proxies. That Dworkin is classified as a faction and not as a courtier is because he tends to be heavily involved in assigning seemingly mundane and obtuse tasks to other powers and factions, who are eager to do the reclusive figure a favor.<p></p>Dworkin's representatives, beyond engaging with those in the court, are often seen running a mix of errands in the cities of Amber and the Golden Circle. Wearing traditional red cloaks with the Unicorn embroidered in gold, Dworkin's proxies also run an art gallery in the lower city dedicated to Dworkin's psychedelic paintings and the Masters brand of oils that Dworkin creates and sells.</p>",
+    "<p>Formerly the royal court sorcerer, the hunchback Dworkin ceded the role in recent years to Princess Ciara. Becoming more elusive as a result, the old dwarf tends to operate by sending trusted servants and proxies. That Dworkin is classified as a faction and not as a courtier is because he tends to be heavily involved in assigning seemingly mundane and obtuse tasks to other powers and factions, who are eager to do the reclusive figure a favor.<p></p>Dworkin's representatives, beyond engaging with those in the court, are often seen running a mix of errands in the cities of Amber and the Golden Circle. Wearing traditional red cloaks with the Unicorn embroidered in gold, Dworkin's proxies also run an art gallery in the lower city dedicated to Dworkin's psychedelic paintings and the Masters brand of oils that Dworkin creates and sells.</p>",
 };
 
 // Velka
@@ -189,7 +189,7 @@ amberCards["roichard"] = {
   blurb:
     "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other. He has been ascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p>",
   details:
-    "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber,but is known for are the varying war machines he has constructed in the shadows for Amber’s conquests and defenses. Recently, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named ‘Dextero.’.</p>",
+    "<p>Roichard claims he came into this world with a wrench in one hand and a brush in the other - given the rumors of how he was created by Fina and Oberon, some may even believe the Prince. Fascinated by mechanisms as long as he can remember, Roichard has adopted the Golden Circle shadow of Begma as a second home, and owns a large estate in the city state of Dinalo. Loud and boisterous, Roichard is possibly responsible for more explosions in Amber than anyone else as a result of efforts to get technology working.</p><p>  Roichard has no official title in Amber beyond Prince of Amber,but is known for are the varying war machines he has constructed in the shadows for Amber's conquests and defenses. Recently, Roichard has gotten the first successful trans-shadow railway between Begma and Montevalno running (somewhat) reliably.</p><p>With the onset of peace, Roichard comes to court when summoned but otherwise paints his next great mechanism, contraption, or dream. Bevin is often a partner in the great Begman workshop Roichard operates out of, and they are working on a top secret mechanical  construct that they have fondly named 'Dextero'.</p>",
 };
 
 amberCards["cethlenn"] = {
@@ -233,7 +233,7 @@ amberCards["ciara"] = {
   oneline: "Daughter of Oberon & Milesia<br>Court Sorceress",
 
   blurb:
-    "<p>Second daughter of Oberon and Ophelia, she has been Dworkin's student and currently serves as Amber's sorcerer in residence. She was married, for a time, to a lord of the Lasir Caite, and her children have gotten old enough to start taking an interest in Amber.</a>.</p>",
+    "<p>Second daughter of Oberon and Ophelia, she has been Dworkin's student and currently serves as Amber's sorcerer in residence. She was married, for a time, to a lord of the Lasir Caite, and her children have gotten old enough to start taking an interest in Amber</a>.</p>",
   details:
     "<p>Second daughter of Oberon and Ophelia, she has been Dworkin's student and currently serves as Amber's sorcerer in residence. She was married, for a time, to a lord of the Lasir Caite, and her children have gotten old enough to start taking an interest in Amber.</a>.</p>",
 };
@@ -264,7 +264,7 @@ amberCards["bevin"] = {
   blurb:
     "<p>Bevin views the royal family of Amber as a gift, if one that has to be handled carefully. With gloves.</p><p> The prince is an incredibly gifted warrior, but is loathe to draw a blade, however, and views the explosion of life in the shadows as the ultimate gift that Amber’s creation provides. He will truly kill only as a last resort, though once the decision has been made very little will change  his mind.</p><p>He currently acts as Amber’s ambassador to the Golden Circle.</p>",
   details:
-    "<p>“Keenly aware of the family across the shadows and the challenges he has had connecting with the Lasair Caite, Bevin views the royal family of Amber as a gift, if one that has to be handled carefully. With gloves.</p><p> The prince is an incredibly gifted warrior, his reputation cemented in infamy after besting Lorec at one of the melees in Anderon’s name. Bevin is loathe to draw a blade, however, and views the explosion of life in the shadows as the ultimate gift that Amber’s creation provides. He will truly kill only as a last resort, though once the decision has been made very little will change Bevin’s mind about the task at hand.</p><p>Bevin convinced Eira Shaol to make him Amber’s ambassador to the Golden Circle and relishes exploring the primal shadows to learn every detail, every alley, every hidden statue.</p>",
+    "<p>Keenly aware of the family across the shadows and the challenges he has had connecting with the Lasair Caite, Bevin views the royal family of Amber as a gift, if one that has to be handled carefully. With gloves.</p><p> The prince is an incredibly gifted warrior, his reputation cemented in infamy after besting Lorec at one of the melees in Anderon’s name. Bevin is loathe to draw a blade, however, and views the explosion of life in the shadows as the ultimate gift that Amber’s creation provides. He will truly kill only as a last resort, though once the decision has been made very little will change Bevin’s mind about the task at hand.</p><p>Bevin convinced Eira Shaol to make him Amber’s ambassador to the Golden Circle and relishes exploring the primal shadows to learn every detail, every alley, every hidden statue.</p>",
 };
 
 amberCards["alaric"] = {
@@ -309,9 +309,9 @@ amberCards["liabelle"] = {
   oneline: "Daughter of Oberon & Eira Shaol,<br>Éminence Grise",
 
   blurb:
-    "<p>Liabelle is never not at war, it is only the means which change</p>",
+    "<p>Liabelle is never not at war, it is only the means which change.</p>",
   details:
-    "<p>Liabelle is never not at war, it is only the means which change</p>",
+    "<p>Liabelle is never not at war, it is only the means which change.</p>",
 };
 
 amberCards["diolinda"] = {
@@ -357,9 +357,9 @@ amberCards["ava"] = {
   oneline: "Daughter of Oberon<br>Queen of Minos",
 
   blurb:
-    "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
+    "<p>Oberon's semi-acknowledged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
   details:
-    "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
+    "<p>Oberon's semi-acknowledged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
 const amberCourtCards = {};
 
@@ -516,9 +516,9 @@ amberCourtCards["desdemona"] = {
   oneline: "Ambassador of Tir Na Nog'th(?)",
 
   blurb:
-    "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: “We are not concerned with the affairs of others.</p>",
+    "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: <i>We are not concerned with the affairs of others.</i></p>",
   details:
-    "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: “We are not concerned with the affairs of others.</p>",
+    "<p>Desdemona claims to be a representative of the night city of Tir Na Nog’th and The Monarch Beyond, Queen Titania. The Ambassador’s presence has done little to increase what is known about the city in the sky or any potential interests from within, instead professing to speak as an oracle and to provide guidance for the royal court as an adviser when asked. Otherwise, her official position is a familiar statement: <i>We are not concerned with the affairs of others.</i></p>",
 };
 
 amberCourtCards["rockscomb"] = {
@@ -650,9 +650,9 @@ amberCourtCards["pfeiffer"] = {
   class: "citizens",
   oneline: "Clerk of Dworkin's Gallery",
   blurb:
-    "<p>Pfieffer is employed running the front desk at the Masters Gallery in Amber City.  He captured Dworkin 's eye working as a street caricaturist, and has had his talent cultivated since, though he is terribly put upon in the process.  He's a good kid.</p>",
+    "<p>Pfieffer is employed running the front desk at the Masters Gallery in Amber City.  He captured Dworkin's eye working as a street caricaturist, and has had his talent cultivated since, though he is terribly put upon in the process.  He's a good kid.</p>",
   details:
-    "<p>Pfieffer is employed running the front desk at the Masters Gallery in Amber City.  He captured Dworkin 's eye working as a street caricaturist, and has had his talent cultivated since, though he is terribly put upon in the process.  He's a good kid.</p>",
+    "<p>Pfieffer is employed running the front desk at the Masters Gallery in Amber City.  He captured Dworkin's eye working as a street caricaturist, and has had his talent cultivated since, though he is terribly put upon in the process.  He's a good kid.</p>",
 };
 
 const otherCards = {};
@@ -819,8 +819,9 @@ otherCards["samson"] = {
   class: "lc",
   oneline: "Visiting Noble<br>Paramour of Cethlenn",
 
-  blurb: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel</p>",
-  details: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel</p>",
+  blurb: "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel.</p>",
+  details:
+    "<p>Paramour of Cethlenn. Troublemaker. Recurring foil of Borel.</p>",
 };
 
 otherCards["strowan"] = {
@@ -1036,7 +1037,7 @@ placeCards["summerpalace"] = {
   blurb:
     "<p>Located on an island near Bayle territory, this palace serves as a retreat for the king or queen, and includes numerous wonders, including the king's personal zoo.</p>",
   details:
-    "<p>Located on an island near Bayle territory, this palace serves as a retreat for the king or queen, and includes numerous wonders, including the king's personal zoo.</p><p>Come for the sea and the zoo, stay for the Oubliettes</p>",
+    "<p>Located on an island near Bayle territory, this palace serves as a retreat for the king or queen, and includes numerous wonders, including the king's personal zoo.</p><p>Come for the sea and the zoo, stay for the Oubliettes.</p>",
 };
 
 placeCards["brandheim"] = {
@@ -1063,9 +1064,9 @@ placeCards["arden"] = {
 
   class: "places",
   blurb:
-    "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas</p>",
+    "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas.</p>",
   details:
-    "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas</p>",
+    "<p>The shadow forest of Arden surrounds Amber from land, with the ocean being the entrance to Amber from those sailing the shadow seas.</p>",
 };
 
 placeCards["makingwaves"] = {
@@ -1118,9 +1119,9 @@ placeCards["minos"] = {
   class: "places",
   oneline: "Nation of Sail",
   blurb:
-    "<p>Minos is a seafaring nation in the golden circle, currently in a steadily simmering conflict with Begma .  Currently ruled by Ava after the death of the former Pirate King, Volund at the hand of Princess Fenella.</p>",
+    "<p>Minos is a seafaring nation in the golden circle, currently in a steadily simmering conflict with Begma.  Currently ruled by Ava after the death of the former Pirate King, Volund at the hand of Princess Fenella.</p>",
   details:
-    "<p>Minos is a seafaring nation in the golden circle, currently in a steadily simmering conflict with Begma .  Currently pulled by Ava after the death of the former Pirate King, Volund at the hand of Princess Fenella.</p><p>Using the chaos from Volund's death, Ava achieved control over Minos' fractured sea kings only to be challenged by unidentified assailants from the shadows utilizing cannons with an unknown powder that somehow ignites within Minos. Ava has openly accused Begma  of this complication, something the Golden Circle neighbor categorically denies. This is to say nothing the insistence from those under Ava that Amber is due for a bloody nose; the popular argument is not even Oberon's family should be allowed to randomly murder Minosian leadership.</p>",
+    "<p>Minos is a seafaring nation in the golden circle, currently in a steadily simmering conflict with Begma.  Currently pulled by Ava after the death of the former Pirate King, Volund at the hand of Princess Fenella.</p><p>Using the chaos from Volund's death, Ava achieved control over Minos' fractured sea kings only to be challenged by unidentified assailants from the shadows utilizing cannons with an unknown powder that somehow ignites within Minos. Ava has openly accused Begma  of this complication, something the Golden Circle neighbor categorically denies. This is to say nothing the insistence from those under Ava that Amber is due for a bloody nose; the popular argument is not even Oberon's family should be allowed to randomly murder Minosian leadership.</p>",
 };
 
 placeCards["ghenesh"] = {
