@@ -400,6 +400,17 @@ function createDeck() {
   }
   setUpFish();
   shuffleAnimation();
+  primeInfo();
+}
+
+function primeInfo() {
+  cardInfo.innerHTML = activeCard["id"];
+  const sourceId = activeCard.firstElementChild.id;
+  const sourceInfo = allCards[sourceId];
+
+  cardInfo.innerHTML = `<div><h2>${sourceInfo.cardname}</h2></div>
+  <div><h3>${sourceInfo.oneline}</h3></div>
+  <div class="tagline">${sourceInfo.tagline}</div>`;
 }
 
 function deckSetup(deck) {
@@ -438,8 +449,9 @@ function shuffleArray(array) {
 function resetDeck() {
   cardIndex = deckSetup(allCards);
   createDeck();
-  cardInfo.classList.add("hidden");
+  // cardInfo.classList.add("hidden");
   unZoomAll();
+  primeInfo;
 }
 
 function hideFirstTime() {
