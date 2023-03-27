@@ -477,6 +477,20 @@ amberCourtCards["alvina"] = {
     "<p>Alvina Karm is the daughter of Richard Karm and Belinda Bayle and a veteran of the Red Rebellion and Abyssal Reach wars. A prodigy of Brandheim, Alvina's ability to control the power of the Crystal Scale is second only to her legendary inability to be killed. This particular legend culminates in Alvina's initiation as an Abyss Walker in a failed attempt to save the Outlands realm of Jugo from corruption inflicted by Chaos.</p><p>After the wars, Alvina's rare ability as a shadow walker outside of the royal family means she often serves as Karm's hand in affairs outside of Amber. The resulting reputation as a fixer means her presence abroad is rarely a sign of peace and stability in whatever realm she currently inhabits.</p>",
 };
 
+amberCourtCards["tiga"] = {
+  type: "child",
+  parent: "ambernobility-category",
+  cardname: "Tiga Bayle",
+  url: "../img/tiga.png",
+  tagline: "Patience",
+  class: "nobles",
+  oneline: "Countess Bayle",
+  blurb:
+    "<p>Tiga Bayle is Countess Bayle and the Royal Vintner to the Crown. In addition to overseeing Bayle's wine production, she is responsible for reducing the dependence of Amber's exploding population on external food sources.  The latest court rumor is that she has taken Prince Roichard of Amber as a lover, and the two have been closer and closer in public ever since</p>",
+  details:
+    "<p>Tiga Bayle is Countess Bayle and the Royal Vintner to the Crown. In addition to overseeing Bayle's wine production, she is responsible for reducing the dependence of Amber's exploding population on external food sources.  The latest court rumor is that she has taken Prince Roichard of Amber as a lover, and the two have been closer and closer in public ever since</p>",
+};
+
 amberCourtCards["allamu"] = {
   type: "child",
   parent: "ambernobility-category",
@@ -732,6 +746,34 @@ otherCards["prudence"] = {
     "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
   details:
     "<p>Prudence Taylor speaks on behalf of Begma City and the other city states in the shadow of Begma. The court of Amber is a prime place for the Ambassador to assist Begman interests not only in trade but in technological experimentation. Finding out what works where in other shadows is a key to expanding Begman technological industry and patent royalties. Ambassador Taylor also has a permanent office in the Amber IAAL branch, due to her extensive engagement with the lawyers there. </p>",
+};
+
+otherCards["domizio"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Domizio Calimero",
+  url: "../img/domizio.png",
+  tagline: "Taste",
+  class: "shadows",
+  oneline: "Ambassador of Montevalno",
+  blurb:
+    "<p> As the Montevalno ambassador, he enjoys the opportunity to present Montevalno’s unparalleled civilization as a model for Amber and the other shadows of the Golden Circle to emulate. Domizio speaks for the principalities and city states of the shadow in letter of the law; this does not often get met withspiritual agreement by who he represents. Montevalno’s inherent wealth has madeit a center of artistic achievement in the shadows, and it exports all manners of goods related to good taste. Domizio has routinely, and unsuccessfully, courted Princess Fenella, as game recognizes game </p>",
+  details:
+    "<p>As the Montevalno ambassador, he enjoys the opportunity to present Montevalno’s unparalleled civilization as a model for Amber and the other shadows of the Golden Circle to emulate. Domizio speaks for the principalities and city states of the shadow in letter of the law; this does not often get met withspiritual agreement by who he represents. Montevalno’s inherent wealth has madeit a center of artistic achievement in the shadows, and it exports all manners of goods related to good taste. Domizio has routinely, and unsuccessfully, courted Princess Fenella, as game recognizes game</p>",
+};
+
+otherCards["rialta"] = {
+  type: "child",
+  parent: "goldencircle-category",
+  cardname: "Rialta De Lomi Borecca",
+  url: "../img/rialta.png",
+  tagline: "Indulgence",
+  class: "shadows",
+  oneline: "Montevalnan Socialite",
+  blurb:
+    "<p> A rich socialite from the Montevalnan state of Serminia, Rialta has been drawn to Amber through the myth of the Great Gallery of Amber and its impossibly lifelike artwork. While this area of the palace is sealed off from all but the royal family and trusted security, it hasn’t stopped gaining access as Rialta’s new life’s work. She also spends her considerable wealth displaying art exhibitions both inside the court and within Amber city as a whole. </p>",
+  details:
+    "<p>A rich socialite from the Montevalnan state of Serminia, Rialta has been drawn to Amber through the myth of the Great Gallery of Amber and its impossibly lifelike artwork. While this area of the palace is sealed off from all but the royal family and trusted security, it hasn’t stopped gaining access as Rialta’s new life’s work. She also spends her considerable wealth displaying art exhibitions both inside the court and within Amber city as a whole.</p>",
 };
 
 otherCards["wellington"] = {
