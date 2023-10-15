@@ -16,6 +16,8 @@ const headerContent = `
 <li><a href="flipcards.html">The Spread</a></li>
 <li><a href="divination.html">Divination</a></li>
 <li><a href="itemcards.html">Tabletop</a></li>
+<li><a href="brandheim.html">Brandheim U</a></li>
+
 <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
 </ul>`;
 

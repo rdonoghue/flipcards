@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  --color1: hsl(203, 58%, 88%);
+  --color2: #8bbbd9;
+  --color3: #8c6e54;
+  --color4: #593a1e;
+  --color5: hsl(23, 95%, 8%);
+  --colorpunch: hsl(7, 100%, 29%);
+
+  --color-text: hsl(23, 95%, 8%);
+  --background-color: hsl(203, 58%, 88%);
+  --background-color-sift: hsl(203, 58%, 78%);
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  color: black;
+  /* background-color: var(--background-color); */
+  background-color: yellow;
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  background: linear-gradient(70deg, rgb(27, 36, 11), rgb(178, 222, 65));
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  /* background-size: cover; */
+}
+
+.panels {
+  /* min-height: 50rem; */
+  min-height: 100vh;
+
+  /* min-height: calc(100vh - 175px); */
+  /* background-color: var(--background-color); */
+  background-image: url("../img/campus.png");
+  background-color: pink;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* background-color: grey; */
+}
+.topbar {
+  background-color: azure;
+  width: 100%;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bulogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.toplinks {
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: center;
+  gap: 2rem;
+  padding-right: 10rem;
+}
+
+.toplinks div {
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: 400ms;
+}
+
+.topnav {
+  text-decoration: none;
+}
+
+.topnav:hover {
+  background-color: #020ca7;
+  color: azure;
+  transition: 400ms;
+}
+
+.hiddenbox {
+  width: 20rem;
+  height: 150px;
+  /* background-color: #8c6e54; */
+}
+
+.panelcontent {
+  position: absolute;
+  top: calc(175px + 5rem);
+
+  /* border-top: 3px solid white;
+  border-bottom: 3px solid yellow; */
+  min-height: 20rem;
+  width: 100%;
+}
+
+.schoolcontent {
+  height: 50rem;
+  min-width: 50rem;
+  border: 3px solid red;
+  margin: auto;
+}
+
+.schoolcontent2 {
+  background-size: cover;
+  background-color: rgba(2, 12, 167, 0.5);
+  height: 50rem;
+  border: 3px solid teal;
+  min-width: 100%;
+  visibility: hidden;
+  margin: 0;
+}
+
+.schoolcontent3 {
+  background-image: url("../img/campus.png");
+  background-size: cover;
+  background-color: rgba(167, 2, 98, 0.5);
+  height: 50rem;
+  border: 3px solid red;
+  min-width: 100%;
+  visibility: hidden;
+}
+
+.schoolcontent4 {
+  background-image: url("../img/campus.png");
+  background-size: cover;
+  background-color: rgba(16, 167, 2, 0.5);
+  height: 50rem;
+  border: 3px solid red;
+  min-width: 100%;
+  visibility: hidden;
+}
+
+.hovertext {
+  margin: auto;
+  /* border: 3px solid yellow; */
+  /* margin-top: 20%; */
+  padding-top: 5rem;
+}
+
+.hovertext h2 {
+  font-size: 3rem;
+  text-shadow: rgb(18, 42, 63) 6px 2px 10px;
+  /* color: pink; */
+  text-align: center;
+}
+
+.bgpattern1 {
+  --s: 100px; /* control the size */
+  --c1: #f8b195;
+  --c2: #355c7d;
+
+  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+.about,
+.academics,
+.campus,
+.student {
+  visibility: hidden;
+}
+
+.panelbox {
+  /* display: flex;
+  
+  flex-direction: column; */
+  padding: 1rem;
+
+  margin: auto;
+  width: 50rem;
+  /* border: 1px solid black; */
+  min-height: 16rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.picholder {
+  /* height: 20rem; */
+  /* width: 20rem; */
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+}
+
+.biggertext {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+
+.picholder img {
+  width: 100%;
+}
+
+.picwords {
+  display: grid;
+  grid-template-columns: 20rem 30rem;
+  height: 20rem;
+  gap: 1rem;
+}
+
+.wordspic {
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  height: 20rem;
+}
+
+.widebox {
+  display: flex;
+  width: 50rem;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.escape {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  /* border: 2px solid limegreen; */
+  z-index: 30;
+}
+.mini {
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 3px;
+  transform: rotate(17deg);
+  transition: 400ms;
+}
+
+.mini:hover {
+  transform: rotate(-17deg);
+
+  transition: 400ms;
+}
