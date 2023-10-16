@@ -35,7 +35,7 @@ body {
   /* min-height: calc(100vh - 175px); */
   /* background-color: var(--background-color); */
   background-image: url("../img/campus.png");
-  background-color: pink;
+  background-color: azure;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -89,7 +89,7 @@ body {
 
 .panelcontent {
   position: absolute;
-  top: calc(175px + 5rem);
+  top: calc(175px + 1rem);
 
   /* border-top: 3px solid white;
   border-bottom: 3px solid yellow; */
@@ -177,7 +177,7 @@ body {
 .about,
 .academics,
 .campus,
-.student {
+.student .goblue {
   visibility: hidden;
 }
 
@@ -226,7 +226,7 @@ body {
 
 .widebox {
   display: flex;
-  width: 50rem;
+  width: 70rem;
   flex-direction: column;
 
   padding: 1rem;
@@ -258,4 +258,13 @@ body {
   transform: rotate(-17deg);
 
   transition: 400ms;
+}
+
+.blueshout {
+  height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #020ca7;
+  padding-top: 1rem;
 }
