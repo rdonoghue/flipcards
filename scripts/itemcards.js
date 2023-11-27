@@ -31,6 +31,7 @@ const deckOutline = document.querySelector(".deckspace");
 const resetButton = document.getElementById("resetdeck");
 const configButton = document.getElementById("config");
 const configClose = document.getElementById("closex");
+const helpClose = document.getElementById("hclosex");
 
 const overlayElement = document.querySelector(".helpoverlay");
 const helpElement = document.querySelector(".helpdetails");
@@ -54,6 +55,8 @@ resetButton.addEventListener("click", resetDeck);
 helpButton.addEventListener("click", toggleHelp);
 configButton.addEventListener("click", toggleCustomize);
 configClose.addEventListener("click", toggleCustomize);
+helpClose.addEventListener("click", toggleHelp);
+
 document.addEventListener("keypress", getKeyboardInput);
 customizeDeck.addEventListener("submit", updateDeck);
 fishForm.addEventListener("submit", fishCard);
@@ -287,6 +290,8 @@ function getKeyboardInput(event) {
     toggleGreenScreen();
   } else if (event.key === "z") {
     zoomCard();
+  } else if (event.key === "Escape") {
+    clearOverlays();
   }
 
   // else if (event.key == "1") {
