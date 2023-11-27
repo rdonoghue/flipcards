@@ -938,6 +938,21 @@ otherCards["richeza"] = {
     "<p>The loose and other worldly kingdoms of the Abyssal Reach are represented as one voice by Richeza, a demonic being who maintains a human form while in Amber. While the Reach may have interests and concerns that are occasionally floated to the crown of Amber and the associated court, far more often the Ambassador’s role is to hear of grievances and concerns about abyssal corruption from shadows within and beyond the Golden Circle. It is Richeza who tasks the Abyss Hunters to go combat the corruption of the Abyss where Amber or the others need such actions taken.</p>",
 };
 
+otherCards["shai"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Shai",
+  url: "../img/shai.png",
+  tagline: "Frost",
+  class: "lc",
+  oneline: "Keeper of Eleum Loyce",
+
+  blurb:
+    "<p>Keeper of Eleum Loyce, one of the four kingdoms of the Abyssal Reach.  She also has a complicated history with Prince Borel.</p>",
+  details:
+    "<p>Keeper of Eleum Loyce, one of the four kingdoms of the Abyssal Reach.  She also has a complicated history with Prince Borel.</p>",
+};
+
 // Shadow
 
 otherCards["lucatiel"] = {
@@ -980,7 +995,7 @@ otherCards["gael"] = {
   oneline: "Guardian of Cethlenn",
 
   blurb:
-    "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
+    "<p>Cethlenn's warden and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
   details:
     "<p>Cethlenn's ward and guardian within Tir Na Nog'th and the Hall of Mirrors. He is the one who helped Cethlenn navigate from Tir to the Hall to Shadow and back, and was her instructor in combat and stealth.</p><p> Gael is the one who convinced Cethlenn to leave the dream city and the Hall of Mirrors, expressing concern about her continued safety. He has not been seen since.</p>",
 };
@@ -1310,6 +1325,20 @@ placeCards["flame"] = {
     "<p>Very little is understood about the Flame of Chaos beyond its origins and consequences. Commonly agreed to have been sparked by the death of Oberon’s wife Milesia, the flame grew into a massive forge of life and entropy. The Flame itself is so large as to defy easy measurement - there is an active debate among scholars and sorcerers as to whether or not the flame’s growth continues or has halted. What is known is that, at the end of the Red Rebellion, Amber had surrounded the flame with checkpoints and that the greatest sorcerers of both Oberon and Swayvil’s kingdoms came together to extinguish the flame. All efforts failed.</p>",
   details:
     "<p>Very little is understood about the Flame of Chaos beyond its origins and consequences. Commonly agreed to have been sparked by the death of Oberon’s wife Milesia, the flame grew into a massive forge of life and entropy. To this day it produces an endless amount of demonic beings that flee into the Abyss. Most of these demons are never seen again, either lost within the depths of the Reach or going to places unknown. A smaller amount seems drawn to the edge of the Lasair Caite, engaging in an endless war with the military forces fortified along the edges of the Outlands. And yet a few seem to navigate the Abyss successfully, coming to one of the four kingdoms of the Reach and incorporating into the societies within.</p><p>The Flame itself is so large as to defy easy measurement - there is an active debate among scholars and sorcerers as to whether or not the flame’s growth continues or has halted. What is known is that, at the end of the Red Rebellion, Amber had surrounded the flame with checkpoints and that the greatest sorcerers of both Oberon and Swayvil’s kingdoms came together to extinguish the flame. All efforts failed.</p>",
+};
+
+placeCards["eleumloyce"] = {
+  type: "child",
+  parent: "shadows-category",
+  cardname: "Eleum Loyce",
+  url: "../img/eleum.png",
+  oneline: "The Frozen Flame",
+  tagline: "Ice",
+  class: "places",
+  blurb:
+    "<p>Eleum Loyce is one of the four kingdoms of the Abyssal Reach. A massive piece of the Flame of Chaos frozen solid, the kingdom is inhabited by beings of ice and light which tend to encourage life in a cold, violent land. The demons of Eleum Loyce pride themselves on finding life and biomes in the Outlands and shadow; once something interesting is found, a bubble in the ice is carved out. </p><p>From there, the twisting influence of the Flame of Chaos slowly subverts life, making something unique and fitting for the floating island. </p>",
+  details:
+    "<p>Eleum Loyce is one of the four kingdoms of the Abyssal Reach. A massive piece of the Flame of Chaos frozen solid, the kingdom is inhabited by beings of ice and light which tend to encourage life in a cold, violent land. The demons of Eleum Loyce pride themselves on finding life and biomes in the Outlands and shadow; once something interesting is found, a bubble in the ice is carved out. </p><p>From there, the twisting influence of the Flame of Chaos slowly subverts life, making something unique and fitting for the floating island. </p><p>The seasons of Eleum Loyce are stuck at the whim of the monarch, who has attuned to the island itself. The ice can melt into vibrant summers, the flames of life bursting into being almost immediately and creating wondrous mutations. Fall can come just as quickly, but rest assured; no matter what, winter ice will collapse upon Eleum Loyce, and life will evolve.</p>",
 };
 
 export { amberCards, amberCourtCards, otherCards, placeCards };
