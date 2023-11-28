@@ -1132,7 +1132,7 @@ placeCards["makingwaves"] = {
   cardname: "Making Waves",
   url: "../img/makingwaves.png",
   tagline: "Celebration",
-  oneline: "Making Waves",
+  oneline: "Amber City's Premier Theme Bar",
 
   class: "places",
   blurb:
