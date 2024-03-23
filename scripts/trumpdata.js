@@ -1007,12 +1007,27 @@ otherCards["kaathe"] = {
   url: "../img/kaathe.png",
   tagline: "Sleep",
   class: "shadows",
-  oneline: "The Dreamer who Must No Awaken",
+  oneline: "The Dreamer who Must Not Awaken",
 
   blurb:
     "<p>The Dreamer that must not be awakened. The creature is speculated to be one of the old Gods Oberon defeated and is surly, bored, and hungry. Not much else is known. </p>",
   details:
     "<p>The Dreamer that must not be awakened. The creature is speculated to be one of the old Gods Oberon defeated and is surly, bored, and hungry. Not much else is known. </p>",
+};
+
+otherCards["yggdrasil"] = {
+  type: "child",
+  parent: "shadow-category",
+  cardname: "Yggdrasil",
+  url: "../img/yggdrasil.png",
+  tagline: "Growth",
+  class: "shadows",
+  oneline: "Where the Fire Once Burned...",
+
+  blurb:
+    "<p>Born from the abyss, it's many branches are now the home of the kingdoms of the Abyssal Reach.</p>",
+  details:
+    "<p>Born from the abyss, it's many branches are now the home of the kingdoms of the Abyssal Reach.</p>",
 };
 
 const placeCards = {};
