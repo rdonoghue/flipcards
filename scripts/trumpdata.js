@@ -245,7 +245,7 @@ amberCards["borel"] = {
   parent: "milesia-category",
   tagline: "Gatekeeper",
   class: "scions",
-  oneline: "Son of Oberon & Milesia<br>Not the Keeper of the Abyss",
+  oneline: "Son of Oberon & Milesia<br><s>Not the</s> Keeper of the Abyss",
 
   blurb:
     "<p>Third child and first son of Oberon and Ophelia, Borel spends most of his time in what he describes as 'his studies' but which others refer to as 'plugging holes in the universe'.  He is one of the more sorcerously knowledgeable members of the family, but consistently defers to his hister on such matters. </a>.",
