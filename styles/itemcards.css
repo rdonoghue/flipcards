@@ -28,6 +28,7 @@ button {
   display: flex;
   width: 340px;
   margin-left: 0.5rem;
+  /* height: 4rem; */
 }
 
 .helpoverlay {
@@ -261,6 +262,12 @@ button {
   left: 20px;
 }
 
+.deckholder {
+  position: relative;
+  margin: 0 1rem;
+  /* border: 1px solid pink; */
+}
+
 .deckspace {
   height: 530px;
   width: 340px;
@@ -394,170 +401,21 @@ button {
   border: 6px solid white;
   border-radius: 10px;
 }
-/* main {
-  border: 1px solid red;
-  position: relative;
-} */
 
-/*
-.playcard {
-  height: 550px;
-  width: 350px;
-  border: 1px dashed rgb(246, 209, 164);
-  border-radius: 2rem;
-  font-family: "Aboreto", cursive;
-  font-size: 2rem;
-  position: relative;
-  margin: 0 auto;
-}
-
-.playcard h2 {
-  margin: 0.5rem auto 0 auto;
-  font-size: 1rem;
-  text-align: center;
-  color: rgb(246, 209, 164);
-  width: 100%;
-}
-
-.flipspace {
-  perspective: 1200px;
-  height: 450px;
-  width: 300px;
-  margin-left: 20px;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.cardface {
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
+.firsttime {
+  /* height: 10rem; */
+  width: 20rem;
+  background-color: rgba(246, 209, 164, 0.8);
+  color: black;
+  border-radius: 8px;
   position: absolute;
-  border: 0.5rem solid white;
-  box-sizing: border-box;
-  border-radius: 2ch;
-  box-shadow: 2px 4px 8px rgb(0, 0, 0);
-  background-color: blanchedalmond;
+  top: 20rem;
+  left: calc(50% - 10rem);
+  padding: 2rem;
 }
 
-.cardfront {
-  transform: rotateY(180deg);
-  background-color: whitesmoke;
-}
-.cardback {
-  background-color: whitesmoke;
-}
-.card.is-flipped {
-  transform: rotateY(180deg);
-}
-.cardmeaning {
-  text-align: center;
-  line-height: 3rem;
-  margin-bottom: 1rem;
-  height: 3rem;
-  font-family: "Aboreto", cursive;
-  font-size: 1.25rem;
-  color: rgb(246, 209, 164);
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.invert {
-  rotate: 180deg;
-}
-
-#cardlist p {
-  font-family: "Jost", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 0, 1rem;
-  margin: 0;
-}
-
-.fauxcard {
-  width: 100%;
-  height: 100%;
-}
-
-.backdeck {
-  position: absolute;
-  top: 0px;
-}
-
-.l1 {
-  z-index: -30;
-}
-.l2 {
-  z-index: -40;
-  rotate: 2deg;
-}
-.l3 {
-  z-index: -50;
-  rotate: -3deg;
-}
-
-.frozen {
-  pointer-events: none;
-}
-
-.pivot-r {
-  transition: transform 0.25s;
-  transform: rotate(10deg);
-}
-
-.pivot-l {
-  transition: transform 0.25s;
-  transform: rotate(-10deg);
-}
-
-.flopback {
-  transform: rotateY(-180deg) translateX(-800px);
-  background-color: blueviolet;
-}
-
-.card.is-flopped {
-  transform: rotateY(-180deg) translateX(-500px);
-}
-
-.pilefront {
-  transform: rotateY(-180deg) translateX(-500px);
-  background-color: blueviolet;
-}
-
-.vibrate {
-  animation: shake-left-right 0.4s linear both;
-}
-@keyframes shake-left-right {
-  0%,
-  100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
+@media (max-width: 64rem) {
+  .firsttime {
+    visibility: hidden;
   }
-  10% {
-    transform: rotate(8deg);
-  }
-  20%,
-  40%,
-  60% {
-    transform: rotate(-10deg);
-  }
-  30%,
-  50%,
-  70% {
-    transform: rotate(10deg);
-  }
-  80% {
-    transform: rotate(-8deg);
-  }
-  90% {
-    transform: rotate(8deg);
-  }
-} */
+}

@@ -4,9 +4,7 @@ const card = document.querySelector(".card");
 const trumpSelector = document.querySelectorAll(".trump-selector");
 var buttonDiv = document.getElementById("buttonList");
 const scriptCall = document.getElementById("callcards").getAttribute("handoff");
-
-console.log(scriptCall);
-
+const thumbnailHolder = document.getElementById("thumbnailholder");
 import {
   amberCards,
   amberCourtCards,
@@ -32,13 +30,9 @@ if (scriptCall == "ambercards") {
 }
 
 console.log(document.getElementById("callcards"));
-// const cardDetails = amberCards;
 
 buildCategories(cardDetails);
 setup(cardDetails);
-// shuffle();
-
-console.log("Making sure the script runs");
 
 function buildCategories(cardList) {
   for (let k in cardList) {
@@ -48,17 +42,19 @@ function buildCategories(cardList) {
       buttonDiv.appendChild(newDiv);
       var thisDiv = document.getElementById(cardDetails[k]["category"]);
       thisDiv.classList.add("trump-category");
-      thisDiv.classList.add("trump-button");
+      // thisDiv.classList.add("trump-button");
 
-      document
-        .getElementById(cardDetails[k]["category"])
-        .classList.add("trump-category");
-      document
-        .getElementById(cardDetails[k]["category"])
-        .classList.add("trump-button");
+      // document
+      //   .getElementById(cardDetails[k]["category"])
+      //   .classList.add("trump-category");
+      // document
+      //   .getElementById(cardDetails[k]["category"])
+      //   .classList.add("trump-category");;
 
       var newButton = document.createElement("button");
       newButton.id = k;
+      newButton.classList.add("trump-category");
+      newButton.classList.add("trump-button");
       newButton.addEventListener("click", function () {
         pickcard(this.id);
       });
@@ -71,7 +67,6 @@ function buildCategories(cardList) {
 function setup(cardList) {
   for (var k in cardList) {
     if (cardDetails[k]["type"] == "child") {
-      console.log(k);
       let parentContainer = document.getElementById(cardList[k]["parent"]);
       var newButton = document.createElement("button");
       newButton.id = k;
@@ -142,6 +137,7 @@ function resetpage() {
     "rotate(" + cardpivot() + "deg)"
   );
   document.getElementById("cardmeaning").innerHTML = "<p> </p>";
+  document.getElementById("char-oneline").innerHTML = "<p> </p>";
 
   document.getElementById("char-blurb").innerHTML = "Prosperity";
   document.getElementById("char-desc").innerHTML =

@@ -4,6 +4,7 @@
 
 - add some help text to the pages (tabletop, divination etc) so peopel know they can move the cards
 - decide if I keep draw 1 (probably not?)
+- update readme for strangers
 
 ## Big TODO:
 

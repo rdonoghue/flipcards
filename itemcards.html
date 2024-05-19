@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,11 +18,18 @@
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/itemcards.css" />
     <link rel="stylesheet" href="styles/namedcards.css" />
+
+    
+    
+    <script src="scripts/makeheader.js" type="module" defer></script>
+
+    <script src="scripts/shared.js" type="module" defer></script>
     <script src="scripts/itemcards.js" type="module" defer></script>
 
     <title>Draw a Trump</title>
   </head>
   <body>
+    <div class="firsttime">Drag cards off the top of the deck to arrange them on the desktop.  Hit "?" to see other options. </div>
     <div class="hidden helpoverlay"></div>
     <div class="hidden deckdetails">
       <h3>Customize Deck</h3>
@@ -138,8 +146,12 @@
           <p>Zoom active card in/out</p>
         </li>
       </ul>
+      <div class="closex" id="hclosex">X</div>
+
     </div>
     <header>
+      <div class="overlay"></div>
+
       <div class="hamburger">
         <img src="img/menu.png" class="menuburger" />
       </div>
@@ -157,17 +169,17 @@
         <li><a href="https://prosperity-amber.slab.com">Slab</a></li>
       </ul>
     </header>
-    <main>
-      <div class="deckspace"></div>
-
+    <div class="deckholder">
       <div class="buttonholder">
-        <button id="resetdeck">Reset</button> <button id="gethelp">Help</button
-        ><button id="config">Configure</button>
+        <button id="resetdeck">Reset</button>
+        <button id="gethelp">Help</button><button id="config">Configure</button>
       </div>
-
-      <div id="playspace" class="playspace"></div>
-      <div class="spacer"></div>
-      <div id="cardInfo" class="cardinfo hidden"></div>
+      <!-- <div class="deckspace"> -->
+        <div id="playspace" class="playspace"></div>
+        <div class="spacer"></div>
+        <div id="cardInfo" class="cardinfo"></div>
+      <!-- </div> -->
+      </div>
     </main>
     <aside id="preloader" style="visibility: hidden"></aside>
   </body>

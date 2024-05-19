@@ -22,6 +22,7 @@ var showCards = {
   places: [true, document.getElementById("cb-places")],
 };
 let greenScreen = 0;
+let pageVisibility = 1;
 let currentHoverTarget;
 var cardIndex = deckSetup(allCards);
 const pageBody = document.querySelector("body");
@@ -30,6 +31,7 @@ const deckOutline = document.querySelector(".deckspace");
 const resetButton = document.getElementById("resetdeck");
 const configButton = document.getElementById("config");
 const configClose = document.getElementById("closex");
+const helpClose = document.getElementById("hclosex");
 
 const overlayElement = document.querySelector(".helpoverlay");
 const helpElement = document.querySelector(".helpdetails");
@@ -43,6 +45,8 @@ const fishList = document.getElementById("fishcards");
 const fishForm = document.getElementById("gofish");
 const moveCard = document.getElementsByClassName("card");
 const cardFaces = document.getElementsByClassName("cardface");
+const firstTime = document.querySelector(".firsttime");
+const buttonHolder = document.querySelector(".buttonholder");
 
 var activeCard;
 // FUNCTIONAL BUTTONS
@@ -51,6 +55,8 @@ resetButton.addEventListener("click", resetDeck);
 helpButton.addEventListener("click", toggleHelp);
 configButton.addEventListener("click", toggleCustomize);
 configClose.addEventListener("click", toggleCustomize);
+helpClose.addEventListener("click", toggleHelp);
+
 document.addEventListener("keypress", getKeyboardInput);
 customizeDeck.addEventListener("submit", updateDeck);
 fishForm.addEventListener("submit", fishCard);
@@ -225,52 +231,45 @@ function getKeyboardInput(event) {
   } else if (event.key == "x") {
     resetDeck();
   } else if (event.key == "h") {
-    for (let cardToHide of cardsInDeck) {
-      if (cardToHide.style.visibility !== "hidden") {
-        cardToHide.style.visibility = "hidden";
-      } else {
-        cardToHide.style.visibility = "visible";
-      }
-    }
-    if (deckOutline.style.visibility !== "hidden") {
-      deckOutline.style.visibility = "hidden";
-    } else {
-      deckOutline.style.visibility = "visible";
-    }
-    if (resetButton.style.visibility !== "hidden") {
-      resetButton.style.visibility = "hidden";
-    } else {
-      resetButton.style.visibility = "visible";
-    }
-    if (helpButton.style.visibility !== "hidden") {
-      helpButton.style.visibility = "hidden";
-    } else {
-      helpButton.style.visibility = "visible";
-    }
-    if (configButton.style.visibility !== "hidden") {
-      configButton.style.visibility = "hidden";
-    } else {
-      configButton.style.visibility = "visible";
-    }
-    if (pageHeader.style.visibility !== "hidden") {
-      pageHeader.style.visibility = "hidden";
-    } else {
-      pageHeader.style.visibility = "visible";
-    }
+    toggleVisibility();
+    // for (let cardToHide of cardsInDeck) {
+    //   if (cardToHide.style.visibility !== "hidden") {
+    //     cardToHide.style.visibility = "hidden";
+    //   } else {
+    //     cardToHide.style.visibility = "visible";
+    //   }
+    // }
+    // if (deckOutline.style.visibility !== "hidden") {
+    //   deckOutline.style.visibility = "hidden";
+    // } else {
+    //   deckOutline.style.visibility = "visible";
+    // }
+    // if (resetButton.style.visibility !== "hidden") {
+    //   resetButton.style.visibility = "hidden";
+    // } else {
+    //   resetButton.style.visibility = "visible";
+    // }
+    // if (helpButton.style.visibility !== "hidden") {
+    //   helpButton.style.visibility = "hidden";
+    // } else {
+    //   helpButton.style.visibility = "visible";
+    // }
+    // if (configButton.style.visibility !== "hidden") {
+    //   configButton.style.visibility = "hidden";
+    // } else {
+    //   configButton.style.visibility = "visible";
+    // }
+    // if (pageHeader.style.visibility !== "hidden") {
+    //   pageHeader.style.visibility = "hidden";
+    // } else {
+    //   pageHeader.style.visibility = "visible";
+    // }
     // deckOutline.style.visibility = "hidden";
     // resetButton.style.visibility = "hidden";
     // helpButton.style.visibility = "hidden";
     // pageHeader.style.visibility = "hidden";
   } else if (event.key == "u") {
-    for (let cardToHide of cardsInDeck) {
-      cardToHide.style.visibility = "visible";
-    }
-    deckOutline.style.visibility = "visible";
-    resetButton.style.visibility = "visible";
-    configButton.style.visibility = "visible";
-
-    helpButton.style.visibility = "visible";
-    pageHeader.style.visibility = "visible";
+    toggleVisibility();
   } else if (event.key == "t") {
     activeCard.style.top = 0;
     activeCard.style.left = 0;
@@ -280,8 +279,6 @@ function getKeyboardInput(event) {
   } else if (event.key == "b") {
     activeCard.parentNode.prepend(activeCard);
   } else if (event.key == "?") {
-    // console.log("show help overlay");
-    // console.log(overlayElement.classList);
     toggleHelp();
   } else if (event.key === "`") {
     clearOverlays();
@@ -293,6 +290,8 @@ function getKeyboardInput(event) {
     toggleGreenScreen();
   } else if (event.key === "z") {
     zoomCard();
+  } else if (event.key === "Escape") {
+    clearOverlays();
   }
 
   // else if (event.key == "1") {
@@ -317,7 +316,6 @@ function infoHover(elmnt) {
 
 function dragElement(elmnt) {
   // console.log(elmnt.id);
-
   var pos1 = 0,
     pos2 = 0,
     pos3 = 0,
@@ -326,6 +324,8 @@ function dragElement(elmnt) {
   elmnt.onmousedown = dragMouseDown;
 
   function dragMouseDown(e) {
+    hideFirstTime();
+
     elmnt.parentNode.appendChild(elmnt);
     elmnt.style.transition = "none";
 
@@ -405,6 +405,17 @@ function createDeck() {
   }
   setUpFish();
   shuffleAnimation();
+  primeInfo();
+}
+
+function primeInfo() {
+  cardInfo.innerHTML = activeCard["id"];
+  const sourceId = activeCard.firstElementChild.id;
+  const sourceInfo = allCards[sourceId];
+
+  cardInfo.innerHTML = `<div><h2>${sourceInfo.cardname}</h2></div>
+  <div><h3>${sourceInfo.oneline}</h3></div>
+  <div class="tagline">${sourceInfo.tagline}</div>`;
 }
 
 function deckSetup(deck) {
@@ -443,13 +454,20 @@ function shuffleArray(array) {
 function resetDeck() {
   cardIndex = deckSetup(allCards);
   createDeck();
-  cardInfo.classList.add("hidden");
+  // cardInfo.classList.add("hidden");
   unZoomAll();
+  primeInfo;
+}
 
-  // for (let k of Object.keys(showCards)) {
-  //   console.log(k);
-  //   showCards[k][0] = true;
-  // }
+function hideFirstTime() {
+  firstTime.classList.add("hidden");
+}
 
-  // console.log(showCards);
+function toggleVisibility() {
+  hideFirstTime();
+  for (let cardToHide of cardsInDeck) {
+    cardToHide.classList.toggle("invisible");
+  }
+  pageHeader.classList.toggle("invisible");
+  buttonHolder.classList.toggle("invisible");
 }

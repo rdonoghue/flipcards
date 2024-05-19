@@ -10,7 +10,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
   gap: 2rem;
-  margin-top: 4rem;
   position: relative;
 }
 
@@ -84,7 +83,6 @@ button:hover {
   height: 500px;
   width: 300px;
   /* aspect-ratio: 5 / 3; */
-  background-color: aqua;
   clip-path: border-box;
   position: relative;
   margin: 2rem auto;
@@ -96,19 +94,16 @@ button:hover {
 }
 
 #cardmanip {
-  margin: 0 4rem;
+  margin: 1rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  flex: 1;
+  /* flex: 1; */
   box-sizing: border-box;
 }
 
-.bottombox {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
+/* .bottombox {
+} */
 
 #cardmanip > button {
   flex: 1;
@@ -117,7 +112,6 @@ button:hover {
 #cardmeaning {
   text-align: center;
   line-height: 3rem;
-  margin-bottom: 4rem;
   height: 3rem;
   font-family: "Aboreto", cursive;
   font-size: 1.5rem;
@@ -202,4 +196,33 @@ button:hover {
 
 .preloader {
   visibility: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .card,
+  .fauxcard {
+    height: 375px;
+    width: 225px;
+    border: 2px solid white;
+  }
+  .cardholder {
+    height: 320px;
+  }
+  /* .fauxcard {
+    transform: scale(0.65);
+  } */
+}
+
+@media (max-width: 1300px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+    position: relative;
+  }
+
+  nav {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
