@@ -96,6 +96,12 @@ body {
   background-image: url("img/royalback.png");
 }
 
+.kolvirback {
+  background: rgb(36, 75, 157);
+  background-image: url("img/kolvirback.png");
+}
+
+
 .lorec {
   background-image: url("img/lorec-web.png");
 }
@@ -114,7 +120,7 @@ body {
 
 .suil-lir {
   background-image: url("img/suil-lir-web.png");
-}
+} 
 
 .fenella {
   background-image: url("img/fenella-web.png");

@@ -296,6 +296,105 @@ amberCards["ava"] = {
   blurb:
     "<p>Oberon's semi-acknowldged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
+
+amberCards["cimere"] = {
+  cardname: "Cemere Louve",
+  type: "child",
+  url: "../img/cimere.png",
+  parent: "unknown-category",
+  tagline: "Professor",
+  category: "scions",
+
+  blurb:
+    "Cimere Louve is a minor noble that Lorec rescued from an Abyss-consumed shadow. She has shown a remarkable aptitude to the Jezik, and has seized on it as a source of power during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.",
+};
+
+amberCards["tybalt"] = {
+  cardname: "Tybalt",
+  type: "child",
+  url: "../img/tybalt.png",
+  parent: "unknown-category",
+  tagline: "Strategist",
+  category: "scions",
+
+  blurb:
+    "Ava recruited Tybalt as one of her two advisers once she ascended to the Minos throne. Tybalt is the political and economic brains in contrast to her other advsior, C, and their military bent. An unknown within Amber, the man is a legend within the pirate circles and has served many pirate captains. during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.",
+};
+
+amberCards["melody"] = {
+  cardname: "Pheme Melody",
+  type: "child",
+  url: "../img/melody.png",
+  parent: "unknown-category",
+  tagline: "Witch",
+  category: "scions",
+
+  blurb:
+    "Pheme Melody is an Earther who was lost in a shadow storm and wound up in the Outlands. Inevitably tained by Chaos's corruption, she used its power to survive until a curious Helgram took  Pheme under the name's wing. Pheme is unique in that she is the only known being touched by Chaos to survive the extinguishing of the flame and not fall into a coma.",
+};
+
+amberCards["guinevere"] = {
+  cardname: "Guinevere of Serminia",
+  type: "child",
+  url: "../img/guinevere.png",
+  parent: "unknown-category",
+  tagline: "Reaper",
+  category: "scions",
+
+  blurb:
+    "A sword for hire in Serminia's noble disputes, Guinevere has built a legendary reputation for using murder to settle duels. It's suggested serving under Princess Fenella and finding enough favor to be personally trained as a marine has led to Guinevere's legendary swordsmanship..",
+};
+
+amberCards["shitobi"] = {
+  cardname: "Shitobi",
+  type: "child",
+  url: "../img/shitobi.png",
+  parent: "unknown-category",
+  tagline: "Bastardo",
+  category: "scions",
+
+  blurb:
+    "Emperor Bao had four bastards who were never formally acknowledged but served as agents of Penglai. Known as the Four Winds for traveling across all the shadows in service of Bao, Shitabi has been reconstituted by Ygg after the extinguishing of the flame. The Abyss walker has arrived at the Prosperity Court to personally beseech the crown to atone for his father's sins.",
+};
+
+amberCards["angharad"] = {
+  cardname: "Angharad Feldane",
+  type: "child",
+  url: "../img/angharad.png",
+  parent: "unknown-category",
+  tagline: "Dame",
+  category: "scions",
+
+  blurb:
+    "She has served throughout the centuries as a foot soldier, marine, shock trooper, and otherwise in units that represent Amber's military fodder. Despite repeat attempts by Feldane to get Angharad promoted and otherwise put in a leadership position, Prince Lorec has thwarted any attempt to elevate Angharad beyond the life of a common soldier. Until now.",
+};
+
+amberCards["cadfael"] = {
+  cardname: "Cadfael",
+  type: "child",
+  url: "../img/cadfael.png",
+  parent: "unknown-category",
+  tagline: "Warden",
+  category: "scions",
+
+  blurb:
+    "Cadfael of Amber has served the Wardens for long enough that he traces back to Queen Milesia's reign. Often out in the shadows, the Warden has been effective in dealing with threats in deep Arden and scouting for the Suil Leir to the point that rumors intermittently pop up that he is descended from the royal family - perhaps Suil Leir himself.",
+};
+
+amberCards["dunhold"] = {
+  cardname: "Dunhold of Schenn",
+  type: "child",
+  url: "../img/dunhold.png",
+  parent: "unknown-category",
+  tagline: "Retired",
+  category: "scions",
+
+  blurb:
+    "Dunhold of Schenn is a shadow pirate who built a fortune large enough to attract the interest of House Chantris. After helping Chantris resolve an issue on the Rebman seas, Dunhold married into the house through Fflur Chantris. Flur died in the massacre at the Oisen. Dunhold lived, and after the war declared his Chantris name died with his wife. He purchased land in Weirmonken outside Silverthorne, and has resided there since. .",
+};
+
+
+
 const amberCourtCards = {};
 
 amberCourtCards["ambernobility"] = {
