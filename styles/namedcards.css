@@ -353,6 +353,11 @@
   background-size: cover;
 }
 
+.tonnansaad {
+  background-image: url("../img/tonnansaad.png");
+  background-size: cover;
+}
+
 .montevalno {
   background-image: url("../img/montevalno.png");
   background-size: cover;
@@ -486,7 +491,58 @@
   background-image: url("../img/eleum.png");
   background-size: cover;
 }
+
 .ygg {
   background-image: url("../img/yggdrasil.png");
+  background-size: cover;
+}
+
+.glinde {
+  background-image: url("../img/glinde.png");
+  background-size: cover;
+}
+
+.melody {
+  background-image: url("../img/melody.png");
+  background-size: cover;
+}
+
+.shitabi {
+  background-image: url("../img/shitabi.png");
+  background-size: cover;
+}
+
+.guinevere {
+  background-image: url("../img/guinevere.png");
+  background-size: cover;
+}
+
+.cadfael {
+  background-image: url("../img/cadfael.png");
+  background-size: cover;
+}
+
+.cimere {
+  background-image: url("../img/cimere.png");
+  background-size: cover;
+}
+
+.branca {
+  background-image: url("../img/branca.png");
+  background-size: cover;
+}
+
+.angharad {
+  background-image: url("../img/angharad.png");
+  background-size: cover;
+}
+
+.dunhold {
+  background-image: url("../img/dunhold.png");
+  background-size: cover;
+}
+
+.tybalt {
+  background-image: url("../img/tybalt.png");
   background-size: cover;
 }

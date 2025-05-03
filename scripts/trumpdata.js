@@ -1,3 +1,5 @@
+
+
 "use strict";
 
 const amberCards = {};
@@ -12,7 +14,7 @@ amberCards["oberon"] = {
   tagline: "The King",
   class: "scions",
   oneline: "King of Amber",
-  details: `<p>King of Amber. Creator of the Pattern. Conqueror of all reality. Sitting upon a great throne with a greater crown wrought of silver with seven high points, studded with emeralds, and huge rubies at either temple. The jewel of judgment rests upon his chest, supported around broad shoulders by a thick golden chain.</p><p>Father.</p><p>  Oberon as a father is open to many interpretations and possibilities. Oberon is a distant father. Oberon is a loving father. Oberon is a manipulator. Oberon is a teacher. Any, all, or none of these may be true. Oberon is complicated.</p><p>  What can be said about Oberon without interpretation is that those not of royal blood within the court of Amber are terrified of him. He was ruthless enough to win wars that the subjugated are still trying to understand how they could have possibly lost. He was powerful enough to slay demons, ancient dragons, and self- proclaimed gods on the fields of battle.</p>`,
+  details: `<p>King of Amber. Creator of the Pattern. Conqueror of all reality. Sitting upon a great throne with a greater crown wrought of silver with seven high points, studded with emeralds, and huge rubies at either temple. The jewel of judgment rests upon his chest, supported around broad shoulders by a thick golden chain.</p><p>Father.</p><p>  Oberon as a father is open to many interpretations and possibilities. Oberon is a distant father. Oberon is a loving father. Oberon is a manipulator. Oberon is a teacher. Any, all, or none of these may be true. Oberon is complicated.</p><p>  What can be said about Oberon without interpretation is that those not of royal blood within the court of Amber are terrified of him. He was ruthless enough to win wars that the subjugated are still trying to understand how they could have possibly lost. He was powerful enough to slay demons, ancient dragons, and self- proclaimed gods on the fields of battle.</p>`,
   blurb:
     "<p>King of Amber. Creator of the Pattern. Conqueror of all reality.</p>",
 };
@@ -202,9 +204,9 @@ amberCards["cethlenn"] = {
   oneline: "Daughter of Oberon & Fina",
 
   blurb:
-    "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger.</p><p>For a time, another Cethlenn was active in the court of Amber, and while the doppleganger has been quietly dealt with, many mysteries linger.</p>",
+    "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger.</p><p>For a time, another Cethlenn was active in the court of Amber, and while the doppleganger has been quietly dealt with, many mysteries linger.</p>",
   details:
-    "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger. She’s never quite been certain who the danger would come from -- Oberon? Tir? Her mother’s loyal retainers? Political machinations she’s unaware of? -- but the fact remains that she grew up ever-aware that calling attention to herself would be tantamount to suicide. Luckily, in Tir, it was easy to learn how to drift by silently.</p><p>When Princess Cethlenn, the long-lost daughter of Fina, was recognized and welcomed into Amber’s court by King Oberson, Cethlenn was perturbed to discover that she had no knowledge of the double taking her place. Her memories of that era are dim, flickers and moments and half-caught glimpses. She came back to herself in the Forest of Arden with Suil Lier, and grounded herself on Tir Na Nog’th’s Pattern hours later. Her false twin died, and Cethlenn survived the Pattern but lost her ability to remain in Tir after sunrise.</p><p>Since then, Cethlenn has slipped into the role of Princess of Amber, which another played before her.</p>",
+    "<p>Cethlenn was raised largely in Tir, with occasional forays (often unannounced ahead of time) to other Shadows. She was taught that being kept out of sight was for her safety, as if she attracted too much attention it would put her in danger. She’s never quite been certain who the danger would come from -- Oberon? Tir? Her mother’s loyal retainers? Political machinations she’s unaware of? -- but the fact remains that she grew up ever-aware that calling attention to herself would be tantamount to suicide. Luckily, in Tir, it was easy to learn how to drift by silently.</p><p>When Princess Cethlenn, the long-lost daughter of Fina, was recognized and welcomed into Amber’s court by King Oberson, Cethlenn was perturbed to discover that she had no knowledge of the double taking her place. Her memories of that era are dim, flickers and moments and half-caught glimpses. She came back to herself in the Forest of Arden with Suil Lier, and grounded herself on Tir Na Nog’th’s Pattern hours later. Her false twin died, and Cethlenn survived the Pattern but lost her ability to remain in Tir after sunrise.</p><p>Since then, Cethlenn has slipped into the role of Princess of Amber, which another played before her.</p>",
 };
 
 // Milesia
@@ -361,6 +363,125 @@ amberCards["ava"] = {
   details:
     "<p>Oberon's semi-acknowledged bastard and general black ops agent.  She has been given rulership of Minos, and most opposition to that has been quashed fairly violently.  Her relationship with her father is rocky, and her siblings are still largely an unknown.  Oberon has stated that the stars say her life will not be one of peace, and to help bear that, he has allowed her to continue to bear the pattern blade <a href='https://prosperity-amber.slab.com/posts/pattern-blades-vumfpia0'>Rekamuk</a>.",
 };
+
+amberCards["cimere"] = {
+  cardname: "Cemere Louve",
+  type: "child",
+  url: "../img/cimere.png",
+  parent: "unknown-category",
+  tagline: "Professor",
+  category: "scions",
+  blurb:
+    "<p>Cimere Louve is a minor noble that Lorec rescued from an Abyss-consumed shadow. She has shown a remarkable aptitude to the Jezik, and has seized on it as a source of power during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.</p>",
+  details:
+    "<p>Cimere Louve is a minor noble that Lorec rescued from an Abyss-consumed shadow. She has shown a remarkable aptitude to the Jezik, and has seized on it as a source of power during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.</p>",
+};
+
+amberCards["tybalt"] = {
+  cardname: "Tybalt",
+  type: "child",
+  url: "../img/tybalt.png",
+  parent: "unknown-category",
+  tagline: "Strategist",
+  category: "scions",
+  blurb:
+    "<p>Ava recruited Tybalt as one of her two advisers once she ascended to the Minos throne. Tybalt is the political and economic brains in contrast to her other advsior, C, and their military bent. An unknown within Amber, the man is a legend within the pirate circles and has served many pirate captains. during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him</p>",
+  details:
+    "<p>Ava recruited Tybalt as one of her two advisers once she ascended to the Minos throne. Tybalt is the political and economic brains in contrast to her other advsior, C, and their military bent. An unknown within Amber, the man is a legend within the pirate circles and has served many pirate captains. during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him</p>",
+
+};
+
+amberCards["melody"] = {
+  cardname: "Pheme Melody",
+  type: "child",
+  url: "../img/melody.png",
+  parent: "unknown-category",
+  tagline: "Witch",
+  category: "scions",
+  blurb:
+    "<p>Pheme Melody is an Earther who was lost in a shadow storm and wound up in the Outlands. Inevitably tained by Chaos's corruption, she used its power to survive until a curious Helgram took  Pheme under the name's wing. Pheme is unique in that she is the only known being touched by Chaos to survive the extinguishing of the flame and not fall into a coma</p>",
+  details:
+    "<p>Pheme Melody is an Earther who was lost in a shadow storm and wound up in the Outlands. Inevitably tained by Chaos's corruption, she used its power to survive until a curious Helgram took  Pheme under the name's wing. Pheme is unique in that she is the only known being touched by Chaos to survive the extinguishing of the flame and not fall into a coma</p>",
+
+
+
+};
+
+amberCards["guinevere"]= {
+  cardname: "Guinevere of Serminia",
+  type: "child",
+  url: "../img/guinevere.png",
+  parent: "unknown-category",
+  tagline: "Reaper",
+  "category": "scions",
+  blurb:
+    "<p>A sword for hire in Serminia's noble disputes, Guinevere has built a legendary reputation for using murder to settle duels. It's suggested serving under Princess Fenella and finding enough favor to be personally trained as a marine has led to Guinevere's legendary swordsmanship.</p>",
+  details:  
+    "<p>A sword for hire in Serminia's noble disputes, Guinevere has built a legendary reputation for using murder to settle duels. It's suggested serving under Princess Fenella and finding enough favor to be personally trained as a marine has led to Guinevere's legendary swordsmanship.</p>",
+
+};
+
+amberCards["shitabi"]= {
+  cardname: "Shitabi",
+  type: "child",
+  url: "../img/shitabi.png",
+  parent: "unknown-category",
+  tagline: "Bastardo",
+  category: "scions",
+  blurb:
+    "<p>Emperor Bao had four bastards who were never formally acknowledged but served as agents of Penglai. Known as the Four Winds for traveling across all the shadows in service of Bao, Shitabi has been reconstituted by Ygg after the extinguishing of the flame. The Abyss walker has arrived at the Prosperity Court to personally beseech the crown to atone for his father's sins.</p>",
+  details:
+    "<p>Emperor Bao had four bastards who were never formally acknowledged but served as agents of Penglai. Known as the Four Winds for traveling across all the shadows in service of Bao, Shitabi has been reconstituted by Ygg after the extinguishing of the flame. The Abyss walker has arrived at the Prosperity Court to personally beseech the crown to atone for his father's sins.</p>",
+
+};
+
+
+
+amberCards["angharad"]= {
+  cardname: "Angharad Feldane",
+  type: "child",
+  url: "../img/angharad.png",
+  parent: "unknown-category",
+  tagline: "Dame",
+  category: "scions",
+  blurb:
+    "<p>She has served throughout the centuries as a foot soldier, marine, shock trooper, and otherwise in units that represent Amber's military fodder. Despite repeat attempts by Feldane to get Angharad promoted and otherwise put in a leadership position, Prince Lorec has thwarted any attempt to elevate Angharad beyond the life of a common soldier. Until now.</p>",
+  details:
+    "<p>She has served throughout the centuries as a foot soldier, marine, shock trooper, and otherwise in units that represent Amber's military fodder. Despite repeat attempts by Feldane to get Angharad promoted and otherwise put in a leadership position, Prince Lorec has thwarted any attempt to elevate Angharad beyond the life of a common soldier. Until now.</p>",
+
+};
+
+amberCards["cadfael"]= {
+  cardname: "Cadfael",
+  type: "child",
+  url: "../img/cadfael.png",
+  parent: "unknown-category",
+  tagline: "Warden",
+  category: "scions",
+  blurb:
+    "<p>Cadfael of Amber has served the Wardens for long enough that he traces back to Queen Milesia's reign. Often out in the shadows, the Warden has been effective in dealing with threats in deep Arden and scouting for the Suil Leir to the point that rumors intermittently pop up that he is descended from the royal family - perhaps Suil Leir himself.</p>",
+  details:
+    "<p>Cadfael of Amber has served the Wardens for long enough that he traces back to Queen Milesia's reign. Often out in the shadows, the Warden has been effective in dealing with threats in deep Arden and scouting for the Suil Leir to the point that rumors intermittently pop up that he is descended from the royal family - perhaps Suil Leir himself.</p>",
+
+
+};
+
+amberCards["dunhold"]= {
+  cardname: "Dunhold of Schenn",
+  type: "child",
+  url: "../img/dunhold.png",
+  parent: "unknown-category",
+  tagline: "Retired",
+  category: "scions",
+  blurb:
+    "<p>Dunhold of Schenn is a shadow pirate who built a fortune large enough to attract the interest of House Chantris. After helping Chantris resolve an issue on the Rebman seas, Dunhold married into the house through Fflur Chantris. Flur died in the massacre at the Oisen. Dunhold lived, and after the war declared his Chantris name died with his wife. He purchased land in Weirmonken outside Silverthorne, and has resided there since. .</p>",
+  details:
+    "<p>Dunhold of Schenn is a shadow pirate who built a fortune large enough to attract the interest of House Chantris. After helping Chantris resolve an issue on the Rebman seas, Dunhold married into the house through Fflur Chantris. Flur died in the massacre at the Oisen. Dunhold lived, and after the war declared his Chantris name died with his wife. He purchased land in Weirmonken outside Silverthorne, and has resided there since. .</p>",
+
+
+};
+
+
 const amberCourtCards = {};
 
 amberCourtCards["ambernobility"] = {
@@ -401,9 +522,25 @@ amberCourtCards["salem"] = {
   oneline: "Chancellor of Amber",
 
   blurb:
-    "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
-  details:
-    "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
+  "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
+details:
+  "<p>Salem Chantris oversees all other royal court appointments, and also serves as the head butler of the palace. Old beyond reason, some suspect that the cane is just for show. He is polite, firm, and not easily cowed. Even Fenella’s threats run off of Salem like water off a duck, and he saw her kill someone in Bloody Frank’s.</p>",
+};
+
+amberCourtCards["branca"] = {
+  type: "child",
+  parent: "ambernobility-category",
+  cardname: "Branca Chantris",
+  url: "../img/branca.png",
+  tagline: "Tradition",
+  class: "nobles",
+  oneline: "Chancellor of Amber",
+
+
+blurb:
+"<p>Branca Chantris is the child of a political alliance between Chantris and House Mairwen of Rebma. She has largely been absent from the Prosperity court, focusing more on Rebma's interests, but with the festival of Karelia at an end, Chantris is exploring political marriages. Like much of Chantris, little is known about Branca in public.</p>",
+details:
+"<p>Branca Chantris is the child of a political alliance between Chantris and House Mairwen of Rebma. She has largely been absent from the Prosperity court, focusing more on Rebma's interests, but with the festival of Karelia at an end, Chantris is exploring political marriages. Like much of Chantris, little is known about Branca in public.</p>",
 };
 
 amberCourtCards["edward"] = {
@@ -803,7 +940,7 @@ otherCards["wesley"] = {
   blurb:
     "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodge of Weirmonken. Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.</p>",
   details:
-    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
+    "<p>Kathryn Wesley is an accomplished hunter and the de factor leader of the  Elderhorn Lodgeof Weirmonken. Rumored to be one of the broken lines of lineage within Weirmonken, Kathryn's life has been dedicated in recent years to helping contain and ward off the Weir.</p><p>Exhausted by years of fighting an elusive and deadly opponent, in recent times Kathryn has convinced the local nobility within Weirmonken to start trying to find ways to increase trade and commerce as a beginning point of getting aid from the Golden Circle shadows for assistance in their fight.  While that effort is playing out, though, Kathryn leads the hunters of the lodge in stalking a superior opponent to try to make the lands safer for those who inhabit it.</p>",
 };
 
 // Chaos
@@ -850,6 +987,21 @@ otherCards["galina"] = {
     "<p>Milesia’s younger sister and daughter of King Swayvil of the Lasair Caite. Galina was appointed ambassador to Amber after the end of the second Lasair Caite war. While tensions remain high between Amber and the Lasair Caite, Galina has driven much of the effort to maintain the peace. Without much of a need or ability to trade with Amber or the Golden Circle, a lot of the ambassador’s focus has been on making sure efforts taken by the Thelbane to strengthen their position after a series of wars do not come across as unnecessarily bellicose.</p>",
   details:
     "<p>Milesia’s younger sister and daughter of King Swayvil of the Lasair Caite. Galina was appointed ambassador to Amber after the end of the second Lasair Caite war. While tensions remain high between Amber and the Lasair Caite, Galina has driven much of the effort to maintain the peace. Without much of a need or ability to trade with Amber or the Golden Circle, a lot of the ambassador’s focus has been on making sure efforts taken by the Thelbane to strengthen their position after a series of wars do not come across as unnecessarily bellicose.</p>",
+};
+
+otherCards["glinde"] = {
+  type: "child",
+  parent: "lasaircaite-category",
+  cardname: "Glinde Hendrake",
+  url: "../img/glinde.png",
+  tagline: "struggle",
+  class: "lc",
+  oneline: "Archduchess Hendrake, Swayvil's Voice",
+
+  blurb:
+    "<p>Glinde Hendrake has served as the loudest of Hendrake's name since the end of the first Lasair Caite war. She has overseen war with Amber, as well as the defense of Ceset against the Flame of Chaos. She has been sent to Amber by King Swayvil to speak on his half in matters to the court.</p>",
+  details:
+    "<p>Glinde Hendrake has served as the loudest of Hendrake's name since the end of the first Lasair Caite war. She has overseen war with Amber, as well as the defense of Ceset against the Flame of Chaos. She has been sent to Amber by King Swayvil to speak on his half in matters to the court.</p>",
 };
 
 otherCards["samson"] = {
@@ -1166,6 +1318,22 @@ placeCards["rebma"] = {
   oneline: "City Beneath the Waves",
   blurb: "",
   details: "",
+};
+
+placeCards["tonnansaad"] = {
+  type: "child",
+  parent: "gc-category",
+  cardname: "Tonnan Saad",
+  url: "../img/tonnansaad.png",
+  tagline: "Pleasure palace",
+  class: "places",
+  oneline: "Wonder of the Shadows",
+
+
+  blurb:
+    "<p>Tonnan Saad is a great underwater palace built between Rebma and the Deep. With the natural magics of Rebma extended to cover the great structure, the rooms alternate between being dry and sealed or filled with water, magical enchantments separating the water. Designed to accentuate the water and undersea beauty, Tonnan Saad is one of the great engineering wonders of reality, and the pride of the Golden Circle's most talented engineers and Brandheim's best Jezik speakers.</p>",
+  details:
+    "<p>Tonnan Saad is a great underwater palace built between Rebma and the Deep. With the natural magics of Rebma extended to cover the great structure, the rooms alternate between being dry and sealed or filled with water, magical enchantments separating the water. Designed to accentuate the water and undersea beauty, Tonnan Saad is one of the great engineering wonders of reality, and the pride of the Golden Circle's most talented engineers and Brandheim's best Jezik speakers.</p>",
 };
 
 placeCards["tir"] = {
