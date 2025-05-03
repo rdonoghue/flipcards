@@ -57,6 +57,14 @@
   background-size: cover;
 }
 
+.kolvirback {
+  background: goldenrod;
+  background-image: url("../img/kolvirback.png");
+  background-size: cover;
+}
+
+
+
 .lorec {
   background-image: url("../img/lorec-web.png");
   background-size: cover;
