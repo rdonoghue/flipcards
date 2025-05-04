@@ -298,7 +298,7 @@ amberCards["ava"] = {
 
 
 amberCards["cimere"] = {
-  cardname: "Cemere Louve",
+  cardname: "Cimere Louve",
   type: "child",
   url: "../img/cimere.png",
   parent: "unknown-category",
@@ -306,7 +306,7 @@ amberCards["cimere"] = {
   category: "scions",
 
   blurb:
-    "Cimere Louve is a minor noble that Lorec rescued from an Abyss-consumed shadow. She has shown a remarkable aptitude to the Jezik, and has seized on it as a source of power during Velka's reign, the Bastard's name and history have been wiped from Amber's collective memory, save that he rebelled against Oberon, and it went badly for him.",
+    "Cimere Louve is a minor noble that Lorec rescued from an Abyss-consumed shadow. She has shown a remarkable aptitude to the Jezik, and seized on it as a source of power. Recently, she has begun teaching at Brandheim university as a professor.",
 };
 
 amberCards["tybalt"] = {
